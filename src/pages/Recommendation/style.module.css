@@ -1,0 +1,46 @@
+.recommendation__text {
+  margin-top: 40px;
+}
+
+.recommendation__text p {
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  color: var(--grey-900);
+  margin-bottom: 1.5rem;
+}
+
+.recommendation__text span {
+  display: block;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--grey-900);
+  margin-bottom: 1.5rem;
+}
+
+.recommendation__text ul {
+  padding-left: 27px;
+  color: var(--grey-900);
+}
+
+.recommendation__text ul li {
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+.second__text {
+  margin-top: 2rem;
+  color: var(--grey-900);
+  font-size: 12px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  margin-bottom: -4px;
+}
+
+.second__text__link {
+  color: var(--primary-red);
+  font-size: 12px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+}

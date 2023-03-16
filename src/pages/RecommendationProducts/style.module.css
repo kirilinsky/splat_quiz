@@ -1,0 +1,102 @@
+.recommendation {
+  max-width: 588px;
+  width: 100%;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  margin: 0 auto 70px;
+  padding: 2.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--grey-900);
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 2.5rem;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+.item {
+  margin-top: 1rem;
+  border: 1px solid var(--grey-200);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.item img {
+  width: 64px;
+  height: 64px;
+  margin-right: 18px;
+}
+
+.item section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item section span {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-600);
+}
+
+.item section p {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--grey-900);
+}
+
+.recommendation button {
+  width: 100%;
+  margin-top: 40px;
+  background: var(--grey-200);
+  border-radius: 245px;
+  border: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: var(--grey-900);
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .form-send-prev {
+    display: none;
+  }
+
+  .recommendation {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .title {
+    letter-spacing: 0.02em;
+    line-height: 100%;
+  }
+
+  .description {
+    margin-top: 2rem;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,16 @@
+.information {
+  margin-top: 1.875rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.information img {
+  margin-right: 0.875rem;
+}
+
+.information p {
+  font-size: 0.875rem;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  color: var(--grey-900);
+}

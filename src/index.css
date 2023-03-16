@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Futura New";
+  src: url("assets/fonts/FuturaNewMedium-Reg.woff2") format("woff2"),
+    url("assets/fonts/FuturaNewMedium-Reg.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura New";
+  src: url("assets/fonts/FuturaNewBook-Reg.woff2") format("woff2"),
+    url("assets/fonts/FuturaNewBook-Reg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("assets/fonts/RobotoSlab-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("assets/fonts/RobotoSlab-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PF Din Text Comp Pro Medium";
+  src: url("assets/fonts/PFDinTextCompPro-Medium.ttf");
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --grey-200: #f2f4f5;
+  --grey-400: #e8ebed;
+  --grey-500: #cacfd1;
+  --grey-600: #a5acb2;
+  --grey-900: #2c2c2c;
+
+  --error: #dc392d;
+  --success: #46bb44;
+
+  --primary-red: #ba0c2f;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Futura New", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
