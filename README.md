@@ -1,5 +1,5 @@
 # Навигация по проекту
-
+#"homepage": "/wp-content/landings/diagnostics/",
 ## Описание папок
 
 1. actions - rudux
