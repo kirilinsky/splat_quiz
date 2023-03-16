@@ -1,10 +1,10 @@
-import QuizTemplate from '../../components/QuizTemplate'
-import Title from '../../components/Title'
-import Attantion from '../../components/Attantion'
+import QuizTemplate from '../../../components/QuizTemplate'
+import Title from '../../../components/Title'
+import Attantion from '../../../components/Attantion'
 import styles from './style.module.css'
 
 import { useDispatch } from 'react-redux'
-import { firstQuiz, secondQuiz, thirdQuiz } from '../../actions/routingApp'
+import { firstQuiz, secondQuiz, thirdQuiz } from '../../../actions/routingApp'
 
 const InitialPage = () => {
   const dispatch = useDispatch()

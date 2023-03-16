@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setInitial } from '../../../actions/thirdQuiz'
 import { recommendationProductsThirdQuiz } from '../../../actions/routingApp'
 
-import FormAppointmentDoctor from '../../FormAppointmentDoctor'
-import Attantion from '../../Attantion'
+import FormAppointmentDoctor from '../FormAppointmentDoctor'
+import Attantion from '../Attantion'
 
 import styles from './style.module.css'
 
-const FinalForm = ({ questions }) => {
+const QuizTemplateThird = ({ questions }) => {
   const [index, setIndex] = useState(0)
   const dispatch = useDispatch()
   const stateIndex = useSelector((state) => state.data.index)
@@ -119,4 +119,4 @@ const FinalForm = ({ questions }) => {
   )
 }
 
-export default FinalForm
+export default QuizTemplateThird

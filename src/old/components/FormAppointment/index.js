@@ -1,7 +1,7 @@
 import styles from './style.module.css'
 
 import { useDispatch } from 'react-redux'
-import { recommendationAppointment } from '../../actions/routingApp'
+import { recommendationAppointment } from '../../../actions/routingApp'
 
 const FormAppointment = () => {
   const dispatch = useDispatch()

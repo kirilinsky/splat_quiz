@@ -8,19 +8,11 @@ export const routingApps = createSlice({
   reducers: {
     startPage: (state) => {
       state.page = 'StartPage'
-    },
-    initialPage: (state) => {
-      state.page = 'InitialPage'
-    },
-    firstQuiz: (state) => {
-      state.page = 'FirstQuiz'
-    },
+    }, 
     secondQuiz: (state) => {
       state.page = 'SecondQuiz'
     },
-    thirdQuiz: (state) => {
-      state.page = 'ThirdQuiz'
-    },
+    
     recommendation: (state) => {
       state.page = 'Recommendation'
     },
@@ -31,12 +23,9 @@ export const routingApps = createSlice({
       state.page = 'RecommendationProducts'
     },
     finalForm: (state) => {
-      state.page = 'FInalForm'
+      state.page = 'FinalForm'
     },
-    quizOver: (state) => {
-      //state.page = 'QuizOver'
-      state.page = 'ResultSelection'
-    },
+     
     resultSelection: (state) => {
       state.page = 'ResultSelection'
     },

@@ -1,13 +1,13 @@
-import FormAppointmentDoctor from '../../components/FormAppointmentDoctor'
+import FormAppointmentDoctor from '../../../components/FinalForm'
 import image from '../../assets/images/splat_recommend.png'
 
-import { ToothpasteRecommendation } from '../../data/toothpaste'
+import { ToothpasteRecommendation } from '../../../data/toothpaste'
 
 import { useDispatch, useSelector } from 'react-redux'
 import {
   recommendationProducts,
   recommendation,
-} from '../../actions/routingApp'
+} from '../../../actions/routingApp'
 
 const RecommendationAppointment = () => {
   const ToothpasteIndex = useSelector(

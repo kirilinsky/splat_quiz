@@ -2,9 +2,9 @@ import { useState } from 'react'
 import politic from '../../assets/Политика_конфиденциальности_WEB_2208.pdf'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
-import { startPage } from '../../actions/routingApp'
+import { resultSelection   } from '../../actions/routingApp'
 
-const FormAppointmentDoctor = () => {
+const FinalForm = () => {
   const dispatch = useDispatch()
   const [agree, setAgree] = useState(false)
   const [formdata, setFormdata] = useState({
@@ -20,9 +20,9 @@ const FormAppointmentDoctor = () => {
   const submitForm = (e) => {
     setAgree(false)
     e.preventDefault()
-     axios.post('/wp-content/themes/promo/inc/diagnostics/ajax.php', formdata).then(r => {
-
-      dispatch(startPage())
+    axios.post('/wp-content/themes/promo/inc/diagnostics/ajax.php', formdata).then(r => {
+      /* debug */
+      dispatch(resultSelection())
     }).catch(e => {
       console.log('error');
       console.error(e.message);
@@ -69,10 +69,11 @@ const FormAppointmentDoctor = () => {
             </label>
           </div>
         </div>
+        <button onClick={() => dispatch(resultSelection())}>debug next</button>
         <input disabled={!agree} type="submit" className="form-send" value="Отправить" />
       </form>
     </div>
   )
 }
 
-export default FormAppointmentDoctor
+export default FinalForm

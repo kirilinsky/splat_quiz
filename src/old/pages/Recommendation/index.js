@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import styles from './style.module.css'
-import { recommendations } from '../../data/firstQuestions'
+import { recommendations } from '../../../data/firstQuestions'
 
-import SendEmail from '../../components/SendEmail'
+import SendEmail from '../../../components/SendEmail'
 import FormAppointment from '../../components/FormAppointment'
 
 import { useSelector } from 'react-redux'
-import ScrollToTop from '../../components/ScrollToTop'
+import ScrollToTop from '../../../components/ScrollToTop'
 
 const Recommendation = () => {
   const index = useSelector((state) => state.number.recommendationValue)

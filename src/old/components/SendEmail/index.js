@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { resultSelection } from '../../actions/routingApp'
+import { resultSelection } from '../../../actions/routingApp'
 import politic from '../../assets/Политика_конфиденциальности_WEB_2208.pdf'
 import axios from 'axios'
 const SendEmail = ({ buttonText, visible = false }) => {
