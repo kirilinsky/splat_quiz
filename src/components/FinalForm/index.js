@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import politic from '../../assets/Политика_конфиденциальности_WEB_2208.pdf'
-import axios from 'axios'
-import { useDispatch } from 'react-redux'
-import { resultSelection   } from '../../actions/routingApp'
+import { useState } from "react";
+import politic from "../../assets/Политика_конфиденциальности_WEB_2208.pdf";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { resultSelection } from "../../actions/routingApp";
+import InputMask from "react-input-mask";
 
 const FinalForm = () => {
-  const dispatch = useDispatch()
-  const [agree, setAgree] = useState(false)
+  const dispatch = useDispatch();
+  const [agree, setAgree] = useState(false);
   const [formdata, setFormdata] = useState({
-    name: '',
-    phone: '',
-    email: ''
-  })
+    name: "",
+    phone: "",
+    email: "",
+  });
 
-  const handleInput = e => {
-    setFormdata({ ...formdata, [e.target.name]: e.target.value })
-  }
+  const handleInput = (e) => {
+    setFormdata({ ...formdata, [e.target.name]: e.target.value.trim() });
+  };
 
+  console.log(formdata, "df");
   const submitForm = (e) => {
-    setAgree(false)
-    e.preventDefault()
-    axios.post('/wp-content/themes/promo/inc/diagnostics/ajax.php', formdata).then(r => {
-      /* debug */
-      dispatch(resultSelection())
-    }).catch(e => {
-      console.log('error');
-      console.error(e.message);
-      setAgree(true)
-    })
-  }
+    setAgree(false);
+    e.preventDefault();
+    axios
+      .post("/wp-content/themes/promo/inc/diagnostics/ajax.php", formdata)
+      .then((r) => {
+        /* debug */
+        dispatch(resultSelection());
+      })
+      .catch((e) => {
+        console.log("error");
+        console.error(e.message);
+        setAgree(true);
+      });
+  };
   return (
     <div className="form">
       <div className="form-title">
@@ -38,16 +43,25 @@ const FinalForm = () => {
         <input
           type="text"
           value={formdata.name}
-          name="name" onChange={handleInput}
-
+          name="name"
+          onChange={handleInput}
           className="form-input"
           placeholder="Ваше имя*"
           required
         />
         <div className="form-contact">
-          <input value={formdata.phone}
-            name="phone" onChange={handleInput}
-            type="text" className="form-input" placeholder="Телефон" />
+          <InputMask
+            formatChars={{ '9': '[0-9]' }}
+            value={formdata.phone}
+            name="phone"
+            onChange={handleInput}
+            className="form-input"
+            type="text"
+            placeholder="Телефон"
+            mask="+7\ 999 999 99 99"
+            maskChar=" "
+          />
+
           <input
             type="email"
             onChange={handleInput}
@@ -60,20 +74,35 @@ const FinalForm = () => {
         </div>
         <div className="form-politic">
           <div className="line">
-            <input value={agree} onChange={(e) => setAgree(e.target.checked)} type="checkbox" id="checkbox-mail" />
+            <input
+              value={agree}
+              onChange={(e) => setAgree(e.target.checked)}
+              type="checkbox"
+              id="checkbox-mail"
+            />
             <label htmlFor="checkbox-mail">
-              Нажимая на кнопку, я принимаю{' '}
+              Нажимая на кнопку, я принимаю{" "}
               <a href={politic} target="_blank">
                 условия соглашения
               </a>
             </label>
           </div>
         </div>
-        <button onClick={() => dispatch(resultSelection())}>debug next</button>
-        <input disabled={!agree} type="submit" className="form-send" value="Отправить" />
+        <button
+          className="form-send"
+          onClick={() => dispatch(resultSelection())}
+        >
+          debug next
+        </button>
+        <input
+          disabled={!agree}
+          type="submit"
+          className="form-send"
+          value="Отправить"
+        />
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default FinalForm
+export default FinalForm;

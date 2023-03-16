@@ -84,26 +84,26 @@ const Navigation = ({
       </div>
 
       {/* debug */}
-     {/*  <div
-          onClick={() => { 
-            dispatch(finalForm())
-           }}
-          className="quiz-navigation-button btn-active"
-        >
-          Далее FINAL
-        </div> */}
-        {/* debug */}
+      <div
+        onClick={() => {
+          dispatch(finalForm())
+        }}
+        className="quiz-navigation-button btn-active"
+      >
+        Debug final
+      </div>
+      {/* debug */}
 
       {currentCard === questionLength ? (
         <div
           onClick={() => {
-            
+
             dispatch(finalForm())
             handleIncrement()
           }}
           className="quiz-navigation-button btn-active"
         >
-          Далее FINAL
+          Далее
         </div>
       ) : (
         <div
