@@ -51,14 +51,14 @@ const FinalForm = () => {
         />
         <div className="form-contact">
           <InputMask
-            formatChars={{ '9': '[0-9]' }}
+            formatChars={{ '8': '[0-9]' }}
             value={formdata.phone}
             name="phone"
             onChange={handleInput}
             className="form-input"
             type="text"
             placeholder="Телефон"
-            mask="+7\ 999 999 99 99"
+            mask="+7 988 888 88 88"
             maskChar=" "
           />
 
