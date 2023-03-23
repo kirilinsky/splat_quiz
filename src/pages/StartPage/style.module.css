@@ -29,27 +29,9 @@
   padding-right: 10px;
 }
 
-.hero__button button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 40px;
-  background-color: var(--primary-red);
-  padding: 12px 30px;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Roboto Slab";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.3rem;
-  cursor: pointer;
-}
+ 
 
-.hero__button button:hover {
-  background-color: #8b0923;
-}
-
+ 
 .hero__description p {
   font-size: 10px;
   font-family: "Roboto Slab";
@@ -59,8 +41,7 @@
 }
 
 .hero__image {
-  background-image: url(../../assets/hero.jpg);
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50%;
   width: 58%;
