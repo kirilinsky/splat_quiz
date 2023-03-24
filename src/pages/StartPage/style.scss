@@ -4,11 +4,16 @@
 
     padding-right: 0;
     grid-template-areas: "C P" "D P";
-    grid-template-rows: 65% 35%;
+    grid-template-rows: 70% 30%;
     width: 100vw;
     height: calc(100vh - 60px);
     grid-template-columns: 1fr 1fr;
     gap: 1px 20px;
+    @media screen and (max-height: 715px) {
+       grid-template-columns: 72% auto;
+      
+      gap: 1px;
+    }
     @media screen and (max-width: 780px) {
       grid-template-columns: 1fr;
       grid-template-areas: "P" "C" "D";
@@ -21,7 +26,7 @@
   }
   &_content {
     grid-area: C;
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-left: 5rem;
     padding-right: 0;
     font-family: "Futura New";
@@ -40,13 +45,16 @@
       padding: 0.75rem;
     }
     h1 {
-      font-size: 80px;
-      line-height: 94%;
+      font-size: 78px;
+      line-height: 92%;
 
       margin: 0;
-      margin-bottom: 24px;
+      margin-bottom: 23px;
       @media screen and (max-width: 1200px) {
         font-size: 66px;
+      }
+      @media screen and (max-height: 655px) {
+         font-size: 55px;
       }
       @media screen and (max-width: 1030px) {
         font-size: 52px;
@@ -125,6 +133,7 @@
     position: relative;
     height: 100%;
     padding-left: 5rem;
+   
     @media screen and (max-width: 1200px) {
       padding-left: 2rem;
     }
@@ -138,6 +147,9 @@
       height: 100%;
       width: 115%;
       gap: 20px;
+      @media screen and (max-height: 715px) {
+        width: 95%;
+      }
       @media screen and (max-width: 780px) {
         width: 95%;
       }

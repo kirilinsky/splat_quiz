@@ -351,9 +351,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -384,9 +384,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -422,9 +422,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -719,9 +719,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -752,9 +752,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -791,9 +791,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -1047,9 +1047,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -1080,9 +1080,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
@@ -1112,9 +1112,9 @@ export const Toothpaste = {
     },
     {
       id: 4,
-      image: Accessories.MouthwashSuperwhite.image,
-      name: Accessories.MouthwashSuperwhite.name,
-      link: Accessories.MouthwashSuperwhite.link,
+      image: products.TotalCare.image,
+      name: products.TotalCare.name,
+      link: products.TotalCare.link,
     },
     {
       id: 5,
