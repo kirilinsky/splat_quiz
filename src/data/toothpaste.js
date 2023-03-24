@@ -344,12 +344,6 @@ export const Toothpaste = {
       link: products.ProfessionalUltracomplex.link,
     },
     {
-      id: 2,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
-    {
       id: 3,
       image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
@@ -381,12 +375,7 @@ export const Toothpaste = {
       name: products.ProfessionalUltracomplex.name,
       link: products.ProfessionalUltracomplex.link,
     },
-    {
-      id: 2,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -419,12 +408,12 @@ export const Toothpaste = {
       name: products.ProfessionalUltracomplex.name,
       link: products.ProfessionalUltracomplex.link,
     },
-    {
-      id: 2,
-      image: products.SpecialGold.image,
-      name: products.SpecialGold.name,
-      link: products.SpecialGold.link,
-    },
+    /*  {
+       id: 2,
+       image: products.SpecialGold.image,
+       name: products.SpecialGold.name,
+       link: products.SpecialGold.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -451,18 +440,24 @@ export const Toothpaste = {
     },
   ],
   'Low-Low-Medium-Low': [
+    /*   {
+        id: 1,
+        image: products.BiomedVITAFRESH.image,
+        name: products.BiomedVITAFRESH.name,
+        link: products.BiomedVITAFRESH.link,
+      }, */
     {
       id: 1,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalLavendersept.image,
-      name: products.ProfessionalLavendersept.name,
-      link: products.ProfessionalLavendersept.link,
-    },
+    /*   {
+        id: 2,
+        image: products.ProfessionalLavendersept.image,
+        name: products.ProfessionalLavendersept.name,
+        link: products.ProfessionalLavendersept.link,
+      }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -489,18 +484,24 @@ export const Toothpaste = {
     },
   ],
   'Low-Low-Medium-Medium': [
-    {
+    /* {
       id: 1,
       image: products.SpecialOrganic.image,
       name: products.SpecialOrganic.name,
       link: products.SpecialOrganic.link,
-    },
+    }, */
     {
-      id: 2,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
+      id: 1,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+    /*   {
+        id: 2,
+        image: products.ProfessionalGreenTea.image,
+        name: products.ProfessionalGreenTea.name,
+        link: products.ProfessionalGreenTea.link,
+      }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -527,18 +528,24 @@ export const Toothpaste = {
     },
   ],
   'Low-Low-Medium-High': [
+    /*  {
+       id: 1,
+       image: products.ProfessionalActive.image,
+       name: products.ProfessionalActive.name,
+       link: products.ProfessionalActive.link,
+     }, */
     {
       id: 1,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
+    /* {
       id: 2,
       image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -565,18 +572,19 @@ export const Toothpaste = {
     },
   ],
   'Low-Low-High-Low': [
-    {
+    /* {
       id: 1,
       image: products.BiomedVITAFRESH.image,
       name: products.BiomedVITAFRESH.name,
       link: products.BiomedVITAFRESH.link,
-    },
+    }, */
     {
-      id: 2,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
+      id: 1,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -605,16 +613,16 @@ export const Toothpaste = {
   'Low-Low-High-Medium': [
     {
       id: 1,
-      image: products.ProfessionalLavendersept.image,
-      name: products.ProfessionalLavendersept.name,
-      link: products.ProfessionalLavendersept.link,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
-    {
-      id: 2,
-      image: products.SpecialOrganic.image,
-      name: products.SpecialOrganic.name,
-      link: products.SpecialOrganic.link,
-    },
+    /*    {
+         id: 2,
+         image: products.SpecialOrganic.image,
+         name: products.SpecialOrganic.name,
+         link: products.SpecialOrganic.link,
+       }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -641,18 +649,24 @@ export const Toothpaste = {
     },
   ],
   'Low-Low-High-High': [
-    {
+    /* {
       id: 1,
       image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    },
+    }, */
     {
-      id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
+      id: 1,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
+    /*   {
+        id: 2,
+        image: products.ProfessionalActive.image,
+        name: products.ProfessionalActive.name,
+        link: products.ProfessionalActive.link,
+      }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -679,18 +693,24 @@ export const Toothpaste = {
     },
   ],
   'Low-Medium-Low-Low': [
+    /*  {
+       id: 1,
+       image: products.SpecialLove.image,
+       name: products.SpecialLove.name,
+       link: products.SpecialLove.link,
+     }, */
     {
       id: 1,
-      image: products.SpecialLove.image,
-      name: products.SpecialLove.name,
-      link: products.SpecialLove.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
+    /* {
       id: 2,
       image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -719,16 +739,11 @@ export const Toothpaste = {
   'Low-Medium-Low-Medium': [
     {
       id: 1,
-      image: products.SpecialSeaMinerals.image,
-      name: products.SpecialSeaMinerals.name,
-      link: products.SpecialSeaMinerals.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -755,18 +770,19 @@ export const Toothpaste = {
     },
   ],
   'Low-Medium-Low-High': [
-    {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
+    /*  {
+       id: 1,
+       image: products.SpecialSilver.image,
+       name: products.SpecialSilver.name,
+       link: products.SpecialSilver.link,
+     }, */
     {
       id: 2,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -795,16 +811,16 @@ export const Toothpaste = {
   'Low-Medium-Medium-Low': [
     {
       id: 1,
-      image: products.SpecialSeaMinerals.image,
-      name: products.SpecialSeaMinerals.name,
-      link: products.SpecialSeaMinerals.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
-    },
+    /*  {
+       id: 2,
+       image: products.ProfessionalExtraFresh.image,
+       name: products.ProfessionalExtraFresh.name,
+       link: products.ProfessionalExtraFresh.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -831,18 +847,18 @@ export const Toothpaste = {
     },
   ],
   'Low-Medium-Medium-Medium': [
-    {
+    /* {
       id: 1,
       image: products.SpecialSeaMinerals.image,
       name: products.SpecialSeaMinerals.name,
       link: products.SpecialSeaMinerals.link,
-    },
-    {
+    }, */    {
       id: 2,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -871,15 +887,9 @@ export const Toothpaste = {
   'Low-Medium-Medium-High': [
     {
       id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
-      id: 2,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
@@ -907,18 +917,19 @@ export const Toothpaste = {
     },
   ],
   'Low-Medium-High-Low': [
-    {
-      id: 1,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
-    },
+    /*  {
+       id: 1,
+       image: products.BiomedVITAFRESH.image,
+       name: products.BiomedVITAFRESH.name,
+       link: products.BiomedVITAFRESH.link,
+     }, */
     {
       id: 2,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -946,17 +957,12 @@ export const Toothpaste = {
   ],
   'Low-Medium-High-Medium': [
     {
-      id: 1,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -984,17 +990,12 @@ export const Toothpaste = {
   ],
   'Low-Medium-High-High': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1021,18 +1022,23 @@ export const Toothpaste = {
     },
   ],
   'Low-High-Low-Low': [
-    {
+   /*  {
       id: 1,
       image: products.BiomedCALCIMAX.image,
       name: products.BiomedCALCIMAX.name,
       link: products.BiomedCALCIMAX.link,
+    }, */ {
+      id: 1,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
-    {
-      id: 2,
-      image: products.BiomedSENSITIVE.image,
-      name: products.BiomedSENSITIVE.name,
-      link: products.BiomedSENSITIVE.link,
-    },
+    /*  {
+       id: 2,
+       image: products.BiomedSENSITIVE.image,
+       name: products.BiomedSENSITIVE.name,
+       link: products.BiomedSENSITIVE.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1065,12 +1071,7 @@ export const Toothpaste = {
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1104,12 +1105,6 @@ export const Toothpaste = {
       link: products.ProfessionalExtraFresh.link,
     },
     {
-      id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
-    },
-    {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
       name: Accessories.ToothbrushSilver.name,
@@ -1136,17 +1131,12 @@ export const Toothpaste = {
   ],
   'Low-High-Medium-Low': [
     {
-      id: 1,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
-    },
-    {
       id: 2,
       image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1173,12 +1163,7 @@ export const Toothpaste = {
     },
   ],
   'Low-High-Medium-Medium': [
-    {
-      id: 1,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
-    },
+
     {
       id: 2,
       image: products.ProfessionalActive.image,
@@ -1212,17 +1197,12 @@ export const Toothpaste = {
   ],
   'Low-High-Medium-High': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalLavendersept.image,
-      name: products.ProfessionalLavendersept.name,
-      link: products.ProfessionalLavendersept.link,
+      image: products.ProfessionalActive.image,
+      name: products.ProfessionalActive.name,
+      link: products.ProfessionalActive.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1255,12 +1235,7 @@ export const Toothpaste = {
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1289,16 +1264,11 @@ export const Toothpaste = {
   'Low-High-High-Medium': [
     {
       id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalLavendersept.image,
-      name: products.ProfessionalLavendersept.name,
-      link: products.ProfessionalLavendersept.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1327,16 +1297,11 @@ export const Toothpaste = {
   'Low-High-High-High': [
     {
       id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalLavendersept.image,
-      name: products.ProfessionalLavendersept.name,
-      link: products.ProfessionalLavendersept.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1363,18 +1328,24 @@ export const Toothpaste = {
     },
   ],
   'Medium-Low-Low-Low': [
-    {
-      id: 1,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
-    },
+    /*  {
+       id: 1,
+       image: products.SpecialDream.image,
+       name: products.SpecialDream.name,
+       link: products.SpecialDream.link,
+     }, */
     {
       id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+    /*  {
+       id: 2,
+       image: products.ProfessionalBiocalcium.image,
+       name: products.ProfessionalBiocalcium.name,
+       link: products.ProfessionalBiocalcium.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushClinic.image,
@@ -1402,17 +1373,17 @@ export const Toothpaste = {
   ],
   'Medium-Low-Low-Medium': [
     {
-      id: 1,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+    /*  {
+       id: 2,
+       image: products.ProfessionalBiocalcium.image,
+       name: products.ProfessionalBiocalcium.name,
+       link: products.ProfessionalBiocalcium.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1441,16 +1412,11 @@ export const Toothpaste = {
   'Medium-Low-Low-High': [
     {
       id: 1,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
+      image: products.BiomedSENSITIVE.image,
+      name: products.BiomedSENSITIVE.name,
+      link: products.BiomedSENSITIVE.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1478,17 +1444,12 @@ export const Toothpaste = {
   ],
   'Medium-Low-Medium-Low': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
       image: products.ProfessionalUltracomplex.image,
       name: products.ProfessionalUltracomplex.name,
       link: products.ProfessionalUltracomplex.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1516,17 +1477,12 @@ export const Toothpaste = {
   ],
   'Medium-Low-Medium-Medium': [
     {
-      id: 1,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
-    },
-    {
       id: 2,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1554,17 +1510,17 @@ export const Toothpaste = {
   ],
   'Medium-Low-Medium-High': [
     {
-      id: 1,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
+      id: 2,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
+    /* {
       id: 2,
       image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1593,15 +1549,9 @@ export const Toothpaste = {
   'Medium-Low-High-Low': [
     {
       id: 1,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
-    },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
     {
       id: 3,
@@ -1631,16 +1581,11 @@ export const Toothpaste = {
   'Medium-Low-High-Medium': [
     {
       id: 1,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1669,16 +1614,11 @@ export const Toothpaste = {
   'Medium-Low-High-High': [
     {
       id: 1,
-      image: products.SpecialDream.image,
-      name: products.SpecialDream.name,
-      link: products.SpecialDream.link,
+      image: products.ProfessionalLikvumGel.image,
+      name: products.ProfessionalLikvumGel.name,
+      link: products.ProfessionalLikvumGel.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1705,18 +1645,18 @@ export const Toothpaste = {
     },
   ],
   'Medium-Medium-Low-Low': [
-    {
+    /* {
       id: 1,
       image: products.SpecialStressOff.image,
       name: products.SpecialStressOff.name,
       link: products.SpecialStressOff.link,
-    },
-    {
+    }, */{
       id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1744,16 +1684,10 @@ export const Toothpaste = {
   ],
   'Medium-Medium-Low-Medium': [
     {
-      id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
     {
       id: 3,
@@ -1783,16 +1717,11 @@ export const Toothpaste = {
   'Medium-Medium-Low-High': [
     {
       id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
+      image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1820,17 +1749,12 @@ export const Toothpaste = {
   ],
   'Medium-Medium-Medium-Low': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
       image: products.ProfessionalUltracomplex.image,
       name: products.ProfessionalUltracomplex.name,
       link: products.ProfessionalUltracomplex.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1858,17 +1782,17 @@ export const Toothpaste = {
   ],
   'Medium-Medium-Medium-Medium': [
     {
-      id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
+      id: 2,
+      image: products.ProfessionalUltracomplex.image,
+      name: products.ProfessionalUltracomplex.name,
+      link: products.ProfessionalUltracomplex.link,
     },
-    {
+    /* {
       id: 2,
       image: products.BiomedVITAFRESH.image,
       name: products.BiomedVITAFRESH.name,
       link: products.BiomedVITAFRESH.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1897,15 +1821,9 @@ export const Toothpaste = {
   'Medium-Medium-Medium-High': [
     {
       id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
-    {
-      id: 2,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
+      image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
@@ -1934,17 +1852,12 @@ export const Toothpaste = {
   ],
   'Medium-Medium-High-Low': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -1972,16 +1885,10 @@ export const Toothpaste = {
   ],
   'Medium-Medium-High-Medium': [
     {
-      id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
-    {
       id: 2,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
@@ -2010,16 +1917,10 @@ export const Toothpaste = {
   ],
   'Medium-Medium-High-High': [
     {
-      id: 1,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
-    },
-    {
       id: 2,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
@@ -2048,17 +1949,12 @@ export const Toothpaste = {
   ],
   'Medium-High-Low-Low': [
     {
-      id: 1,
-      image: products.ProfessionalMedicalHerbs.image,
-      name: products.ProfessionalMedicalHerbs.name,
-      link: products.ProfessionalMedicalHerbs.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalActive.image,
-      name: products.ProfessionalActive.name,
-      link: products.ProfessionalActive.link,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2086,17 +1982,17 @@ export const Toothpaste = {
   ],
   'Medium-High-Low-Medium': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      image: products.ProfessionalActive.image,
+      name: products.ProfessionalActive.name,
+      link: products.ProfessionalActive.link,
     },
+    /*   {
+        id: 2,
+        image: products.ProfessionalUltracomplex.image,
+        name: products.ProfessionalUltracomplex.name,
+        link: products.ProfessionalUltracomplex.link,
+      }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2124,17 +2020,12 @@ export const Toothpaste = {
   ],
   'Medium-High-Low-High': [
     {
-      id: 1,
-      image: products.ProfessionalMedicalHerbs.image,
-      name: products.ProfessionalMedicalHerbs.name,
-      link: products.ProfessionalMedicalHerbs.link,
-    },
-    {
       id: 2,
       image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2167,12 +2058,7 @@ export const Toothpaste = {
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalExtraFresh.image,
-      name: products.ProfessionalExtraFresh.name,
-      link: products.ProfessionalExtraFresh.link,
-    },
+
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2199,18 +2085,23 @@ export const Toothpaste = {
     },
   ],
   'Medium-High-Medium-Medium': [
-    {
+    /* {
       id: 1,
       image: products.BiomedSENSITIVE.image,
       name: products.BiomedSENSITIVE.name,
       link: products.BiomedSENSITIVE.link,
-    },
-    {
+    }, */{
       id: 2,
-      image: products.BiomedCALCIMAX.image,
-      name: products.BiomedCALCIMAX.name,
-      link: products.BiomedCALCIMAX.link,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
+    /*  {
+       id: 2,
+       image: products.BiomedCALCIMAX.image,
+       name: products.BiomedCALCIMAX.name,
+       link: products.BiomedCALCIMAX.link,
+     }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2238,16 +2129,10 @@ export const Toothpaste = {
   ],
   'Medium-High-Medium-High': [
     {
-      id: 1,
-      image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    },
-    {
       id: 2,
-      image: products.SpecialStressOff.image,
-      name: products.SpecialStressOff.name,
-      link: products.SpecialStressOff.link,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 3,
@@ -2277,16 +2162,11 @@ export const Toothpaste = {
   'Medium-High-High-Low': [
     {
       id: 1,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
+      image: products.ProfessionalActive.image,
+      name: products.ProfessionalActive.name,
+      link: products.ProfessionalActive.link,
     },
-    {
-      id: 2,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
-    },
+     
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2314,16 +2194,10 @@ export const Toothpaste = {
   ],
   'Medium-High-High-Medium': [
     {
-      id: 1,
-      image: products.ProfessionalGreenTea.image,
-      name: products.ProfessionalGreenTea.name,
-      link: products.ProfessionalGreenTea.link,
-    },
-    {
       id: 2,
-      image: products.BiomedVITAFRESH.image,
-      name: products.BiomedVITAFRESH.name,
-      link: products.BiomedVITAFRESH.link,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 3,
@@ -2352,17 +2226,17 @@ export const Toothpaste = {
   ],
   'Medium-High-High-High': [
     {
-      id: 1,
-      image: products.SpecialSilver.image,
-      name: products.SpecialSilver.name,
-      link: products.SpecialSilver.link,
+      id: 2,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
-    {
+   /*  {
       id: 2,
       image: products.ProfessionalUltracomplex.image,
       name: products.ProfessionalUltracomplex.name,
       link: products.ProfessionalUltracomplex.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2391,16 +2265,11 @@ export const Toothpaste = {
   'High-Low-Low-Low': [
     {
       id: 1,
-      image: products.ProfessionalSensitive.image,
-      name: products.ProfessionalSensitive.name,
-      link: products.ProfessionalSensitive.link,
+      image: products.ProfessionalSensitiveUltra.image,
+      name: products.ProfessionalSensitiveUltra.name,
+      link: products.ProfessionalSensitiveUltra.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
-    },
+    
     {
       id: 3,
       image: Accessories.ToothbrushInnovaBlue.image,
@@ -2429,15 +2298,9 @@ export const Toothpaste = {
   'High-Low-Low-Medium': [
     {
       id: 1,
-      image: products.ProfessionalSensitive.image,
-      name: products.ProfessionalSensitive.name,
-      link: products.ProfessionalSensitive.link,
-    },
-    {
-      id: 2,
-      image: products.ProfessionalBiocalcium.image,
-      name: products.ProfessionalBiocalcium.name,
-      link: products.ProfessionalBiocalcium.link,
+      image: products.ProfessionalSensitiveUltra.image,
+      name: products.ProfessionalSensitiveUltra.name,
+      link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 3,
@@ -2465,17 +2328,17 @@ export const Toothpaste = {
     },
   ],
   'High-Low-Low-High': [
-    {
+    /* {
       id: 1,
       image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
-    },
+    }, */
     {
       id: 2,
-      image: products.ProfessionalSensitive.image,
-      name: products.ProfessionalSensitive.name,
-      link: products.ProfessionalSensitive.link,
+      image: products.ProfessionalSensitiveWhite.image,
+      name: products.ProfessionalSensitiveWhite.name,
+      link: products.ProfessionalSensitiveWhite.link,
     },
     {
       id: 3,
@@ -2503,12 +2366,18 @@ export const Toothpaste = {
     },
   ],
   'High-Low-Medium-Low': [
-    {
+   /*  {
       id: 1,
       image: products.InnovaSensitive2.image,
       name: products.InnovaSensitive2.name,
       link: products.InnovaSensitive2.link,
-    },
+    }, */
+    {
+      id: 1,
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2537,10 +2406,10 @@ export const Toothpaste = {
   'High-Low-Medium-Medium': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
-    },
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2569,10 +2438,10 @@ export const Toothpaste = {
   'High-Low-Medium-High': [
     {
       id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2601,10 +2470,10 @@ export const Toothpaste = {
   'High-Low-High-Low': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
-    },
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2633,10 +2502,10 @@ export const Toothpaste = {
   'High-Low-High-Medium': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
-    },
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2665,10 +2534,10 @@ export const Toothpaste = {
   'High-Low-High-High': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
-    },
+      image: products.ProfessionalSensitive.image,
+      name: products.ProfessionalSensitive.name,
+      link: products.ProfessionalSensitive.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2697,9 +2566,9 @@ export const Toothpaste = {
   'High-Medium-Low-Low': [
     {
       id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
+      image: products.ProfessionalSensitiveUltra.image,
+      name: products.ProfessionalSensitiveUltra.name,
+      link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 2,
@@ -2733,12 +2602,7 @@ export const Toothpaste = {
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
     },
-    {
-      id: 2,
-      image: products.ProfessionalSensitiveWhite.image,
-      name: products.ProfessionalSensitiveWhite.name,
-      link: products.ProfessionalSensitiveWhite.link,
-    },
+   
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2766,17 +2630,11 @@ export const Toothpaste = {
   ],
   'High-Medium-Low-High': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalSensitiveWhite.image,
-      name: products.ProfessionalSensitiveWhite.name,
-      link: products.ProfessionalSensitiveWhite.link,
-    },
+      image: products.ProfessionalBiocalcium.image,
+      name: products.ProfessionalBiocalcium.name,
+      link: products.ProfessionalBiocalcium.link,
+    }, 
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2804,17 +2662,17 @@ export const Toothpaste = {
   ],
   'High-Medium-Medium-Low': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
-    {
+      id: 2,
+      image: products.ProfessionalBiocalcium.image,
+      name: products.ProfessionalBiocalcium.name,
+      link: products.ProfessionalBiocalcium.link,
+    }, 
+    /* {
       id: 2,
       image: products.ProfessionalSensitiveWhite.image,
       name: products.ProfessionalSensitiveWhite.name,
       link: products.ProfessionalSensitiveWhite.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2843,10 +2701,10 @@ export const Toothpaste = {
   'High-Medium-Medium-Medium': [
     {
       id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
-    },
+      image: products.ProfessionalBiocalcium.image,
+      name: products.ProfessionalBiocalcium.name,
+      link: products.ProfessionalBiocalcium.link,
+    }, 
     {
       id: 2,
       image: Accessories.ToothbrushSilver.image,
@@ -2874,17 +2732,11 @@ export const Toothpaste = {
   ],
   'High-Medium-Medium-High': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalSensitiveWhite.image,
-      name: products.ProfessionalSensitiveWhite.name,
-      link: products.ProfessionalSensitiveWhite.link,
-    },
+      image: products.ProfessionalBiocalcium.image,
+      name: products.ProfessionalBiocalcium.name,
+      link: products.ProfessionalBiocalcium.link,
+    }, 
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2912,17 +2764,17 @@ export const Toothpaste = {
   ],
   'High-Medium-High-Low': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
+      id: 2,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
-    {
+   /*  {
       id: 2,
       image: products.ProfessionalSensitiveWhite.image,
       name: products.ProfessionalSensitiveWhite.name,
       link: products.ProfessionalSensitiveWhite.link,
-    },
+    }, */
     {
       id: 3,
       image: Accessories.ToothbrushSilver.image,
@@ -2950,16 +2802,10 @@ export const Toothpaste = {
   ],
   'High-Medium-High-Medium': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalSensitiveWhite.image,
-      name: products.ProfessionalSensitiveWhite.name,
-      link: products.ProfessionalSensitiveWhite.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
@@ -2988,16 +2834,10 @@ export const Toothpaste = {
   ],
   'High-Medium-High-High': [
     {
-      id: 1,
-      image: products.ProfessionalSensitiveUltra.image,
-      name: products.ProfessionalSensitiveUltra.name,
-      link: products.ProfessionalSensitiveUltra.link,
-    },
-    {
       id: 2,
-      image: products.ProfessionalSensitiveWhite.image,
-      name: products.ProfessionalSensitiveWhite.name,
-      link: products.ProfessionalSensitiveWhite.link,
+      image: products.ProfessionalLavendersept.image,
+      name: products.ProfessionalLavendersept.name,
+      link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
@@ -3027,9 +2867,9 @@ export const Toothpaste = {
   'High-High-Low-Low': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
     {
       id: 2,
@@ -3059,9 +2899,9 @@ export const Toothpaste = {
   'High-High-Low-Medium': [
     {
       id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
     {
       id: 2,
@@ -3091,9 +2931,9 @@ export const Toothpaste = {
   'High-High-Low-High': [
     {
       id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
     {
       id: 2,
@@ -3123,9 +2963,9 @@ export const Toothpaste = {
   'High-High-Medium-Low': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
+      image: products.ProfessionalExtraFresh.image,
+      name: products.ProfessionalExtraFresh.name,
+      link: products.ProfessionalExtraFresh.link,
     },
     {
       id: 2,
@@ -3154,10 +2994,10 @@ export const Toothpaste = {
   ],
   'High-High-Medium-Medium': [
     {
-      id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
+      id: 2,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 2,
@@ -3186,10 +3026,10 @@ export const Toothpaste = {
   ],
   'High-High-Medium-High': [
     {
-      id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
+      id: 2,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 2,
@@ -3219,9 +3059,9 @@ export const Toothpaste = {
   'High-High-High-Low': [
     {
       id: 1,
-      image: products.InnovaSensitive3.image,
-      name: products.InnovaSensitive3.name,
-      link: products.InnovaSensitive3.link,
+      image: products.ProfessionalActive.image,
+      name: products.ProfessionalActive.name,
+      link: products.ProfessionalActive.link,
     },
     {
       id: 2,
@@ -3251,9 +3091,9 @@ export const Toothpaste = {
   'High-High-High-Medium': [
     {
       id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
+      image: products.ProfessionalActive.image,
+      name: products.ProfessionalActive.name,
+      link: products.ProfessionalActive.link,
     },
     {
       id: 2,
@@ -3281,11 +3121,11 @@ export const Toothpaste = {
     },
   ],
   'High-High-High-High': [
-    {
-      id: 1,
-      image: products.InnovaSensitive2.image,
-      name: products.InnovaSensitive2.name,
-      link: products.InnovaSensitive2.link,
+   {
+      id: 2,
+      image: products.ProfessionalMedicalHerbs.image,
+      name: products.ProfessionalMedicalHerbs.name,
+      link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 2,
