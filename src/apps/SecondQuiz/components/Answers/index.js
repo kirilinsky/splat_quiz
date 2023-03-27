@@ -7,7 +7,11 @@ import {
 
 const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
   const yaClick = (yaIndex) => {
-    return yaIndex !== undefined && window.ym(89872572, 'reachGoal', yaIndex)
+    if(yaIndex !== undefined){
+      return
+    }
+    window.ym(92962183, 'reachGoal', yaIndex)
+    window.gtag('event', yaIndex)
   }
   const dispatch = useDispatch()
 
@@ -22,9 +26,8 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
     <>
       {answers.map((el) => (
         <div
-          className={`answer-wrapper ${el.status ? 'active' : ''}${
-            el.correctAnswer ? ' yes' : ' not'
-          }`}
+          className={`answer-wrapper ${el.status ? 'active' : ''}${el.correctAnswer ? ' yes' : ' not'
+            }`}
           key={el.id}
           onClick={() => {
             onSelectAnswer(el.id, el.questionId)
@@ -38,7 +41,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             )
             dispatch(setDescription(el.description))
             dispatch(setDescriptionColor(el.correctAnswer))
-            // yaClick(el.yaIndex)
+            yaClick(el.yaIndex)
           }}
         >
           <div className="answer">{el.answer}</div>

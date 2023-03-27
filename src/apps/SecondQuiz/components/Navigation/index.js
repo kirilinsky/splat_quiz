@@ -32,6 +32,13 @@ const Navigation = ({
     }
   })
 
+
+  const sendMetric = string => {
+    window.ym(92962183, 'reachGoal', string)
+    window.gtag('event', string)
+
+  }
+
   const result = () => {
     const sensitivity = questions.reduce((acc, point) => {
       return acc + point.pointSensitivity
@@ -86,6 +93,8 @@ const Navigation = ({
       {/* debug */}
       <div
         onClick={() => {
+          sendMetric('specialist_recommendations_open')
+
           dispatch(finalForm())
         }}
         className="quiz-navigation-button btn-active"
@@ -97,7 +106,7 @@ const Navigation = ({
       {currentCard === questionLength ? (
         <div
           onClick={() => {
-
+            sendMetric('specialist_recommendations_open')
             dispatch(finalForm())
             handleIncrement()
           }}

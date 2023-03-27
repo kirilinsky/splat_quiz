@@ -40,7 +40,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
-        yaIndex: 'question110',
+        yaIndex: 'answer1_question1',
       },
       {
         questionId: 0,
@@ -54,7 +54,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
-        yaIndex: 'question111',
+        yaIndex: 'answer2_question1',
       },
       {
         questionId: 0,
@@ -68,6 +68,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question1'
       },
       {
         questionId: 0,
@@ -81,6 +82,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer4_question1'
       },
       {
         questionId: 0,
@@ -94,6 +96,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex:'answer5_question1'
       },
     ],
   },

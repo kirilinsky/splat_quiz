@@ -20,6 +20,8 @@ const FinalForm = () => {
 
   console.log(formdata, "df");
   const submitForm = (e) => {
+    window.ym(92962183, 'reachGoal', 'specialist_recommendations')
+    window.gtag('event', 'specialist_recommendations')
     setAgree(false);
     e.preventDefault();
     axios

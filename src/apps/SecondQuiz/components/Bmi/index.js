@@ -18,6 +18,12 @@ const Bmi = ({ question }) => {
   const dispatch = useDispatch()
 
   const handleChange = (e) => {
+    if(e.target.name ==='height'){
+ 
+       window.ym(92962183, 'reachGoal', 'introduced_growth')
+       window.gtag('event', 'introduced_growth')
+
+    }
     setInput({
       ...input,
       [e.target.name]: e.target.value,
