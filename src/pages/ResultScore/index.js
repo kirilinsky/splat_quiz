@@ -57,6 +57,7 @@ const ResultScore = () => {
   }
 
   const Products = ({array}) => {
+    console.log(Value1(),Value2(),Value3(),Value4(),'res');
     return array[
       `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
       ].map((item) => (
