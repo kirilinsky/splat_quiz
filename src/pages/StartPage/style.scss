@@ -6,9 +6,9 @@
     grid-template-areas: "C P" "D P";
     grid-template-rows: 70% 30%;
     width: 100vw;
-    height: calc(100vh - 60px);
-    grid-template-columns: 1fr 1fr;
-    gap: 1px 20px;
+    height: calc(100vh - 61px);
+    grid-template-columns: 60% 40%;
+    gap: 1px 19px;
     @media screen and (max-height: 715px) {
        grid-template-columns: 72% auto;
       
@@ -45,8 +45,8 @@
       padding: 0.75rem;
     }
     h1 {
-      font-size: 78px;
-      line-height: 92%;
+      font-size: 74px;
+      line-height: 90%;
 
       margin: 0;
       margin-bottom: 23px;

@@ -7,9 +7,10 @@ import {
 
 const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
   const yaClick = (yaIndex) => {
-    if(yaIndex !== undefined){
+    if (!yaIndex) {
       return
     }
+
     window.ym(92962183, 'reachGoal', yaIndex)
     window.gtag('event', yaIndex)
   }
@@ -43,7 +44,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             dispatch(setDescriptionColor(el.correctAnswer))
             yaClick(el.yaIndex)
           }}
-        > 
+        >
           <div className="answer">{el.answer}</div>
           {isMobile <= 1200 && (
             <div className="answer-description">
