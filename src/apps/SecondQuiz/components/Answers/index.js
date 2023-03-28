@@ -26,7 +26,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
     <>
       {answers.map((el) => (
         <div
-          className={`answer-wrapper ${el.status ? 'active' : ''}${el.correctAnswer ? ' yes' : ' not'
+          className={`answer-wrapper ${el.neutral ? 'neutral' : ''}  ${el.status ? 'active' : ''}${el.correctAnswer ? ' yes' : ' not'
             }`}
           key={el.id}
           onClick={() => {
@@ -43,7 +43,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             dispatch(setDescriptionColor(el.correctAnswer))
             yaClick(el.yaIndex)
           }}
-        >
+        > 
           <div className="answer">{el.answer}</div>
           {isMobile <= 1200 && (
             <div className="answer-description">
