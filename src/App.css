@@ -160,8 +160,28 @@
 }
 .answer .answer-text {
   position: relative;
+  display: flex;
+  align-items: center;
 }
-
+.answer-letter {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #cfd3e5;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.answer-wrapper.active .answer-letter {
+  background: #c11e43;
+  color: #fff;
+  border-color: #c11e43;
+}
 .answer-wrapper.active .answer,
 .answer-wrapper .answer:hover {
   background: #dfe4f5;
@@ -303,6 +323,24 @@
 
 .quiz-desktop {
   margin-top: 2.5rem;
+  padding: 32px;
+  font-size: 18px;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(200%);
+  transition: 0.2s linear;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0px 14px 151px rgba(0, 0, 0, 0.03);
+}
+.quiz-desktop.active {
+  transform: translateX(0);
+  transition: 0.2s linear;
+}
+.quiz-desktop img {
+  margin-bottom: 24px;
+  width: 100px;
 }
 
 .quiz-desktop.neutral {

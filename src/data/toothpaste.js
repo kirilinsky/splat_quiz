@@ -73,6 +73,7 @@ export const products = {
     link: 'https://s.click.aliexpress.com/e/_ol61KTL',
   },
   ProfessionalLikvumGel: {
+    type:'products',
     image: image13,
     name: 'Зубная паста - PROFESSIONAL «SPLAT (СПЛАТ) Likvum-Gel / Ликвум-гель»',
     link: 'https://s.click.aliexpress.com/e/_olYUEqt',
@@ -88,6 +89,7 @@ export const products = {
     link: 'https://s.click.aliexpress.com/e/_oEJK9vj',
   },
   ProfessionalUltracomplex: {
+    type: 'products',
     image: image1,
     name: 'Зубная паста - PROFESSIONAL «SPLAT (СПЛАТ) Ultracomplex / Ультракомплекс»',
     link: 'https://s.click.aliexpress.com/e/_oD4YVV7',
@@ -352,32 +354,30 @@ export const Accessories = {
 export const ToothpasteNotFluorine = {
   'Low-Low-Low-Low': [
     {
-      id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      id: 1, 
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -385,31 +385,29 @@ export const ToothpasteNotFluorine = {
   'Low-Low-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -417,42 +415,39 @@ export const ToothpasteNotFluorine = {
   'Low-Low-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+      description: 'Хороший результат! У вас низкие риски развития заболеваний полости рта, но все же вы не до конца очищаете зубной налет. Что делать в качестве профилактики? Для лучшего очищения и профилактики здоровья полости рта, рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.'
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Low-Medium-Low': [
-   
+
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     /*   {
         id: 2,
@@ -462,102 +457,86 @@ export const ToothpasteNotFluorine = {
       }, */
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Low-Medium-Medium': [
-  
+
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-Medium-High': [
-    /*  {
-       id: 1,
-       type:'products', image: products.ProfessionalActive.image,
-       name: products.ProfessionalActive.name,
-       link: products.ProfessionalActive.link,
-     }, */
+  'Low-Low-Medium-High': [ 
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    },
-    /* {
-      id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
-      name: products.ProfessionalMedicalHerbs.name,
-      link: products.ProfessionalMedicalHerbs.link,
-    }, */
+      ...products.ProfessionalUltracomplex,
+    }, 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -571,32 +550,30 @@ export const ToothpasteNotFluorine = {
     }, */
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
+      ...products.ProfessionalLikvumGel,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -604,101 +581,89 @@ export const ToothpasteNotFluorine = {
   'Low-Low-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    },
-    /*    {
-         id: 2,
-         type:'products', image: products.SpecialOrganic.image,
-         name: products.SpecialOrganic.name,
-         link: products.SpecialOrganic.link,
-       }, */
+      ...products.ProfessionalLikvumGel,
+    }, 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-High-High': [ 
+  'Low-Low-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    }, 
+      ...products.ProfessionalLikvumGel,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Low-Low': [ 
+  'Low-Medium-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -706,63 +671,61 @@ export const ToothpasteNotFluorine = {
   'Low-Medium-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Low-High': [ 
+  'Low-Medium-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -770,63 +733,59 @@ export const ToothpasteNotFluorine = {
   'Low-Medium-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Medium-Medium-Medium': [
-      {
+    {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -834,65 +793,65 @@ export const ToothpasteNotFluorine = {
   'Low-Medium-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Medium-High-Low': [
-    
+
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -900,31 +859,31 @@ export const ToothpasteNotFluorine = {
   'Low-Medium-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -932,31 +891,31 @@ export const ToothpasteNotFluorine = {
   'Low-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -964,31 +923,31 @@ export const ToothpasteNotFluorine = {
   'Low-High-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -996,32 +955,32 @@ export const ToothpasteNotFluorine = {
   'Low-High-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1029,31 +988,31 @@ export const ToothpasteNotFluorine = {
   'Low-High-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1061,32 +1020,32 @@ export const ToothpasteNotFluorine = {
   'Low-High-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1095,31 +1054,31 @@ export const ToothpasteNotFluorine = {
 
     {
       id: 2,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1127,32 +1086,32 @@ export const ToothpasteNotFluorine = {
   'Low-High-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1160,32 +1119,32 @@ export const ToothpasteNotFluorine = {
   'Low-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1193,32 +1152,32 @@ export const ToothpasteNotFluorine = {
   'Low-High-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1226,63 +1185,61 @@ export const ToothpasteNotFluorine = {
   'Low-High-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Medium-Low-Low-Low': [ 
+  'Medium-Low-Low-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1290,31 +1247,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1322,31 +1277,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-Low-High': [
     {
       id: 1,
-      type:'products', image: products.BiomedSENSITIVE.image,
+      type: 'products', image: products.BiomedSENSITIVE.image,
       name: products.BiomedSENSITIVE.name,
       link: products.BiomedSENSITIVE.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1354,31 +1309,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1386,31 +1339,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1418,31 +1369,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1450,31 +1399,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
+      ...products.ProfessionalLikvumGel,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1482,32 +1429,30 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
+      ...products.ProfessionalLikvumGel,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1515,64 +1460,60 @@ export const ToothpasteNotFluorine = {
   'Medium-Low-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    }, 
+      ...products.ProfessionalLikvumGel,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Medium-Medium-Low-Low': [
-     {
+    {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1580,31 +1521,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1612,31 +1551,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1644,32 +1583,30 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1677,31 +1614,29 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1709,31 +1644,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1741,31 +1676,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-High-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1773,31 +1708,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1805,31 +1740,31 @@ export const ToothpasteNotFluorine = {
   'Medium-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1837,31 +1772,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Low-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1869,31 +1804,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1901,31 +1836,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1933,31 +1868,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1965,31 +1900,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -1997,31 +1932,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2029,32 +1964,32 @@ export const ToothpasteNotFluorine = {
   'Medium-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2062,31 +1997,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2094,31 +2029,31 @@ export const ToothpasteNotFluorine = {
   'Medium-High-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2126,31 +2061,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2158,97 +2093,97 @@ export const ToothpasteNotFluorine = {
   'High-Low-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'High-Low-Low-High': [
-   
+
     {
       id: 2,
-      type:'products', image: products.ProfessionalSensitiveWhite.image,
+      type: 'products', image: products.ProfessionalSensitiveWhite.image,
       name: products.ProfessionalSensitiveWhite.name,
       link: products.ProfessionalSensitiveWhite.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'High-Low-Medium-Low': [
-   
+
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2256,31 +2191,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2288,31 +2223,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2320,31 +2255,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2352,31 +2287,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2384,31 +2319,31 @@ export const ToothpasteNotFluorine = {
   'High-Low-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2416,31 +2351,31 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2448,30 +2383,30 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
-    },  {
+    }, {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2479,31 +2414,31 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2511,31 +2446,31 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
-    }, 
+    },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2543,31 +2478,31 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2575,30 +2510,30 @@ export const ToothpasteNotFluorine = {
   'High-Medium-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
     }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2606,30 +2541,30 @@ export const ToothpasteNotFluorine = {
   'High-Medium-High-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2637,30 +2572,30 @@ export const ToothpasteNotFluorine = {
   'High-Medium-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2668,30 +2603,30 @@ export const ToothpasteNotFluorine = {
   'High-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2699,30 +2634,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2730,30 +2665,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2761,30 +2696,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2792,30 +2727,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalExtraFresh.image,
+      type: 'products', image: products.ProfessionalExtraFresh.image,
       name: products.ProfessionalExtraFresh.name,
       link: products.ProfessionalExtraFresh.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2823,30 +2758,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2854,30 +2789,30 @@ export const ToothpasteNotFluorine = {
   'High-High-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2885,31 +2820,31 @@ export const ToothpasteNotFluorine = {
   'High-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2917,30 +2852,30 @@ export const ToothpasteNotFluorine = {
   'High-High-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalActive.image,
+      type: 'products', image: products.ProfessionalActive.image,
       name: products.ProfessionalActive.name,
       link: products.ProfessionalActive.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -2948,65 +2883,64 @@ export const ToothpasteNotFluorine = {
   'High-High-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalMedicalHerbs.image,
+      type: 'products', image: products.ProfessionalMedicalHerbs.image,
       name: products.ProfessionalMedicalHerbs.name,
       link: products.ProfessionalMedicalHerbs.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
 }
 // ftor
-export const Toothpaste  = {
+export const Toothpaste = {
   'Low-Low-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
+      description: 'Ура, все хорошо! У вас низкие риски развития заболеваний полости рта. Для профилактики рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex». В состав пасты входит гидроксиапатит для укрепления эмали, растительный фермент для оптимального очищения и ионы цинка, которые обладают антибактерильными свойствами.'
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3014,182 +2948,176 @@ export const Toothpaste  = {
   'Low-Low-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
+      description: 'Отличный результат! У вас низкие риски развития заболеваний полости рта. Но все же вы не до конца очищаете зубной налет. Что делать в качестве профилактики? Для лучшего очищения и профилактики здоровья полости рта рекомендуем использовать комплексную зубную пасту Professional «SPLAT  Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.'
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Low-Low-High': [
-     
+
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
+
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Low-Medium-Low': [
-   
+
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-Medium-Medium': [ 
+  'Low-Low-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-Medium-High': [ 
+  'Low-Low-Medium-High': [
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-High-Low': [ 
+  'Low-Low-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    }, 
+      ...products.ProfessionalLikvumGel,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3197,200 +3125,196 @@ export const Toothpaste  = {
   'Low-Low-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    }, 
+      ...products.ProfessionalLikvumGel,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Low-High-High': [ 
+  'Low-Low-High-High': [
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Low-Low': [ 
+  'Low-Medium-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
-    }, 
+      ...products.ProfessionalUltracomplex,
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Low-Medium': [ 
+  'Low-Medium-Low-Medium': [
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Low-High': [ 
+  'Low-Medium-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Low-Medium-Medium-Low': [
-     
+
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-Medium-Medium': [ 
+  'Low-Medium-Medium-Medium': [
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3398,64 +3322,64 @@ export const Toothpaste  = {
   'Low-Medium-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'Low-Medium-High-Low': [ 
+  'Low-Medium-High-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3463,32 +3387,32 @@ export const Toothpaste  = {
   'Low-Medium-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3496,31 +3420,31 @@ export const Toothpaste  = {
   'Low-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3528,31 +3452,31 @@ export const Toothpaste  = {
   'Low-High-Low-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3560,32 +3484,32 @@ export const Toothpaste  = {
   'Low-High-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3593,31 +3517,31 @@ export const Toothpaste  = {
   'Low-High-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'products', image: products.TotalCare.image,
+      type: 'products', image: products.TotalCare.image,
       name: products.TotalCare.name,
       link: products.TotalCare.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3625,31 +3549,31 @@ export const Toothpaste  = {
   'Low-High-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3658,31 +3582,31 @@ export const Toothpaste  = {
 
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3690,32 +3614,32 @@ export const Toothpaste  = {
   'Low-High-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3723,32 +3647,32 @@ export const Toothpaste  = {
   'Low-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3756,32 +3680,32 @@ export const Toothpaste  = {
   'Low-High-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3789,64 +3713,62 @@ export const Toothpaste  = {
   'Low-High-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushHard.image,
+      type: 'accessories', image: Accessories.ToothbrushHard.image,
       name: Accessories.ToothbrushHard.name,
       link: Accessories.ToothbrushHard.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashMedical.image,
+      type: 'accessories', image: Accessories.MouthwashMedical.image,
       name: Accessories.MouthwashMedical.name,
       link: Accessories.MouthwashMedical.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Medium-Low-Low-Low': [
-    
+
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3854,31 +3776,29 @@ export const Toothpaste  = {
   'Medium-Low-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3886,32 +3806,32 @@ export const Toothpaste  = {
   'Medium-Low-Low-High': [
     {
       id: 1,
-      type:'products', image: products.BiomedSENSITIVE.image,
+      type: 'products', image: products.BiomedSENSITIVE.image,
       name: products.BiomedSENSITIVE.name,
       link: products.BiomedSENSITIVE.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3919,31 +3839,29 @@ export const Toothpaste  = {
   'Medium-Low-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -3951,59 +3869,57 @@ export const Toothpaste  = {
   'Medium-Low-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Medium-Low-Medium-High': [
-   
+
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4011,31 +3927,29 @@ export const Toothpaste  = {
   'Medium-Low-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
+      ...products.ProfessionalLikvumGel,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4043,25 +3957,25 @@ export const Toothpaste  = {
   'Medium-Low-High-Medium': [
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4069,62 +3983,58 @@ export const Toothpaste  = {
   'Medium-Low-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLikvumGel.image,
-      name: products.ProfessionalLikvumGel.name,
-      link: products.ProfessionalLikvumGel.link,
-    },{
+      ...products.ProfessionalLikvumGel,
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'Medium-Medium-Low-Low': [
-   {
+    {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4132,31 +4042,29 @@ export const Toothpaste  = {
   'Medium-Medium-Low-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4164,31 +4072,31 @@ export const Toothpaste  = {
   'Medium-Medium-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4196,31 +4104,29 @@ export const Toothpaste  = {
   'Medium-Medium-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4228,31 +4134,29 @@ export const Toothpaste  = {
   'Medium-Medium-Medium-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalUltracomplex.image,
-      name: products.ProfessionalUltracomplex.name,
-      link: products.ProfessionalUltracomplex.link,
+      ...products.ProfessionalUltracomplex,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
-    }, 
+    },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4260,30 +4164,30 @@ export const Toothpaste  = {
   'Medium-Medium-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4291,32 +4195,32 @@ export const Toothpaste  = {
   'Medium-Medium-High-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
 
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4324,31 +4228,31 @@ export const Toothpaste  = {
   'Medium-Medium-High-Medium': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4356,31 +4260,31 @@ export const Toothpaste  = {
   'Medium-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4388,31 +4292,31 @@ export const Toothpaste  = {
   'Medium-High-Low-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4420,31 +4324,31 @@ export const Toothpaste  = {
   'Medium-High-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4452,31 +4356,31 @@ export const Toothpaste  = {
   'Medium-High-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4484,31 +4388,31 @@ export const Toothpaste  = {
   'Medium-High-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4516,31 +4420,31 @@ export const Toothpaste  = {
   'Medium-High-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4548,31 +4452,31 @@ export const Toothpaste  = {
   'Medium-High-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4580,31 +4484,31 @@ export const Toothpaste  = {
   'Medium-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
-    }, 
+    },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4612,31 +4516,31 @@ export const Toothpaste  = {
   'Medium-High-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4644,31 +4548,31 @@ export const Toothpaste  = {
   'Medium-High-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushClinic.image,
+      type: 'accessories', image: Accessories.ToothbrushClinic.image,
       name: Accessories.ToothbrushClinic.name,
       link: Accessories.ToothbrushClinic.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4676,31 +4580,31 @@ export const Toothpaste  = {
   'High-Low-Low-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4708,95 +4612,95 @@ export const Toothpaste  = {
   'High-Low-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
-  'High-Low-Low-High': [ 
+  'High-Low-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalSensitiveWhite.image,
+      type: 'products', image: products.ProfessionalSensitiveWhite.image,
       name: products.ProfessionalSensitiveWhite.name,
       link: products.ProfessionalSensitiveWhite.link,
-    },{
+    }, {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
   ],
   'High-Low-Medium-Low': [
-  
+
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4804,31 +4708,31 @@ export const Toothpaste  = {
   'High-Low-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4836,31 +4740,31 @@ export const Toothpaste  = {
   'High-Low-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4868,31 +4772,31 @@ export const Toothpaste  = {
   'High-Low-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4900,31 +4804,31 @@ export const Toothpaste  = {
   'High-Low-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4932,31 +4836,31 @@ export const Toothpaste  = {
   'High-Low-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitive.image,
+      type: 'products', image: products.ProfessionalSensitive.image,
       name: products.ProfessionalSensitive.name,
       link: products.ProfessionalSensitive.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4964,25 +4868,25 @@ export const Toothpaste  = {
   'High-Medium-Low-Low': [
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -4990,31 +4894,31 @@ export const Toothpaste  = {
   'High-Medium-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalSensitiveUltra.image,
+      type: 'products', image: products.ProfessionalSensitiveUltra.image,
       name: products.ProfessionalSensitiveUltra.name,
       link: products.ProfessionalSensitiveUltra.link,
-    }, 
+    },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5022,31 +4926,31 @@ export const Toothpaste  = {
   'High-Medium-Low-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5054,31 +4958,31 @@ export const Toothpaste  = {
   'High-Medium-Medium-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
-    }, 
+    },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5086,25 +4990,25 @@ export const Toothpaste  = {
   'High-Medium-Medium-Medium': [
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5112,31 +5016,31 @@ export const Toothpaste  = {
   'High-Medium-Medium-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalBiocalcium.image,
+      type: 'products', image: products.ProfessionalBiocalcium.image,
       name: products.ProfessionalBiocalcium.name,
       link: products.ProfessionalBiocalcium.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5144,31 +5048,31 @@ export const Toothpaste  = {
   'High-Medium-High-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
-    }, 
+    },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5176,31 +5080,31 @@ export const Toothpaste  = {
   'High-Medium-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5208,31 +5112,31 @@ export const Toothpaste  = {
   'High-Medium-High-High': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 6,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5240,31 +5144,31 @@ export const Toothpaste  = {
   'High-High-Low-Low': [
     {
       id: 2,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5272,31 +5176,31 @@ export const Toothpaste  = {
   'High-High-Low-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5304,31 +5208,31 @@ export const Toothpaste  = {
   'High-High-Low-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashSensitive.image,
+      type: 'accessories', image: Accessories.MouthwashSensitive.image,
       name: Accessories.MouthwashSensitive.name,
       link: Accessories.MouthwashSensitive.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5336,31 +5240,31 @@ export const Toothpaste  = {
   'High-High-Medium-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalLavendersept.image,
+      type: 'products', image: products.ProfessionalLavendersept.image,
       name: products.ProfessionalLavendersept.name,
       link: products.ProfessionalLavendersept.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5368,31 +5272,31 @@ export const Toothpaste  = {
   'High-High-Medium-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5400,31 +5304,31 @@ export const Toothpaste  = {
   'High-High-Medium-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashInnova.image,
+      type: 'accessories', image: Accessories.MouthwashInnova.image,
       name: Accessories.MouthwashInnova.name,
       link: Accessories.MouthwashInnova.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5432,31 +5336,31 @@ export const Toothpaste  = {
   'High-High-High-Low': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5464,31 +5368,31 @@ export const Toothpaste  = {
   'High-High-High-Medium': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5496,31 +5400,31 @@ export const Toothpaste  = {
   'High-High-High-High': [
     {
       id: 1,
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
     },
     {
       id: 2,
-      type:'accessories', image: Accessories.ToothbrushUltraSensitive.image,
+      type: 'accessories', image: Accessories.ToothbrushUltraSensitive.image,
       name: Accessories.ToothbrushUltraSensitive.name,
       link: Accessories.ToothbrushUltraSensitive.link,
     },
     {
       id: 3,
-      type:'accessories', image: Accessories.MouthwashBiocalcium.image,
+      type: 'accessories', image: Accessories.MouthwashBiocalcium.image,
       name: Accessories.MouthwashBiocalcium.name,
       link: Accessories.MouthwashBiocalcium.link,
     },
     {
       id: 4,
-      type:'accessories', image: Accessories.FlossLime.image,
+      type: 'accessories', image: Accessories.FlossLime.image,
       name: Accessories.FlossLime.name,
       link: Accessories.FlossLime.link,
     },
     {
       id: 5,
-      type:'accessories', image: Accessories.FoamAloe.image,
+      type: 'accessories', image: Accessories.FoamAloe.image,
       name: Accessories.FoamAloe.name,
       link: Accessories.FoamAloe.link,
     },
@@ -5532,7 +5436,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5541,7 +5445,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -5552,7 +5456,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5561,7 +5465,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -5572,7 +5476,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5581,7 +5485,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -5592,7 +5496,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5601,7 +5505,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5609,7 +5513,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5618,7 +5522,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5629,7 +5533,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5638,7 +5542,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -5649,7 +5553,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5658,7 +5562,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5666,7 +5570,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5675,7 +5579,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5686,7 +5590,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5695,7 +5599,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5703,7 +5607,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5712,7 +5616,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5723,7 +5627,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5732,7 +5636,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5740,7 +5644,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5749,7 +5653,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5760,7 +5664,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5769,7 +5673,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5777,7 +5681,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5786,7 +5690,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5797,7 +5701,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5806,7 +5710,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5814,7 +5718,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5823,7 +5727,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5834,7 +5738,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5843,7 +5747,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5852,7 +5756,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5862,7 +5766,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5871,7 +5775,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5882,7 +5786,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5891,7 +5795,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5900,7 +5804,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5910,7 +5814,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5919,7 +5823,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -5928,7 +5832,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -5938,7 +5842,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -5947,7 +5851,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная щетка',
-      type:'products', image: products.SoftToothbrush.image,
+      type: 'products', image: products.SoftToothbrush.image,
       name: products.SoftToothbrush.name,
       link: products.SoftToothbrush.link,
       description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
@@ -5955,7 +5859,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -5964,7 +5868,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
       description:
@@ -5973,7 +5877,7 @@ export const ToothpasteRecommendation = {
     {
       id: 5,
       type: 'Очищающая пенка',
-      type:'products', image: products.CareForm.image,
+      type: 'products', image: products.CareForm.image,
       name: products.CareForm.name,
       link: products.CareForm.link,
       description:
@@ -5984,7 +5888,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -5993,7 +5897,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6002,7 +5906,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6012,7 +5916,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6021,7 +5925,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6029,7 +5933,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6038,7 +5942,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6049,7 +5953,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6058,7 +5962,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6066,7 +5970,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6075,7 +5979,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6086,7 +5990,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6095,7 +5999,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6103,7 +6007,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6112,7 +6016,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6123,7 +6027,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6132,7 +6036,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6143,7 +6047,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive2.image,
+      type: 'products', image: products.InnovaSensitive2.image,
       name: products.InnovaSensitive2.name,
       link: products.InnovaSensitive2.link,
       description:
@@ -6152,7 +6056,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6162,7 +6066,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.SpecialStressOff.image,
+      type: 'products', image: products.SpecialStressOff.image,
       name: products.SpecialStressOff.name,
       link: products.SpecialStressOff.link,
       description: 'Зубная паста серии Special «SPLAT STRESS OFF»',
@@ -6170,7 +6074,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6181,7 +6085,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6190,7 +6094,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6199,7 +6103,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6209,7 +6113,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6218,7 +6122,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6229,7 +6133,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6238,7 +6142,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6249,7 +6153,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6258,7 +6162,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6269,7 +6173,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6278,7 +6182,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6289,7 +6193,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6298,7 +6202,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6309,7 +6213,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6318,7 +6222,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6329,7 +6233,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6338,7 +6242,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6349,7 +6253,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6358,7 +6262,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6369,7 +6273,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6378,7 +6282,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6389,7 +6293,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6398,7 +6302,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6409,7 +6313,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6418,7 +6322,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6429,7 +6333,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6438,7 +6342,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6449,7 +6353,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6458,7 +6362,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6469,7 +6373,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6478,7 +6382,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6492,7 +6396,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6501,7 +6405,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.SplatBIOCALCIUM.image,
+      type: 'products', image: products.SplatBIOCALCIUM.image,
       name: products.SplatBIOCALCIUM.name,
       link: products.SplatBIOCALCIUM.link,
       description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
@@ -6509,7 +6413,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6518,7 +6422,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6530,7 +6434,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6539,7 +6443,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6550,7 +6454,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6559,7 +6463,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6570,7 +6474,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6579,7 +6483,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6590,7 +6494,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6599,7 +6503,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6610,7 +6514,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Мягкая зубная щетка',
-      type:'products', image: products.INNOVAToothbrush.image,
+      type: 'products', image: products.INNOVAToothbrush.image,
       name: products.INNOVAToothbrush.name,
       link: products.INNOVAToothbrush.link,
       description:
@@ -6619,7 +6523,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная паста',
-      type:'products', image: products.InnovaSensitive3.image,
+      type: 'products', image: products.InnovaSensitive3.image,
       name: products.InnovaSensitive3.name,
       link: products.InnovaSensitive3.link,
       description:
@@ -6632,7 +6536,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6641,7 +6545,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная щетка',
-      type:'products', image: products.SoftToothbrush.image,
+      type: 'products', image: products.SoftToothbrush.image,
       name: products.SoftToothbrush.name,
       link: products.SoftToothbrush.link,
       description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
@@ -6649,7 +6553,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6658,7 +6562,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
       description:
@@ -6667,7 +6571,7 @@ export const ToothpasteRecommendation = {
     {
       id: 5,
       type: 'Очищающая пенка',
-      type:'products', image: products.CareForm.image,
+      type: 'products', image: products.CareForm.image,
       name: products.CareForm.name,
       link: products.CareForm.link,
       description:
@@ -6678,7 +6582,7 @@ export const ToothpasteRecommendation = {
     {
       id: 1,
       type: 'Ополаскиватель',
-      type:'products', image: products.HealthyGums.image,
+      type: 'products', image: products.HealthyGums.image,
       name: products.HealthyGums.name,
       link: products.HealthyGums.link,
       description:
@@ -6687,7 +6591,7 @@ export const ToothpasteRecommendation = {
     {
       id: 2,
       type: 'Зубная щетка',
-      type:'products', image: products.SoftToothbrush.image,
+      type: 'products', image: products.SoftToothbrush.image,
       name: products.SoftToothbrush.name,
       link: products.SoftToothbrush.link,
       description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
@@ -6695,7 +6599,7 @@ export const ToothpasteRecommendation = {
     {
       id: 3,
       type: 'Зубная нить',
-      type:'products', image: products.ProfessionalDentalFloss.image,
+      type: 'products', image: products.ProfessionalDentalFloss.image,
       name: products.ProfessionalDentalFloss.name,
       link: products.ProfessionalDentalFloss.link,
       description:
@@ -6704,7 +6608,7 @@ export const ToothpasteRecommendation = {
     {
       id: 4,
       type: 'Зубная паста',
-      type:'products', image: products.ProfessionalGreenTea.image,
+      type: 'products', image: products.ProfessionalGreenTea.image,
       name: products.ProfessionalGreenTea.name,
       link: products.ProfessionalGreenTea.link,
       description:
@@ -6713,7 +6617,7 @@ export const ToothpasteRecommendation = {
     {
       id: 5,
       type: 'Очищающая пенка',
-      type:'products', image: products.CareForm.image,
+      type: 'products', image: products.CareForm.image,
       name: products.CareForm.name,
       link: products.CareForm.link,
       description:

@@ -2,8 +2,11 @@ import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import {
   setDescription,
-  setDescriptionColor,setNeutralColor
+  setDescriptionColor, setNeutralColor
 } from '../../../../actions/secondQuiz'
+
+
+const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K']
 
 const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
   const yaClick = (yaIndex) => {
@@ -25,7 +28,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
 
   return (
     <>
-      {answers.map((el) => (
+      {answers.map((el, idx) => (
         <div
           className={`answer-wrapper ${el.neutral ? 'neutral' : ''}  ${el.status ? 'active' : ''}${el.correctAnswer ? ' yes' : ' not'
             }`}
@@ -42,11 +45,13 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             )
             dispatch(setDescription(el.description))
             dispatch(setDescriptionColor(el.correctAnswer))
-             dispatch(setNeutralColor(el.neutral))
+            dispatch(setNeutralColor(el.neutral))
             yaClick(el.yaIndex)
           }}
         >
-          <div className="answer"><div className='answer-text'>{el.answer}</div></div>
+          <div className="answer"><div className='answer-text'>
+            <div className="answer-letter">{letters[idx]}</div>
+            {el.answer}</div></div>
           {isMobile <= 1200 && (
             <div className="answer-description">
               <p>{el.description}</p>

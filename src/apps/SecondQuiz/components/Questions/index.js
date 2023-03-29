@@ -4,6 +4,8 @@ import Answers from '../Answers'
 import Bmi from '../Bmi'
 import FluoridationLevel from '../FluoridationLevel'
 
+import operator from '../../../../assets/images/operator.png'
+
 const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
   const descriptionAnswer = useSelector(
     (state) => state.score.descriptionAnswer
@@ -38,11 +40,12 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
               onCountingPoints={onCountingPoints}
             />
           </div>
-          {isMobile >= 1200&& (<div className="quiz-desc">
+          {isMobile >= 1200 && (<div className="quiz-desc">
             <div
-              className={`quiz-desktop  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
+              className={`quiz-desktop ${descriptionAnswer ? 'active': ''}  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
                 }`}
             >
+              <img src={operator} alt="operator" />
               {descriptionAnswer}
             </div>
           </div>)}

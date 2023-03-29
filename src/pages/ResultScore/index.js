@@ -10,6 +10,7 @@ import tooth from './assets/tooth.png'
 import wb from './assets/wb.png'
 import ozon from './assets/ozon.png'
 import ali from './assets/aliexpress.png'
+import tyan from './assets/tyan.png'
 
 const ResultScore = () => {
   const remineralizing = useSelector((state) => state.score.sensitivity)
@@ -70,10 +71,10 @@ const ResultScore = () => {
         <div className="product_body">
           <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
           <div className="product_body_title">{item.name}</div>
-        
-          
+
+
           <p className="product_body_desc">
-            description
+            {/* description debug */}
           </p>
           <div className="product_body_buttons">
             <a href={item.link} className="product_body_buttons_link" target="_blank">
@@ -84,7 +85,7 @@ const ResultScore = () => {
             </a>
             <a href={item.link} className="product_body_buttons_link" target="_blank">
               <img src={wb} alt="wb" />
-            </a>  
+            </a>
           </div>
         </div>
       </div>
@@ -184,6 +185,24 @@ const ResultScore = () => {
 
 
 
+        </div>
+      </div>
+
+
+      <div className="feedback_section">
+        <div className="container">
+          <div className="feedback_section_wrapper">
+            <div className="feedback_section_picture">
+              <img src={tyan} alt="girl" />
+            </div>
+            <div className="feedback_section_content">
+              <h2>Запишитесь к специалисту,
+                чтобы получить квалифицированную помощь</h2>
+              <button>Записаться к стоматологу</button>
+              <p>Не забывайте регулярно посещать стоматолога и проводить профессиональную чистку зубов. Регулярные консультации специалиста и ежедневный домашний уход помогут сохранить здоровье зубов и десен на долгие годы</p>
+              <p>Уход за полостью рта — важная часть повседневной заботы о здоровье. Если вас беспокоят какие-либо симптомы, или вы хотите пройти профилактический осмотр — вы можете записаться к нашим стоматологам. Все специалисты прошли отбор по критериям образования, опыта и отзывов клиентов, и получили одобрение компании SPLAT</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
