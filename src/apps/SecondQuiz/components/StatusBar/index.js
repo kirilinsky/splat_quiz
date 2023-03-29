@@ -7,7 +7,7 @@ const StatusBar = ({ length, currentCard }) => {
         <span style={{ width: (100 / length) * currentCard + '%' }}></span>
       </div>
       <div className={styles.status__counter}>
-        {currentCard}/{length}
+        {currentCard} из{length}
       </div>
     </div>
   )

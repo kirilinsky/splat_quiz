@@ -85,70 +85,71 @@ const SecondQuiz = () => {
   }, [isMobile])
 
   return (
-    <div className="container">
-      <div className="quiz-wrapper" style={{ display: 'flex' }}>
-        {isMobile <= 1200 ? (
-          <>
-            <div className="quiz">
-              <div className="quiz-container">
-                <StatusBar
-                  length={questions.length}
-                  currentCard={currentCard}
-                />
-                {cardCrop.map((card) => (
-                  <Questions
-                    key={card.id}
-                    question={card}
-                    onSelectAnswer={selectAnswer}
-                    onCountingPoints={countingPoints}
+    <div style={{ background: '#F7F8FC' }}>
+      <div className="container" >
+        <div className="quiz-wrapper" style={{ display: 'flex' }}>
+          {isMobile <= 1200 ? (
+            <>
+              <div className="quiz">
+                <div className="quiz-container">
+                  <StatusBar
+                    length={questions.length}
+                    currentCard={currentCard}
                   />
-                ))}
-                <Navigation
-                  questionLength={questions.length}
-                  currentCard={currentCard}
-                  questions={questions}
-                  onChangeCard={handleCardChange}
-                  currentQuestion={cardCrop}
-                />
-                <div className="quiz-image">
-                  {cardCrop.map((image) => (
-                    <img src={image.sourceImage} alt="" key={image.id} />
+                  {cardCrop.map((card) => (
+                    <Questions
+                      key={card.id}
+                      question={card}
+                      onSelectAnswer={selectAnswer}
+                      onCountingPoints={countingPoints}
+                    />
                   ))}
+                  <Navigation
+                    questionLength={questions.length}
+                    currentCard={currentCard}
+                    questions={questions}
+                    onChangeCard={handleCardChange}
+                    currentQuestion={cardCrop}
+                  />
+                  <div className="quiz-image">
+                    {cardCrop.map((image) => (
+                      <img src={image.sourceImage} alt="" key={image.id} />
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="quiz">
-              <div className="quiz-container">
-                <StatusBar
-                  length={questions.length}
-                  currentCard={currentCard}
-                />
-                {cardCrop.map((card) => (
-                  <Questions
-                    key={card.id}
-                    question={card}
-                    onSelectAnswer={selectAnswer}
-                    onCountingPoints={countingPoints}
+            </>
+          ) : (
+            <>
+              <div className="quiz">
+                <div className="quiz-container">
+                  <StatusBar
+                    length={questions.length}
+                    currentCard={currentCard}
                   />
-                ))}
-                <Navigation
-                  questionLength={questions.length}
-                  currentCard={currentCard}
-                  questions={questions}
-                  onChangeCard={handleCardChange}
-                  currentQuestion={cardCrop}
-                />
-                {/* <div className="quiz-image">
+                  {cardCrop.map((card) => (
+                    <Questions
+                      key={card.id}
+                      question={card}
+                      onSelectAnswer={selectAnswer}
+                      onCountingPoints={countingPoints}
+                    />
+                  ))}
+                  <Navigation
+                    questionLength={questions.length}
+                    currentCard={currentCard}
+                    questions={questions}
+                    onChangeCard={handleCardChange}
+                    currentQuestion={cardCrop}
+                  />
+                  {/* <div className="quiz-image">
           {cardCrop.map((image) => (
             <img src={image.sourceImage} alt="" key={image.id} />
           ))}
         </div> */}
+                </div>
               </div>
-            </div>
-            <div className="quiz">
+              {/*  <div className="quiz">
               <div className="quiz-container">
                 <StatusBar
                   length={questions.length}
@@ -167,11 +168,12 @@ const SecondQuiz = () => {
                   ))}
                 </div>
               </div>
-            </div>
-          </>
-        )}
+            </div> */}
+            </>
+          )}
+        </div>
       </div>
-    </div>
+      </div>
   )
 }
 

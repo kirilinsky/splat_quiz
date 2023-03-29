@@ -45,7 +45,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             yaClick(el.yaIndex)
           }}
         >
-          <div className="answer">{el.answer}</div>
+          <div className="answer"><div className='answer-text'>{el.answer}</div></div>
           {isMobile <= 1200 && (
             <div className="answer-description">
               <p>{el.description}</p>

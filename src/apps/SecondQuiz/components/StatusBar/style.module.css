@@ -1,7 +1,7 @@
 .status__progress__bar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 33px;
+  flex-direction: column;
 }
 
 .status__bar {
@@ -15,15 +15,17 @@
 
 .status__bar span {
   display: block;
-  background: var(--grey-500);
+  background: #c11e43;
   transition: 0.3s ease-out;
   height: inherit;
   border-radius: 1rem;
 }
 
 .status__counter {
-  font-size: 1.5rem;
-  color: var(--grey-500);
-  line-height: 110%;
+  color: #c11e43;
+  font-family: "Futura New";
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 107.5%;
   letter-spacing: 0.02em;
 }

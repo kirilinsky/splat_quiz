@@ -112,7 +112,7 @@ const Navigation = ({
           }}
           className="quiz-navigation-button btn-active"
         >
-          Далее
+          Дальше
         </div>
       ) : (
         <div
@@ -120,7 +120,7 @@ const Navigation = ({
             }`}
           onClick={handleIncrement}
         >
-          Далее
+          Дальше
         </div>
       )}
     </div>

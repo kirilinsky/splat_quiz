@@ -11,13 +11,18 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
     return (
       <div>
         <div className="quiz-headline">{question.question}</div>
-        <div className="quiz-answers">
-          <Answers
-            answers={question.answers}
-            onSelectAnswer={onSelectAnswer}
-            onCountingPoints={onCountingPoints}
-          />
-        </div>
+        <div className="quiz-inner">
+          <div className="quiz-answers">
+            <Answers
+              answers={question.answers}
+              onSelectAnswer={onSelectAnswer}
+              onCountingPoints={onCountingPoints}
+            />
+          </div>
+          <div className="quiz-desc">
+            description
+          </div>
+        </div> 
       </div>
     )
   }
