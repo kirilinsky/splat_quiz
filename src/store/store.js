@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import routingApp from '../actions/routingApp'
- import secondQuiz from '../actions/secondQuiz'
- 
+import secondQuiz from '../actions/secondQuiz'
+import personal from '../actions/personal'
+
 export default configureStore({
   reducer: {
-    routing: routingApp, 
+    routing: routingApp,
     score: secondQuiz,
-    
+    personal
   },
 })

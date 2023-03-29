@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import {
   setDescription,
-  setDescriptionColor,
+  setDescriptionColor,setNeutralColor
 } from '../../../../actions/secondQuiz'
 
 const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
@@ -42,6 +42,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             )
             dispatch(setDescription(el.description))
             dispatch(setDescriptionColor(el.correctAnswer))
+             dispatch(setNeutralColor(el.neutral))
             yaClick(el.yaIndex)
           }}
         >

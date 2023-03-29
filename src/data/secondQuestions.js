@@ -1049,7 +1049,7 @@ export const secondQuestions = [
   },
   {
     id: 15,
-    question: 'Вы любите жевать жевательную резинку?  ',
+    question: 'Вы любите жевать жевательную резинку?',
     sourceImage: image1,
     isSingleAnswer: true,
     pointSensitivity: 0,

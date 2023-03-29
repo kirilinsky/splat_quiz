@@ -1,8 +1,27 @@
+import { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import Answers from '../Answers'
 import Bmi from '../Bmi'
 import FluoridationLevel from '../FluoridationLevel'
 
 const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
+  const descriptionAnswer = useSelector(
+    (state) => state.score.descriptionAnswer
+  )
+  const descriptionAnswerColor = useSelector(
+    (state) => state.score.colorDescription
+  )
+  const neutralColor = useSelector(
+    (state) => state.score.neutral
+  )
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth)
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setIsMobile(window.innerWidth)
+    })
+  }, [isMobile])
+
   if (question.id === 16) {
     return <Bmi question={question} />
   } else if (question.id === 17) {
@@ -19,10 +38,15 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
               onCountingPoints={onCountingPoints}
             />
           </div>
-          <div className="quiz-desc">
-            description
-          </div>
-        </div> 
+          {isMobile >= 1200&& (<div className="quiz-desc">
+            <div
+              className={`quiz-desktop  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
+                }`}
+            >
+              {descriptionAnswer}
+            </div>
+          </div>)}
+        </div>
       </div>
     )
   }

@@ -21,7 +21,7 @@ const QuizTemplate = ({ questions }) => {
   }
 
   const First = () => {
-    console.log(questions[index])
+
     if (typeof index === 'string') return dispatch(recommendation())
     return (
       <>
@@ -44,11 +44,10 @@ const QuizTemplate = ({ questions }) => {
         </div>
         <div className="quiz-navigation">
           <div
-            className={`quiz-navigation-button ${
-              index === 0
+            className={`quiz-navigation-button ${index === 0
                 ? 'quiz-navigation-button-back btn-disable'
                 : 'btn-back-active'
-            }`}
+              }`}
             onClick={() => setIndex(questions[index].prevIndex)}
           >
             Назад

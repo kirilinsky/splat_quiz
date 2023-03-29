@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
-import { secondQuestions } from '../../data/secondQuestions'
+ import { secondQuestions } from '../../data/secondQuestions'
 import { navigate } from './utils/navigate'
 import { descriptionAnswer } from '../../actions/secondQuiz'
 
@@ -12,12 +11,7 @@ import { useEffect } from 'react'
 const SecondQuiz = () => {
   const [questions, setQuestions] = useState(secondQuestions)
   const [currentCard, setCurrentCard] = useState(1)
-  const descriptionAnswer = useSelector(
-    (state) => state.score.descriptionAnswer
-  )
-  const descriptionAnswerColor = useSelector(
-    (state) => state.score.colorDescription
-  )
+
 
   const handleCardChange = (cardIndex) => {
     setCurrentCard(cardIndex)
@@ -111,11 +105,11 @@ const SecondQuiz = () => {
                     onChangeCard={handleCardChange}
                     currentQuestion={cardCrop}
                   />
-                  <div className="quiz-image">
+                 {/*  <div className="quiz-image">
                     {cardCrop.map((image) => (
                       <img src={image.sourceImage} alt="" key={image.id} />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </>
@@ -149,31 +143,12 @@ const SecondQuiz = () => {
         </div> */}
                 </div>
               </div>
-              {/*  <div className="quiz">
-              <div className="quiz-container">
-                <StatusBar
-                  length={questions.length}
-                  currentCard={currentCard}
-                />
-                <div
-                  className={`quiz-desktop ${
-                    descriptionAnswerColor ? 'green' : 'red'
-                  }`}
-                >
-                  {descriptionAnswer}
-                </div>
-                <div className="quiz-image">
-                  {cardCrop.map((image) => (
-                    <img src={image.sourceImage} alt="" key={image.id} />
-                  ))}
-                </div>
-              </div>
-            </div> */}
+
             </>
           )}
         </div>
       </div>
-      </div>
+    </div>
   )
 }
 

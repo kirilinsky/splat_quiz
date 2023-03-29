@@ -1,19 +1,21 @@
 .mainscreen {
   &_grid {
-    display: grid;
-
+    display: grid; 
     padding-right: 0;
     grid-template-areas: "C P" "D P";
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 75% 25%;
     width: 100vw;
-    height: calc(100vh - 61px);
-    grid-template-columns: 60% 40%;
+    min-height: calc(100vh - 61px);
+    grid-template-columns: 61% 39%;
     gap: 1px 19px;
     @media screen and (max-height: 715px) {
-       grid-template-columns: 72% auto;
-      
+      grid-template-columns: 73% auto;
+      min-height: 100vh;
       gap: 1px;
     }
+    @media screen and (max-height: 515px) {
+      min-height: 120vh;
+     }
     @media screen and (max-width: 780px) {
       grid-template-columns: 1fr;
       grid-template-areas: "P" "C" "D";
@@ -54,7 +56,7 @@
         font-size: 66px;
       }
       @media screen and (max-height: 655px) {
-         font-size: 55px;
+        font-size: 55px;
       }
       @media screen and (max-width: 1030px) {
         font-size: 52px;
@@ -62,7 +64,7 @@
         margin-bottom: 18px;
       }
       @media screen and (max-width: 780px) {
-        font-size:54px;
+        font-size: 54px;
         margin-top: 11px;
         width: 70%;
       }
@@ -133,7 +135,7 @@
     position: relative;
     height: 100%;
     padding-left: 5rem;
-   
+
     @media screen and (max-width: 1200px) {
       padding-left: 2rem;
     }
@@ -169,11 +171,10 @@
       }
       img {
         max-height: 90px;
-       
-        @media screen and (max-width: 580px) {
-            max-height: 70px;
 
-          }
+        @media screen and (max-width: 580px) {
+          max-height: 70px;
+        }
       }
     }
   }

@@ -2,8 +2,9 @@ import { useState } from "react";
 import politic from "../../assets/Политика_конфиденциальности_WEB_2208.pdf";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import { resultSelection } from "../../actions/routingApp";
+import { resultScore } from "../../actions/routingApp";
 import InputMask from "react-input-mask";
+import { setPerosonalAction } from "../../actions/personal";
 
 const FinalForm = () => {
   const dispatch = useDispatch();
@@ -18,23 +19,24 @@ const FinalForm = () => {
     setFormdata({ ...formdata, [e.target.name]: e.target.value.trim() });
   };
 
-  console.log(formdata, "df");
-  const submitForm = (e) => {
+
+  const submitForm = (e) => { 
+    dispatch(setPerosonalAction(formdata))
     window.ym(92962183, 'reachGoal', 'specialist_recommendations')
     window.gtag('event', 'specialist_recommendations')
     setAgree(false);
     e.preventDefault();
-    axios
-      .post("/wp-content/themes/promo/inc/diagnostics/ajax.php", formdata)
-      .then((r) => {
-        /* debug */
-        dispatch(resultSelection());
-      })
-      .catch((e) => {
-        console.log("error");
-        console.error(e.message);
-        setAgree(true);
-      });
+    dispatch(resultScore())
+    /*   axios
+        .post("/wp-content/themes/promo/inc/hygiene/ajax.php", formdata)
+        .then((r) => { 
+          dispatch(resultSelection());
+        })
+        .catch((e) => {
+          console.log("error");
+          console.error(e.message);
+          setAgree(true);
+        }); */
   };
   return (
     <div className="form">
@@ -60,9 +62,11 @@ const FinalForm = () => {
             className="form-input"
             type="text"
             placeholder="Телефон"
-            mask="+7 988 888 88 88"
+            mask="+7988 8888888"
             maskChar=" "
+            pattern="\+[79]{2][0-9]{9}" 
           />
+        
 
           <input
             type="email"
@@ -90,12 +94,12 @@ const FinalForm = () => {
             </label>
           </div>
         </div>
-        <button
+        {/*   <button
           className="form-send"
-          onClick={() => dispatch(resultSelection())}
+          onClick={() => dispatch(resultScore())}
         >
           debug next
-        </button>
+        </button> */}
         <input
           disabled={!agree}
           type="submit"

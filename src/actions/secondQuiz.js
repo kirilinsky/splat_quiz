@@ -9,6 +9,7 @@ export const secondQuiz = createSlice({
     hygieneLevel: 0,
     descriptionAnswer: '',
     colorDescription: false,
+    neutral: false,
     bmiNumber: 0,
     ftor: 'not',
   },
@@ -31,6 +32,9 @@ export const secondQuiz = createSlice({
     actionDescriptionColor: (state, action) => {
       state.colorDescription = action.payload
     },
+    actionNeutralColor: (state, action) => {
+      state.neutral = action.payload
+    },
     actionBmi: (state, action) => {
       state.bmiNumber = action.payload
     },
@@ -46,7 +50,7 @@ export const {
   actionInflammationAndBleeding,
   actionHygieneLevel,
   actionDescription,
-  actionDescriptionColor,
+  actionDescriptionColor,actionNeutralColor,
   actionBmi,
   actionFtor,
 } = secondQuiz.actions
@@ -70,6 +74,10 @@ export const setDescription = (value) => (dispatch) => {
 
 export const setDescriptionColor = (value) => (dispatch) => {
   dispatch(actionDescriptionColor(value))
+}
+
+export const setNeutralColor = (value) => (dispatch) => {
+  dispatch(actionNeutralColor(value))
 }
 
 export const setBmi = (value) => (dispatch) => {

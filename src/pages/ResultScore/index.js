@@ -1,18 +1,15 @@
 import styles from './style.module.css'
 import Title from '../../components/Title'
+import './style.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import { resultSelection } from '../../actions/routingApp'
 
-import {useDispatch, useSelector} from 'react-redux'
-import {resultSelection} from '../../actions/routingApp'
 
-import {
-  colorLineBleeding,
-  colorLineCaries,
-  colorLineHygieneLevel,
-  colorLineRemineralizing,
-  recommendation,
-  ResultItem,
-} from './settings'
-import {Toothpaste, ToothpasteNotFluorine} from '../../data/toothpaste'
+import { Toothpaste, ToothpasteNotFluorine } from '../../data/toothpaste'
+import tooth from './assets/tooth.png'
+import wb from './assets/wb.png'
+import ozon from './assets/ozon.png'
+import ali from './assets/aliexpress.png'
 
 const ResultScore = () => {
   const remineralizing = useSelector((state) => state.score.sensitivity)
@@ -20,14 +17,22 @@ const ResultScore = () => {
   const bleeding = useSelector((state) => state.score.inflammationAndBleeding)
   const hygieneLevel = useSelector((state) => state.score.hygieneLevel)
   const ftor = useSelector((state) => state.score.ftor)
-  const dispatch = useDispatch()
+  const name = useSelector((state) => state.personal.name)
 
-  // console.log('TOTAL POINTS:', remineralizing, caries, bleeding, hygieneLevel)
+
+  //console.log('TOTAL POINTS:', remineralizing, caries, bleeding, hygieneLevel)
+
+  const percentage = (value, max) => {
+    if (value == 0) {
+      value = 1
+    }
+    return Math.ceil((value / max) * 100)
+  }
 
   const Value1 = () => {
     if (remineralizing <= 5) return 'Low'
-    if (remineralizing > 6 && remineralizing <= 9) return 'Medium'
-    if (remineralizing > 10) return 'High'
+    if (remineralizing >= 6 && remineralizing <= 9) return 'Medium'
+    if (remineralizing >= 10) return 'High'
 
     return 'Low'
   }
@@ -49,110 +54,136 @@ const ResultScore = () => {
   }
 
   const Value4 = () => {
-    if (hygieneLevel <= 5) return 'Low'
-    if (hygieneLevel >= 6 && hygieneLevel <= 9) return 'Medium'
-    if (hygieneLevel >= 10) return 'High'
+    if (hygieneLevel <= 3) return 'Low'
+    if (hygieneLevel >= 4 && hygieneLevel <= 5) return 'Medium'
+    if (hygieneLevel >= 6) return 'High'
 
     return 'Low'
   }
 
-  const Products = ({array}) => {
-    console.log(Value1(),Value2(),Value3(),Value4(),'res');
+  const Products = ({ array, type }) => {
     return array[
       `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
-      ].map((item) => (
-      <div className={styles.products_item} key={item.id}>
-        <div className={styles.product_img}>
-          <img src={item.image} alt={item.name}/>
-        </div>
-        <div className={styles.product_text}>
-          <div className={styles.description}>
-            <span>Splat® professional</span>
-            <p>{item.name}</p>
+    ].filter(x => x.type === type).map((item) => (
+      <div className='product' key={item.id}>
+        <div className="product_img"><img src={item.image} alt={item.name} /></div>
+        <div className="product_body">
+          <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
+          <div className="product_body_title">{item.name}</div>
+        
+          
+          <p className="product_body_desc">
+            description
+          </p>
+          <div className="product_body_buttons">
+            <a href={item.link} className="product_body_buttons_link" target="_blank">
+              <img src={ali} alt="aliexpress" />
+            </a>
+            <a href={item.link} className="product_body_buttons_link" target="_blank">
+              <img src={ozon} alt="ozon" />
+            </a>
+            <a href={item.link} className="product_body_buttons_link" target="_blank">
+              <img src={wb} alt="wb" />
+            </a>  
           </div>
-          <a   href={item.link} className="button" target="_blank">
-            Купить на aliexpress
-          </a>
         </div>
       </div>
     ))
   }
 
+
+
   return (
     <>
-      <Title text="Опрос от SPLAT Global"/>
-      <div className="quiz-wrapper">
+      <div className="score_section">
         <div className="container">
-          <div
-            className="quiz-prev-page"
-            onClick={() => dispatch(resultSelection())}
-          >
-            <svg
-              width="8"
-              height="14"
-              viewBox="0 0 8 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z"
-                fill="#CACFD1"
-              />
-            </svg>
-            <p>Назад</p>
+          <div className="score_section_title">
+            <div className="score_section_title_content">
+              <h1>Спасибо за прохождение опроса{name ? ', ' + name.split(' ')[0] : ''}!</h1>
+              <p>Мы провели для вас персональную оценку здоровья полости рта.
+                Она включает четыре индикатора: гигиена, воспаление и кровоточивость, кариес, реминерализация и укрепление. Индикаторы помогают получить полную картину состояния полости рта и определить, что требует внимания и ухода</p>
+              <span>*Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом</span>
+            </div>
+            <div className="score_section_title_image">
+              <img src={tooth} alt="tooth" />
+            </div>
           </div>
         </div>
-        <div className="container">
-          <div className={styles.result_wrap}>
-            <div className="quiz">
-              <div className="quiz-container">
-                <div className="quiz-title">Результат опроса</div>
-                <div className={styles.result}>
-                  <ResultItem
-                    problemsCount={remineralizing}
-                    range={[5, [6, 9], [9, 13]]}
-                    objectName={recommendation.rem}
-                    rangeLength={13}
-                    colorLine={colorLineRemineralizing}
-                    title="Реминерализация и укрепление"
-                  />
-                  <ResultItem
-                    problemsCount={caries}
-                    range={[3, [4, 9], [9, 12]]}
-                    objectName={recommendation.caries}
-                    rangeLength={12}
-                    colorLine={colorLineCaries}
-                    title="Кариес"
-                  />
-                  <ResultItem
-                    problemsCount={bleeding}
-                    range={[3, [4, 6], [7, 8]]}
-                    objectName={recommendation.bleeding}
-                    rangeLength={8}
-                    colorLine={colorLineBleeding}
-                    title="Воспаление и кровоточивость"
-                  />
-                  <ResultItem
-                    problemsCount={hygieneLevel}
-                    range={[3, [4, 6], [7, 8]]}
-                    objectName={recommendation.hygieneLevel}
-                    rangeLength={7}
-                    colorLine={colorLineHygieneLevel}
-                    title="Гигиена"
-                  />
-                </div>
+
+        <div className="score_section_result">
+          <div className="score_section_result_wrap">
+            <div className="score_section_result_item">
+              <h4>Гигиена</h4>
+              <h2>{percentage(hygieneLevel, 7)}%</h2>
+
+              <div className="score_section_result_item_progress">
+                <span style={{ width: `${percentage(hygieneLevel, 7)}%` }} className={Value4()}></span>
               </div>
+              <p>
+                Индикатор гигиены - оценивает риск развития заболеваний полости рта, которые связаны с нарушением гигиены зубов. Например, вероятность образования зубного налета и камня, кариеса и пародонтоза
+              </p>
             </div>
-            <div className={styles.products}>
-              <div className={`quiz-title ` + styles.title}>
-                Рекомендуем продукты
-              </div>
-              {/* дополнить фтор и написать ftor === yes */}
-              {ftor === 'yes' ? <Products array={ToothpasteNotFluorine}/> : <Products array={Toothpaste}/>}
+
+            <div className="score_section_result_item">
+              <h4>Воспаление и кровоточивость</h4>
+              <h2>{percentage(bleeding, 8)}%</h2>
+              <div className="score_section_result_item_progress"><span style={{ width: `${percentage(bleeding, 8)}%` }} className={Value3()}></span></div>
+              <p>
+                Индикатор воспаления
+                и кровоточивости - оценивает риск развития заболеваний десен, которые связаны с воспалением
+                и кровоточивостью при чистке зубов,
+                а также общее состояние десен
+                и вероятность пародонтоза
+              </p>
+            </div>
+
+            <div className="score_section_result_item">
+              <h4>Кариес</h4>
+              <h2>{percentage(caries, 13)}%</h2>
+              <div className="score_section_result_item_progress"><span style={{ width: `${percentage(caries, 13)}%` }} className={Value2()}></span></div>
+              <p>
+                Индикатор кариеса - оценивает риск развития кариеса зубов
+              </p>
+            </div>
+
+            <div className="score_section_result_item">
+              <h4>Реминерализация и укрепление</h4>
+              <h2>{percentage(remineralizing, 12)}%</h2>
+
+              <div className="score_section_result_item_progress"><span style={{ width: `${percentage(remineralizing, 12)}%` }} className={Value1()}></span></div>
+              <p>
+                Индикатор чувствительности - оценивает текущий уровень и риск развития повышенной чувствительности зубов. Индикатор учитывает болевые ощущения при контакте с холодной, горячей, сладкой или кислой пищей
+              </p>
             </div>
           </div>
+        </div>
+
+      </div>
+
+
+
+      <div className="products_section">
+
+        <div className="container">
+          <div className="products_section_title">
+            <h2>Рекомендуем </h2>
+            <p>На основе полученных ответов мы подобрали продукты SPLAT,
+              которые соответствуют вашим потребностям по уходу за зубами и полостью рта:</p>
+          </div>
+
+          <div className="products_section_items">
+            <Products type="products" array={ftor === 'yes' ? ToothpasteNotFluorine : Toothpaste} />
+          </div>
+          <div className="products_section_title">
+            <p>Для более эффективного и комплексного ухода наши эксперты рекомендуют ежедневно использовать специализированные средства гигиены: ополаскиватель, зубную нить и очищающую пенку</p>
+          </div>
+          <div className="products_section_items">
+            <Products type="accessories" array={ftor === 'yes' ? ToothpasteNotFluorine : Toothpaste} />
+          </div>
+
+
+
+
         </div>
       </div>
     </>
