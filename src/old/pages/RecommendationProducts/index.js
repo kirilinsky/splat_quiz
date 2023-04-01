@@ -1,14 +1,13 @@
 import React from 'react'
-import { ToothpasteRecommendation } from '../../data/toothpaste'
-import styles from './style.module.css'
-import { recommendations } from '../../data/firstQuestions'
-import Title from '../../components/Title'
+ import styles from './style.module.css'
+import { recommendations } from '../../../data/firstQuestions'
+import Title from '../../../components/Title'
 
 import { useSelector, useDispatch } from 'react-redux'
 import {
   recommendationAppointment,
   initialPage,
-} from '../../actions/routingApp'
+} from '../../../actions/routingApp'
 
 const RecommendationProducts = () => {
   const count = useSelector((state) => state.number.recommendationValue)
@@ -46,7 +45,7 @@ const RecommendationProducts = () => {
             {recommendations[count].textRecommendation}
           </div>
           <div className={styles.list}>
-            {ToothpasteRecommendation[count].map((item) => (
+           {/*  {ToothpasteRecommendation[count].map((item) => (
               <React.Fragment key={item.id}>
                 <div className={styles.description}>{item.description}</div>
                 <a href={item.link} target="_blank" rel="noopener noreferrer" className={styles.item}>
@@ -57,7 +56,7 @@ const RecommendationProducts = () => {
                   </section>
                 </a>
               </React.Fragment>
-            ))}
+            ))} */}
           </div>
           <button
             onClick={() => {

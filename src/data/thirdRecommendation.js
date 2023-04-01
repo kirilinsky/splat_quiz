@@ -212,3 +212,1197 @@ export const thirdRecommendation = {
 
 
 //3
+export const ToothpasteRecommendation = {
+  recommendation1: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation2: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation3: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation4: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation5: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation6: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation7: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation8: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation9: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation10: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation11: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, зеленая',
+    },
+    {
+      id: 3,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation12: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+  ],
+  recommendation13: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, зеленая',
+    },
+    {
+      id: 3,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation14: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, зеленая',
+    },
+    {
+      id: 3,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation15: [
+    {
+      id: 1,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+    {
+      id: 2,
+      type: 'Зубная щетка',
+      type: 'products', image: products.SoftToothbrush.image,
+      name: products.SoftToothbrush.name,
+      link: products.SoftToothbrush.link,
+      description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
+    },
+    {
+      id: 3,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 5,
+      type: 'Очищающая пенка',
+      type: 'products', image: products.CareForm.image,
+      name: products.CareForm.name,
+      link: products.CareForm.link,
+      description:
+        'Очищающая пенка для зубов и десен 2 в 1 (алоэ и чайное дерево) / ORAL CARE FOAM 2 in 1 (aloe & tea tree)',
+    },
+  ],
+  recommendation16: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, зеленая',
+    },
+    {
+      id: 3,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation17: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation18: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation19: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation20: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 1,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+  ],
+  recommendation21: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive2.image,
+      name: products.InnovaSensitive2.name,
+      link: products.InnovaSensitive2.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Восстановление эмали и здоровье десен',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation22: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.SpecialStressOff.image,
+      name: products.SpecialStressOff.name,
+      link: products.SpecialStressOff.link,
+      description: 'Зубная паста серии Special «SPLAT STRESS OFF»',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+  ],
+  recommendation23: [
+    {
+      id: 1,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+    {
+      id: 2,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, зеленая',
+    },
+    {
+      id: 3,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+  ],
+  recommendation24: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation25: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation26: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation27: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation28: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation29: [
+    {
+      id: 1,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 2,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation30: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation31: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation32: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation33: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation34: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation35: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation36: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation37: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation38: [],
+  recommendation39: [],
+  recommendation40: [],
+  recommendation41: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.SplatBIOCALCIUM.image,
+      name: products.SplatBIOCALCIUM.name,
+      link: products.SplatBIOCALCIUM.link,
+      description: 'Ополаскиватель для полости рта SPLAT BIOCALCIUM Биокальций',
+    },
+    {
+      id: 3,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation42: [],
+  recommendation43: [
+    {
+      id: 1,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, голубая',
+    },
+    {
+      id: 2,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation44: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation45: [
+    {
+      id: 1,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом бергамота и лайма',
+    },
+    {
+      id: 2,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель с антибактериальным эффектом, чтобы предупредить развитие бактерий в полости рта: Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+  ],
+  recommendation46: [
+    {
+      id: 1,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, бирюзовая',
+    },
+    {
+      id: 2,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation47: [
+    {
+      id: 1,
+      type: 'Мягкая зубная щетка',
+      type: 'products', image: products.INNOVAToothbrush.image,
+      name: products.INNOVAToothbrush.name,
+      link: products.INNOVAToothbrush.link,
+      description:
+        'Мягкая зубная щетка INNOVA® для чувствительных зубов, бирюзовая',
+    },
+    {
+      id: 2,
+      type: 'Зубная паста',
+      type: 'products', image: products.InnovaSensitive3.image,
+      name: products.InnovaSensitive3.name,
+      link: products.InnovaSensitive3.link,
+      description:
+        'Зубная паста для чувствительных зубов INNOVA SENSITIVE Интенсивное восстановление эмали',
+    },
+  ],
+  recommendation48: [],
+  recommendation49: [],
+  recommendation50: [
+    {
+      id: 1,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+    {
+      id: 2,
+      type: 'Зубная щетка',
+      type: 'products', image: products.SoftToothbrush.image,
+      name: products.SoftToothbrush.name,
+      link: products.SoftToothbrush.link,
+      description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
+    },
+    {
+      id: 3,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 5,
+      type: 'Очищающая пенка',
+      type: 'products', image: products.CareForm.image,
+      name: products.CareForm.name,
+      link: products.CareForm.link,
+      description:
+        'Очищающая пенка для зубов и десен 2 в 1 (алоэ и чайное дерево) / ORAL CARE FOAM 2 in 1 (aloe & tea tree)',
+    },
+  ],
+  recommendation51: [
+    {
+      id: 1,
+      type: 'Ополаскиватель',
+      type: 'products', image: products.HealthyGums.image,
+      name: products.HealthyGums.name,
+      link: products.HealthyGums.link,
+      description:
+        'Ополаскиватель для полости рта SPLAT® Healthy Gums Здоровье дёсен',
+    },
+    {
+      id: 2,
+      type: 'Зубная щетка',
+      type: 'products', image: products.SoftToothbrush.image,
+      name: products.SoftToothbrush.name,
+      link: products.SoftToothbrush.link,
+      description: 'Инновационная зубная щетка SPLAT® COMPLETE SOFT, розовая',
+    },
+    {
+      id: 3,
+      type: 'Зубная нить',
+      type: 'products', image: products.ProfessionalDentalFloss.image,
+      name: products.ProfessionalDentalFloss.name,
+      link: products.ProfessionalDentalFloss.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 4,
+      type: 'Зубная паста',
+      type: 'products', image: products.ProfessionalGreenTea.image,
+      name: products.ProfessionalGreenTea.name,
+      link: products.ProfessionalGreenTea.link,
+      description:
+        'Объемная зубная нить SPLAT Professional DentalFloss с ароматом кардамона',
+    },
+    {
+      id: 5,
+      type: 'Очищающая пенка',
+      type: 'products', image: products.CareForm.image,
+      name: products.CareForm.name,
+      link: products.CareForm.link,
+      description:
+        'Очищающая пенка для зубов и десен 2 в 1 (алоэ и чайное дерево) / ORAL CARE FOAM 2 in 1 (aloe & tea tree)',
+    },
+  ],
+}
