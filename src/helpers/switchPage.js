@@ -12,7 +12,6 @@ const SwitchPage = () => {
 
   switch (routing) {
     case 'StartPage':
-      return <ResultScore />
       return <StartPage />
     /* начало теста */
     case 'SecondQuiz':
