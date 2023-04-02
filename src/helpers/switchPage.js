@@ -3,8 +3,7 @@ import { useSelector } from 'react-redux'
 
 import StartPage from '../pages/StartPage'
 import SecondQuiz from '../apps/SecondQuiz'
-import RecommendationProducts from '../pages/RecommendationProducts'
-import ResultSelection from '../pages/ResultSelections'
+ import ResultSelection from '../pages/ResultSelections'
 import ResultScore from '../pages/ResultScore'
 import FinalForm from '../components/FinalForm'
 
@@ -13,6 +12,7 @@ const SwitchPage = () => {
 
   switch (routing) {
     case 'StartPage':
+      return <ResultScore />
       return <StartPage />
     /* начало теста */
     case 'SecondQuiz':
@@ -25,8 +25,8 @@ const SwitchPage = () => {
       return <ResultSelection />
     case 'ResultScore':
       return <ResultScore />
-    case 'RecommendationProducts':
-      return <RecommendationProducts />
+/*     case 'RecommendationProducts':
+      return <RecommendationProducts /> */
     default:
       return <StartPage />
   }

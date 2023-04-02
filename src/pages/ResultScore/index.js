@@ -5,12 +5,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import { resultSelection } from '../../actions/routingApp'
 
 
-import { Toothpaste, ToothpasteNotFluorine } from '../../data/toothpaste'
+import { Toothpaste, requiredProduts } from '../../data/toothpaste'
 import tooth from './assets/tooth.png'
 import wb from './assets/wb.png'
 import ozon from './assets/ozon.png'
 import ali from './assets/aliexpress.png'
 import tyan from './assets/tyan.png'
+import { useEffect, useState } from 'react'
 
 const ResultScore = () => {
   const remineralizing = useSelector((state) => state.score.sensitivity)
@@ -62,28 +63,51 @@ const ResultScore = () => {
     return 'Low'
   }
 
-  const Products = ({ array, type }) => {
-    return array[
-      `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
-    ].filter(x => x.type === type).map((item) => (
+  const Products = ({ array, ftor = false, type = false }) => {
+    const [productsArray, setProductsArray] = useState([])
+    const [itemKey, setItemKey] = useState('')
+
+    useEffect(() => {
+      if (!type) {
+        setProductsArray(array)
+        return
+      }
+      let a = itemKey && array[
+        `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
+      ]
+      console.log(a, type);
+      if (itemKey) {
+        a = a.filter(x => x[itemKey].type === type)
+      }
+
+      setProductsArray(a)
+      return () => {
+        setProductsArray([])
+      };
+    }, [array, itemKey]);
+    useEffect(() => {
+      setItemKey(ftor ? 'ftorItem' : 'item')
+    }, [ftor])
+    console.log(productsArray, 'sdf');
+    return !productsArray.length ? '' : productsArray.map((item) => (
       <div className='product' key={item.id}>
-        <div className="product_img"><img src={item.image} alt={item.name} /></div>
+        <div className="product_img"><img src={item[itemKey].image} alt={item[itemKey].name} /></div>
         <div className="product_body">
           <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
-          <div className="product_body_title">{item.name}</div>
+          <div className="product_body_title">{item[itemKey].name}</div>
 
 
           <p className="product_body_desc">
             {/* description debug */}
           </p>
           <div className="product_body_buttons">
-            <a href={item.link} className="product_body_buttons_link" target="_blank">
+            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
               <img src={ali} alt="aliexpress" />
             </a>
-            <a href={item.link} className="product_body_buttons_link" target="_blank">
+            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
               <img src={ozon} alt="ozon" />
             </a>
-            <a href={item.link} className="product_body_buttons_link" target="_blank">
+            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
               <img src={wb} alt="wb" />
             </a>
           </div>
@@ -170,21 +194,17 @@ const ResultScore = () => {
             <h2>Рекомендуем </h2>
             <p>На основе полученных ответов мы подобрали продукты SPLAT,
               которые соответствуют вашим потребностям по уходу за зубами и полостью рта:</p>
-          </div>
-
+          </div> 
           <div className="products_section_items">
-            <Products type="products" array={ftor === 'yes' ? ToothpasteNotFluorine : Toothpaste} />
+            <Products type="product" array={Toothpaste} ftor={ftor} />
           </div>
           <div className="products_section_title">
             <p>Для более эффективного и комплексного ухода наши эксперты рекомендуют ежедневно использовать специализированные средства гигиены: ополаскиватель, зубную нить и очищающую пенку</p>
           </div>
           <div className="products_section_items">
-            <Products type="accessories" array={ftor === 'yes' ? ToothpasteNotFluorine : Toothpaste} />
+            <Products type="accessories" array={Toothpaste} ftor={ftor} />
+            <Products array={requiredProduts} />
           </div>
-
-
-
-
         </div>
       </div>
 

@@ -97,7 +97,7 @@ const products = {
         link: "https://s.click.aliexpress.com/e/_oEJK9vj",
     },
     ProfessionalUltracomplex: {
-        type: "products",
+        type: "product",
         image: image1,
         name:
             "Зубная паста - PROFESSIONAL «SPLAT (СПЛАТ) Ultracomplex / Ультракомплекс»",

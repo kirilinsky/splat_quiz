@@ -18,7 +18,7 @@ export const requiredProduts = [
   },
 ];
 //comonn
-export const ToothpasteNotFluorine = {
+export const Toothpaste = {
   "Low-Low-Low-Low": [
     {
       ftorRec:
@@ -955,16 +955,16 @@ export const ToothpasteNotFluorine = {
     },
     {
       ftorRec: "",
-      ftorItem: ssories.ToothbrushClinic,
+      ftorItem: Accessories.ToothbrushClinic,
       rec: "",
-      item: ssories.ToothbrushClinic,
+      item: Accessories.ToothbrushClinic,
       id: 3,
     },
     {
       ftorRec: "",
-      ftorItem: ssories.MouthwashBiocalcium,
+      ftorItem: Accessories.MouthwashBiocalcium,
       rec: "",
-      item: ssories.MouthwashBiocalcium,
+      item: Accessories.MouthwashBiocalcium,
       id: 4,
     },
   ],
@@ -978,16 +978,16 @@ export const ToothpasteNotFluorine = {
     },
     {
       ftorRec: "",
-      ftorItem: ssories.ToothbrushClinic,
+      ftorItem: Accessories.ToothbrushClinic,
       rec: "",
-      item: ssories.ToothbrushClinic,
+      item: Accessories.ToothbrushClinic,
       id: 3,
     },
     {
       ftorRec: "",
-      ftorItem: ssories.MouthwashBiocalcium,
+      ftorItem: Accessories.MouthwashBiocalcium,
       rec: "",
-      item: ssories.MouthwashBiocalcium,
+      item: Accessories.MouthwashBiocalcium,
       id: 4,
     },
   ],
@@ -1001,16 +1001,16 @@ export const ToothpasteNotFluorine = {
     },
     {
       ftorRec: "",
-      ftorItem: ssories.ToothbrushClinic,
+      ftorItem: Accessories.ToothbrushClinic,
       rec: "",
-      item: ssories.ToothbrushClinic,
+      item: Accessories.ToothbrushClinic,
       id: 3,
     },
     {
       ftorRec: "",
-      ftorItem: ssories.MouthwashBiocalcium,
+      ftorItem: Accessories.MouthwashBiocalcium,
       rec: "",
-      item: ssories.MouthwashBiocalcium,
+      item: Accessories.MouthwashBiocalcium,
       id: 4,
     },
   ],
