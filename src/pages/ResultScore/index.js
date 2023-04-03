@@ -109,10 +109,11 @@ const ResultScore = () => {
             <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
               <img src={ali} alt="aliexpress" />
             </a>
-            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
-              <img src={ozon} alt="ozon" />
-            </a>
-            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
+            {item[itemKey].ozon &&
+              <a href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank">
+                <img src={ozon} alt="ozon" />
+              </a>}
+            <a href={item[itemKey].wb} className="product_body_buttons_link" target="_blank">
               <img src={wb} alt="wb" />
             </a>
           </div>
