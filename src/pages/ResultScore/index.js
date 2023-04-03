@@ -22,7 +22,6 @@ const ResultScore = () => {
   const name = useSelector((state) => state.personal.name)
 
 
-  //console.log('TOTAL POINTS:', remineralizing, caries, bleeding, hygieneLevel)
 
   const percentage = (value, max) => {
     if (value == 0) {
@@ -63,7 +62,10 @@ const ResultScore = () => {
     return 'Low'
   }
 
-  const Products = ({ array, ftor = false, type = false }) => {
+  console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
+
+
+  const Products = ({ additional = false, array, ftor = false, type = false }) => {
     const [productsArray, setProductsArray] = useState([])
     const [itemKey, setItemKey] = useState('')
 
@@ -75,7 +77,7 @@ const ResultScore = () => {
       let a = itemKey && array[
         `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
       ]
-      console.log(a, type);
+
       if (itemKey) {
         a = a.filter(x => x[itemKey].type === type)
       }
@@ -85,10 +87,13 @@ const ResultScore = () => {
         setProductsArray([])
       };
     }, [array, itemKey]);
+
     useEffect(() => {
       setItemKey(ftor ? 'ftorItem' : 'item')
     }, [ftor])
-    console.log(productsArray, 'sdf');
+
+    console.log(ftor, 'ftor');
+
     return !productsArray.length ? '' : productsArray.map((item) => (
       <div className='product' key={item.id}>
         <div className="product_img"><img src={item[itemKey].image} alt={item[itemKey].name} /></div>
@@ -194,7 +199,7 @@ const ResultScore = () => {
             <h2>Рекомендуем </h2>
             <p>На основе полученных ответов мы подобрали продукты SPLAT,
               которые соответствуют вашим потребностям по уходу за зубами и полостью рта:</p>
-          </div> 
+          </div>
           <div className="products_section_items">
             <Products type="product" array={Toothpaste} ftor={ftor} />
           </div>
@@ -203,7 +208,7 @@ const ResultScore = () => {
           </div>
           <div className="products_section_items">
             <Products type="accessories" array={Toothpaste} ftor={ftor} />
-            <Products array={requiredProduts} />
+            <Products additional array={requiredProduts} />
           </div>
         </div>
       </div>

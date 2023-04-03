@@ -94,7 +94,7 @@ export const Toothpaste = {
   ],
   "Low-Low-Medium-Low": [
     {
-      ftorRec: "",
+      ftorRec: "Прекрасный результат, так держать! У вас низкие риски развития заболеваний полости рта, но все же есть риск развития воспаления. Что делать в качестве профилактики? Для лучшего очищения и профилактики здоровья полости рта, рекомендуем использовать комплексную зубную пасту Professional «SPLAT  Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
       ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
@@ -117,7 +117,7 @@ export const Toothpaste = {
   ],
   "Low-Low-Medium-Medium": [
     {
-      ftorRec: "",
+      ftorRec: "Хороший результат! У вас низкие риски развития заболеваний полости рта, но все же есть риск развития воспаления. Что делать в качестве профилактики? Для лучшего очищения и профилактики здоровья полости рта, рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
       ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
@@ -139,10 +139,10 @@ export const Toothpaste = {
     },
   ],
   "Low-Low-Medium-High": [
-    //??? ftor paste
+   
     {
-      ftorRec: "",
-      ftorItem: null,
+      ftorRec: "Хороший результат! У вас низкие риски развития заболеваний полости рта, но все же есть риск развития воспаления. Что делать в качестве профилактики? Для лучшего очищения и профилактики здоровья полости рта, рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
+      ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
       id: 1,
@@ -164,7 +164,7 @@ export const Toothpaste = {
   ],
   "Low-Low-High-Low": [
     {
-      ftorRec: "",
+      ftorRec: "Отличный результат! Вы правильно ухаживаете за полостью рта, но риск воспаления мягких тканей все же есть. Что делать в качестве профилактики? Мы рекомендуем зубную пасту  SPLAT Professional Likvum Gel с противовоспалительным эффектом. Паста укрепляет зубную эмаль и поможет в профилактике здоровья десен.",
       ftorItem: products.ProfessionalLikvumGel,
       rec: "",
       item: products.ProfessionalLikvumGel,
@@ -187,7 +187,7 @@ export const Toothpaste = {
   ],
   "Low-Low-High-Medium": [
     {
-      ftorRec: "",
+      ftorRec: "Хороший результат! Вы правильно ухаживаете за полостью рта, но риск воспаления мягких тканей все же есть. Что делать в качестве профилактики? Мы рекомендуем зубную пасту  SPLAT Professional Likvum Gel с противовоспалительным эффектом. Паста укрепляет зубную эмаль и поможет в профилактике здоровья десен. ",
       ftorItem: products.ProfessionalLikvumGel,
       rec: "",
       item: products.ProfessionalLikvumGel,
@@ -209,10 +209,10 @@ export const Toothpaste = {
     },
   ],
   "Low-Low-High-High": [
-    //???
+    
     {
-      ftorRec: "",
-      ftorItem: null,
+      ftorRec: "Вы правильно ухаживаете за полостью рта, но риск воспаления мягких тканей все же есть. Что делать в качестве профилактики? Мы рекомендуем зубную пасту  SPLAT Professional Likvum Gel, которая обладает выраженным противовоспалительным эффектом, укрепляет зубную эмаль и поможет в профилактике здоровья десен.",
+      ftorItem: products.ProfessionalLikvumGel,
       rec: "",
       item: products.ProfessionalLikvumGel,
       id: 1,
@@ -233,9 +233,9 @@ export const Toothpaste = {
     },
   ],
   "Low-Medium-Low-Low": [
-    ///?? ftor
+ 
     {
-      ftorRec: "",
+      ftorRec: "Прекрасный результат! У вас низкие риски развития заболеваний полости рта, но вероятность появления кариеса все же есть. Что делать в качестве профилактики? Для лучшего очищения и профилактики мы рекомендуем использовать комплексную зубную пасту Professional «SPLAT  Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
       ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
@@ -256,11 +256,10 @@ export const Toothpaste = {
       id: 4,
     },
   ],
-  "Low-Medium-Low-Medium": [
-    //??
+  "Low-Medium-Low-Medium": [ 
     {
-      ftorRec: "",
-      ftorItem: products.TotalCare,
+      ftorRec: "Хороший результат! У вас низкие риски развития заболеваний полости рта, но все же есть вероятность появления кариеса. Что делать в качестве профилактики? Для лучшего очищения и профилактики мы рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
+      ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
       id: 1,
@@ -282,9 +281,9 @@ export const Toothpaste = {
     },
   ],
   "Low-Medium-Low-High": [
-    //??
+     
     {
-      ftorRec: "",
+      ftorRec: "Хороший результат! Вы правильно ухаживаете за полостью рта, но все же есть риск развития кариеса и признаки неудовлетворительного очищения зубов. Что делать в качестве профилактики? Мы рекомендуем зубную пасту SPLAT Professional Green tea — она укрепляет твердую ткань зубов за счет экстракта натурального жемчуга и поддерживает здоровье десен с помощью антибактериальных и противовоспалительных свойств зеленого чая.",
       ftorItem: products.ProfessionalGreenTea,
       rec: "",
       item: products.ProfessionalGreenTea,
@@ -312,11 +311,10 @@ export const Toothpaste = {
       id: 1,
     },
   ],
-  "Low-Medium-Medium-Low": [
-    //?? ftor paste
+  "Low-Medium-Medium-Low": [ 
     {
-      ftorRec: "",
-      ftorItem: null,
+      ftorRec: "Хороший результат! У вас низкие риски развития заболеваний полости рта, но риск развития воспаления все же есть. Что делать в качестве профилактики?  Для лучшего очищения и профилактики здоровья полости рта рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
+      ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
       id: 1,
@@ -337,10 +335,10 @@ export const Toothpaste = {
     },
   ],
   "Low-Medium-Medium-Medium": [
-    //?? ftor
+   
     {
-      ftorRec: "",
-      ftorItem: null,
+      ftorRec: "У вас низкие риски развития заболеваний полости рта, но риск развития воспаления все же есть. Что делать в качестве профилактики?  Для лучшего очищения и профилактики здоровья полости рта рекомендуем использовать комплексную зубную пасту Professional «SPLAT Ultracomplex» с комбинацией силики и растительного фермента для оптимального очищения.",
+      ftorItem: products.ProfessionalUltracomplex,
       rec: "",
       item: products.ProfessionalUltracomplex,
       id: 2,
@@ -362,7 +360,7 @@ export const Toothpaste = {
   ],
   "Low-Medium-Medium-High": [
     {
-      ftorRec: "",
+      ftorRec: "Вы правильно ухаживаете за полостью рта, но все же есть риск развития кариеса и признаки неудовлетворительного очищения зубов. Что делать в качестве профилактики? Мы рекомендуем зубную пасту SPLAT Professional Green tea — она способствует укреплению твердой ткани зубов за счет экстракта натурального жемчуга и поддерживает здоровье десен с помощью антибактериальных и противовоспалительных свойств зеленого чая.",
       ftorItem: products.ProfessionalGreenTea,
       rec: "",
       item: products.ProfessionalGreenTea,
@@ -384,9 +382,9 @@ export const Toothpaste = {
     },
   ],
   "Low-Medium-High-Low": [
-    //??
+  
     {
-      ftorRec: "",
+      ftorRec: "Вы правильно ухаживаете за полостью рта, но риск развития воспаления мягких тканей и кариеса все же есть. Что делать в качестве профилактики? Рекомендуем зубную пасту с противовоспалительным и укрепляющим эффектом SPLAT Professional Lavendersept  — она защищает здоровье зубов за счет цитрата цинка, а натуральные масла укрепляют десны и оказывают противовоспалительное действие.",
       ftorItem: products.ProfessionalLavendersept,
       rec: "",
       item: products.ProfessionalLavendersept,
@@ -410,7 +408,7 @@ export const Toothpaste = {
   ],
   "Low-Medium-High-Medium": [
     {
-      ftorRec: "",
+      ftorRec: "Вы правильно ухаживаете за полостью рта, но риск развития воспаления мягких тканей и кариеса все же есть. Что делать в качестве профилактики? Рекомендуем зубную пасту с противовоспалительным и укрепляющим эффектом SPLAT Professional Lavendersept  — она защищает здоровье зубов за счет цитрата цинка, а натуральные масла укрепляют десны и оказывают противовоспалительное действие.",
       ftorItem: products.ProfessionalLavendersept,
       rec: "",
       item: products.ProfessionalLavendersept,
@@ -434,7 +432,7 @@ export const Toothpaste = {
   ],
   "Low-Medium-High-High": [
     {
-      ftorRec: "",
+      ftorRec: "Вы правильно ухаживаете за полостью рта, но риск развития воспаления мягких тканей и кариеса все же есть. Что делать в качестве профилактики? Рекомендуем зубную пасту с противовоспалительным и укрепляющим эффектом SPLAT Professional Lavendersept  — она защищает здоровье зубов за счет цитрата цинка, а натуральные масла укрепляют десны и оказывают противовоспалительное действие.",
       ftorItem: products.ProfessionalLavendersept,
       rec: "",
       item: products.ProfessionalLavendersept,
@@ -457,8 +455,9 @@ export const Toothpaste = {
     },
   ],
   "Low-High-Low-Low": [
+    //?? debug  desc stop
     {
-      ftorRec: "",
+      ftorRec: "Отличный результат! Вы правильно ухаживаете за полостью рта, но риск развития кариеса все же есть. Что делать в качестве профилактики? Мы рекомендуем зубную пасту SPLAT Professional Extra Fresh — она содержит фтор, который сохраняет зубную эмаль и препятствует образованию кариеса.",
       ftorItem: products.ProfessionalLavendersept,
       rec: "",
       item: products.ProfessionalExtraFresh,

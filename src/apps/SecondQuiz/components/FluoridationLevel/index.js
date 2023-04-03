@@ -7,6 +7,14 @@ import { listOfCities } from '../../../../data/citiesList'
 const FluoridationLevel = ({ question }) => {
   const [cityName, setCityName] = useState('Выберете регион')
 
+  useEffect(() => {
+    if (cityName !== 'Выберете регион'
+      && cityName !== 'Москва') {
+      window.ym(92962183, 'reachGoal', 'region_not_Moscow_question18')
+      window.gtag('event', 'region_not_Moscow_question18')
+    }
+  }, [cityName])
+
   ifItContainsFluoride(cityName)
 
   return (
@@ -25,9 +33,7 @@ const FluoridationLevel = ({ question }) => {
             <option
               key={city.id}
               value={city.region}
-              onClick={() => {
-                console.log(city.region)
-              }}
+              
             >
               {city.region}
             </option>
@@ -56,6 +62,12 @@ const DangerRegion = () => {
   const [dangerRegion, setDangerRegion] = useState(2)
   const dispatch = useDispatch()
 
+  const handleDangerButton = item => {
+    setDangerRegion(item.id)
+    window.ym(92962183, 'reachGoal', item.yaIndex)
+    window.gtag('event', item.yaIndex)
+  }
+
   useEffect(() => {
     if (dangerRegion === 0) {
       dispatch(setFtor('yes'))
@@ -65,8 +77,8 @@ const DangerRegion = () => {
   }, [dangerRegion])
 
   const buttonValue = [
-    { id: 0, name: 'Да' },
-    { id: 1, name: 'Нет' },
+    { id: 0, yaIndex: 'yes_question18', name: 'Да' },
+    { id: 1, yaIndex: 'no_question18', name: 'Нет' },
   ]
 
   return (
@@ -74,10 +86,9 @@ const DangerRegion = () => {
       {buttonValue.map((button, index) => (
         <div
           key={button.id}
-          className={`quiz-region__button ${
-            dangerRegion === index ? 'active' : ''
-          }`}
-          onClick={() => setDangerRegion(button.id)}
+          className={`quiz-region__button ${dangerRegion === index ? 'active' : ''
+            }`}
+          onClick={() => handleDangerButton(button)}
         >
           {button.name}
         </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import politic from "../../assets/Политика_конфиденциальности_WEB_2208.pdf";
 import axios from "axios";
 import { useDispatch } from "react-redux";
@@ -20,24 +20,32 @@ const FinalForm = () => {
   };
 
 
-  const submitForm = (e) => { 
+  const submitForm = (e) => {
     dispatch(setPerosonalAction(formdata))
-    window.ym(92962183, 'reachGoal', 'specialist_recommendations')
-    window.gtag('event', 'specialist_recommendations')
+    window.ym(92962183, 'reachGoal', 'specialist')
+    window.gtag('event', 'specialist')
     setAgree(false);
     e.preventDefault();
     dispatch(resultScore())
-    /*   axios
-        .post("/wp-content/themes/promo/inc/hygiene/ajax.php", formdata)
-        .then((r) => { 
-          dispatch(resultSelection());
-        })
-        .catch((e) => {
-          console.log("error");
-          console.error(e.message);
-          setAgree(true);
-        }); */
+    axios
+      .post("/wp-content/themes/promo/inc/hygiene/ajax.php", formdata)
+      .then((r) => {
+        window.ym(92962183, 'reachGoal', 'specialist_success')
+        window.gtag('event', 'specialist_success')
+        //debug post
+        //dispatch(resultScore())
+      })
+      .catch((e) => {
+        console.log("error");
+        console.error(e.message);
+        setAgree(true);
+      });
   };
+
+  useEffect(() => {
+    window.ym(92962183, 'reachGoal', 'specialist_open')
+    window.gtag('event', 'specialist_open')
+  }, [])
   return (
     <div className="form">
       <div className="form-title">
@@ -64,9 +72,9 @@ const FinalForm = () => {
             placeholder="Телефон"
             mask="+7988 8888888"
             maskChar=" "
-            pattern="\+[79]{2][0-9]{9}" 
+            pattern="\+[79]{2][0-9]{9}"
           />
-        
+
 
           <input
             type="email"

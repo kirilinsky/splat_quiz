@@ -24,6 +24,13 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
     })
   }, [isMobile])
 
+  useEffect(() => {
+    if (question && question.yaIndex) {
+      window.ym(92962183, 'reachGoal', question.yaIndex)
+      window.gtag('event', question.yaIndex)
+    } 
+  }, [])
+
   if (question.id === 16) {
     return <Bmi question={question} />
   } else if (question.id === 17) {
@@ -42,7 +49,7 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
           </div>
           {isMobile >= 1200 && (<div className="quiz-desc">
             <div
-              className={`quiz-desktop ${descriptionAnswer ? 'active': ''}  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
+              className={`quiz-desktop ${descriptionAnswer ? 'active' : ''}  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
                 }`}
             >
               <img src={operator} alt="operator" />

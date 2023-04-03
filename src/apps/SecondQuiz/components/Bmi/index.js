@@ -3,12 +3,12 @@ import { useDispatch } from 'react-redux'
 import { setBmi } from '../../../../actions/secondQuiz'
 
 const ages = [
-  { id: 0, age: 'До 18 лет' },
-  { id: 1, age: '18-24' },
-  { id: 2, age: '25-39' },
-  { id: 3, age: '40-54' },
-  { id: 4, age: '55-65' },
-  { id: 5, age: 'Старше 66' },
+  { id: 0, yaIndex: 'answer1_question17', age: 'До 18 лет' },
+  { id: 1, yaIndex: 'answer2_question17', age: '18-24' },
+  { id: 2, yaIndex: 'answer3_question17', age: '25-39' },
+  { id: 3, yaIndex: 'answer4_question17', age: '40-54' },
+  { id: 4, yaIndex: 'answer5_question17', age: '55-65' },
+  { id: 5, yaIndex: 'answer6_question17', age: 'Старше 66' },
 ]
 
 const Bmi = ({ question }) => {
@@ -18,16 +18,23 @@ const Bmi = ({ question }) => {
   const dispatch = useDispatch()
 
   const handleChange = (e) => {
-    if(e.target.name ==='height'){
- 
-       window.ym(92962183, 'reachGoal', 'introduced_growth')
-       window.gtag('event', 'introduced_growth')
-
+    if (e.target.name === 'height') {
+      window.ym(92962183, 'reachGoal', 'introduced_growth')
+      window.gtag('event', 'introduced_growth')
+    } else if (e.target.name === 'weight') {
+      window.ym(92962183, 'reachGoal', 'introduced_weight')
+      window.gtag('event', 'introduced_weight')
     }
     setInput({
       ...input,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handleAgeClick = (item) => {
+    setIsSelected(item.id)
+    window.ym(92962183, 'reachGoal', item.yaIndex)
+    window.gtag('event', item.yaIndex)
   }
 
   useEffect(() => {
@@ -60,7 +67,7 @@ const Bmi = ({ question }) => {
             <div
               key={item.id}
               className={`quiz-age ${isSelected === index ? 'active' : ''}`}
-              onClick={() => setIsSelected(item.id)}
+              onClick={() => handleAgeClick(item)}
             >
               {item.age}
             </div>
@@ -77,6 +84,7 @@ const Bmi = ({ question }) => {
             min="152"
             max="200"
             name="height"
+            meta=""
             onChange={handleChange}
           />
         </div>

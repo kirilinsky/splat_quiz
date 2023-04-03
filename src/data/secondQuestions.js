@@ -27,7 +27,7 @@ export const secondQuestions = [
     pointSensitivity: 0,
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
-    pointHygieneLevel: 0,
+    pointHygieneLevel: 0, yaIndex: 'question1',
     answers: [
       {
         questionId: 0,
@@ -110,6 +110,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question2',
     answers: [
       {
         questionId: 1,
@@ -123,7 +124,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
-        yaIndex: 'question201',
+        yaIndex: 'answer1_question2',
       },
       {
         questionId: 1,
@@ -137,6 +138,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question2'
       },
       {
         questionId: 1,
@@ -150,6 +152,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question2'
       },
     ],
   },
@@ -162,6 +165,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question3',
     answers: [
       {
         questionId: 2,
@@ -176,6 +180,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question3'
       },
       {
         questionId: 2,
@@ -189,6 +194,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question3'
       },
       {
         questionId: 2,
@@ -203,6 +209,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question3'
       },
       {
         questionId: 2,
@@ -217,6 +224,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer4_question3'
       },
       {
         questionId: 2,
@@ -231,6 +239,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer5_question3'
       },
       {
         questionId: 2,
@@ -245,6 +254,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer6_question3'
       },
       {
         questionId: 2,
@@ -259,6 +269,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer7_question3'
       },
       {
         questionId: 2,
@@ -272,6 +283,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
+        yaIndex: 'answer8_question3'
       },
     ],
   },
@@ -284,6 +296,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: "question4",
     answers: [
       {
         questionId: 3,
@@ -296,6 +309,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question4'
       },
       {
         questionId: 3,
@@ -309,6 +323,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question4'
       },
       {
         questionId: 3,
@@ -322,6 +337,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question4'
       },
     ],
   },
@@ -334,6 +350,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: "question5",
     answers: [
       {
         questionId: 4,
@@ -347,7 +364,7 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 1,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer1_question5'
       },
       {
         questionId: 4,
@@ -360,7 +377,7 @@ export const secondQuestions = [
         sensitivity: 1,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer2_question5'
       },
       {
         questionId: 4,
@@ -374,6 +391,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question5'
       },
       {
         questionId: 4,
@@ -387,6 +405,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
+        yaIndex: 'answer4_question5'
       },
       {
         questionId: 4,
@@ -401,6 +420,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer5_question5'
       },
       {
         questionId: 4,
@@ -414,7 +434,8 @@ export const secondQuestions = [
         sensitivity: 1,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer6_question5'
+
       },
       {
         questionId: 4,
@@ -427,7 +448,8 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer7_question5'
+
       },
     ],
   },
@@ -440,6 +462,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question6',
     answers: [
       {
         questionId: 5,
@@ -453,6 +476,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question6'
       },
       {
         questionId: 5,
@@ -465,7 +489,8 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer2_question6'
+
       },
       {
         questionId: 5,
@@ -478,7 +503,8 @@ export const secondQuestions = [
         sensitivity: 1,
         caries: 1,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer3_question6'
+
       },
     ],
   },
@@ -491,6 +517,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question7',
     answers: [
       {
         questionId: 6,
@@ -503,7 +530,7 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer1_question7'
       },
       {
         questionId: 6,
@@ -517,19 +544,21 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question7'
       },
       {
         questionId: 6,
         id: 603,
         answer: 'да, всегда',
         description:
-          ' Обостренная реакция на холодные напитки и продукты может говорить о гиперестезии зубов, патологической стираемости зубов, очаговой деминерализации зубов, клиновидных дефектах. Возможно, необходима реминерализующая терапия — укрепление эмали.',
+          'Обостренная реакция на холодные напитки и продукты может говорить о гиперестезии зубов, патологической стираемости зубов, очаговой деминерализации зубов, клиновидных дефектах. Возможно, необходима реминерализующая терапия — укрепление эмали.',
         correctAnswer: false,
         status: false,
         sensitivity: 1,
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question7'
       },
     ],
   },
@@ -543,6 +572,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question8',
     answers: [
       {
         questionId: 7,
@@ -556,6 +586,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question8'
       },
       {
         questionId: 7,
@@ -569,6 +600,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question8'
       },
       {
         questionId: 7,
@@ -582,6 +614,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question8'
       },
     ],
   },
@@ -594,6 +627,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question9',
     answers: [
       {
         questionId: 8,
@@ -607,6 +641,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question9'
       },
       {
         questionId: 8,
@@ -620,6 +655,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question9'
       },
       {
         questionId: 8,
@@ -633,6 +669,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question9'
       },
       {
         questionId: 8,
@@ -646,6 +683,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer4_question9'
       },
       {
         questionId: 8,
@@ -659,6 +697,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
+        yaIndex: 'answer5_question9'
       },
     ],
   },
@@ -671,6 +710,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question10',
     answers: [
       {
         questionId: 9,
@@ -684,7 +724,7 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer1_question10'
       },
       {
         questionId: 9,
@@ -698,6 +738,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer2_question10'
       },
       {
         questionId: 9,
@@ -711,6 +752,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question10'
       },
     ],
   },
@@ -723,6 +765,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex: 'question11',
     answers: [
       {
         questionId: 10,
@@ -736,6 +779,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer1_question11'
       },
       {
         questionId: 10,
@@ -748,7 +792,7 @@ export const secondQuestions = [
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
-        hygieneLevel: 0,
+        hygieneLevel: 0, yaIndex: 'answer2_question11'
       },
       {
         questionId: 10,
@@ -762,6 +806,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex: 'answer3_question11'
       },
     ],
   },
@@ -774,6 +819,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex:'question12',
     answers: [
       {
         questionId: 11,
@@ -788,6 +834,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer1_question12'
       },
       {
         questionId: 11,
@@ -801,6 +848,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer2_question12'
       },
       {
         questionId: 11,
@@ -814,6 +862,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer3_question12'
       },
       {
         questionId: 11,
@@ -827,6 +876,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer4_question12'
       },
       {
         questionId: 11,
@@ -840,6 +890,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer5_question12'
       },
       {
         questionId: 11,
@@ -853,6 +904,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer6_question12'
       },
       {
         questionId: 11,
@@ -866,6 +918,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer7_question12'
       },
       {
         questionId: 11,
@@ -874,11 +927,12 @@ export const secondQuestions = [
         description:
           'Твердые овощи и фрукты пополняют запас полезных веществ в организме и очищают зубы от налета. Еще одна полезная привычка — споласкивать рот водой или очищающей пенкой после каждого перекуса.',
         correctAnswer: true,
-        status: false,neutral: true,
+        status: false, neutral: true,
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer8_question12'
       },
     ],
   },
@@ -891,6 +945,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    yaIndex:'question13',
     answers: [
       {
         questionId: 12,
@@ -904,6 +959,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer1_question13'
       },
       {
         questionId: 12,
@@ -917,6 +973,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer2_question13'
       },
       {
         questionId: 12,
@@ -930,6 +987,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer3_question13'
       },
     ],
   },
@@ -941,7 +999,8 @@ export const secondQuestions = [
     pointSensitivity: 0,
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
-    pointHygieneLevel: 0,
+    pointHygieneLevel: 0, 
+    yaIndex:'question14',
     answers: [
       {
         questionId: 13,
@@ -955,6 +1014,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 1,
+        yaIndex:'answer1_question14'
       },
       {
         questionId: 13,
@@ -968,6 +1028,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer2_question14'
       },
       {
         questionId: 13,
@@ -981,6 +1042,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer3_question14'
       },
     ],
   },
@@ -993,6 +1055,8 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+    
+    yaIndex:' question15',
     answers: [
       {
         questionId: 14,
@@ -1006,6 +1070,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer1_question15'
       },
       {
         questionId: 14,
@@ -1019,6 +1084,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer2_question15'
       },
       {
         questionId: 14,
@@ -1032,6 +1098,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer3_question15'
       },
       {
         questionId: 14,
@@ -1044,6 +1111,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer4_question15'
       },
     ],
   },
@@ -1056,6 +1124,8 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
+
+    yaIndex:'question16',
     answers: [
       {
         questionId: 15,
@@ -1069,6 +1139,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 0,
         hygieneLevel: 1,
+        yaIndex:'answer1_question16'
       },
       {
         questionId: 15,
@@ -1082,6 +1153,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 1,
+        yaIndex:'answer2_question16'
       },
       {
         questionId: 15,
@@ -1095,6 +1167,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'answer3_question16'
       },
     ],
   },
@@ -1110,6 +1183,7 @@ export const secondQuestions = [
     pointHygieneLevel: 0,
     required: true,
     answers: [],
+    yaIndex:'question17'
   },
   {
     id: 17,
@@ -1121,12 +1195,13 @@ export const secondQuestions = [
     pointCaries: 1,
     pointInflammationAndBleeding: 1,
     pointHygieneLevel: 1,
+    yaIndex:'question18',
     required: false,
     answers: [
       {
         questionId: 17,
         id: 1701,
-        answer: 'Да',
+        answer: 'Да 2',
         description: '',
         correctAnswer: true,
         status: false,
@@ -1134,6 +1209,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
+        yaIndex:'yes_question18'
       },
       {
         questionId: 17,
@@ -1146,6 +1222,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
+        yaIndex:'no_question18'
       },
     ],
   },
