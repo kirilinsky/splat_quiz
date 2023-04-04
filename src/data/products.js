@@ -12,7 +12,7 @@ import image11 from "../assets/images/toothpaste/11.jpeg";
 import image12 from "../assets/images/toothpaste/12.jpeg";
 import image13 from "../assets/images/toothpaste/13.jpeg";
 import image14 from "../assets/images/toothpaste/14.jpeg";
-import image15 from "../assets/images/toothpaste/15.jpeg";
+//import image15 from "../assets/images/toothpaste/15.jpeg";
 import image16 from "../assets/images/toothpaste/16.jpeg";
 import image17 from "../assets/images/toothpaste/17.jpeg";
 import image18 from "../assets/images/toothpaste/18.jpg";

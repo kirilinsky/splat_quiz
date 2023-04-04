@@ -1,21 +1,5 @@
 import image1 from '../assets/images/quiz/d-1.jpg'
-//import image1 from '../assets/images/quiz/q-1.jpg'
-import image2 from '../assets/images/quiz/q-2.jpg'
-import image3 from '../assets/images/quiz/q-3.jpg'
-import image4 from '../assets/images/quiz/q-4.jpg'
-import image5 from '../assets/images/quiz/q-5.jpg'
-import image6 from '../assets/images/quiz/q-6.jpg'
-import image7 from '../assets/images/quiz/q-7.jpg'
-import image8 from '../assets/images/quiz/q-8.jpg'
-import image9 from '../assets/images/quiz/q-9.jpg'
-import image10 from '../assets/images/quiz/q-10.jpg'
-import image11 from '../assets/images/quiz/q-11.jpg'
-import image12 from '../assets/images/quiz/q-12.jpg'
-import image13 from '../assets/images/quiz/q-13.jpg'
-import image14 from '../assets/images/quiz/q-14.jpg'
-import image15 from '../assets/images/quiz/q-15.jpg'
-import image16 from '../assets/images/quiz/q-16.jpg'
-import image17 from '../assets/images/quiz/q-17.jpeg'
+ 
 import image18 from '../assets/images/quiz/q-18.jpg'
 
 export const secondQuestions = [

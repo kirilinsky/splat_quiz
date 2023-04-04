@@ -9,6 +9,7 @@ import { setPerosonalAction } from "../../actions/personal";
 const FinalForm = () => {
   const dispatch = useDispatch();
   const [agree, setAgree] = useState(false);
+  const [errorSend, setErrorSend] = useState(false);
   const [formdata, setFormdata] = useState({
     name: "",
     phone: "",
@@ -25,20 +26,21 @@ const FinalForm = () => {
     window.ym(92962183, 'reachGoal', 'specialist_recommendations_open')
     window.gtag('event', 'specialist_recommendations_open')
     setAgree(false);
+    setErrorSend(false)
     e.preventDefault();
-    dispatch(resultScore())
+    //dispatch(resultScore())
     axios
       .post("/wp-content/themes/promo/inc/hygiene/ajax.php", formdata)
       .then((r) => {
         window.ym(92962183, 'reachGoal', 'specialist_success')
         window.gtag('event', 'specialist_success')
-        //debug post
-        //dispatch(resultScore())
+        dispatch(resultScore())
       })
       .catch((e) => {
         console.log("error");
         console.error(e.message);
         setAgree(true);
+        setErrorSend(true)
       });
   };
 
@@ -95,9 +97,9 @@ const FinalForm = () => {
               id="checkbox-mail"
             />
             <label htmlFor="checkbox-mail">
-              Нажимая на кнопку, я принимаю{" "}
+            Я принимаю условия{" "}
               <a href={politic} target="_blank">
-                условия соглашения
+              Политики о конфиденциальности
               </a>
             </label>
           </div>
@@ -108,6 +110,8 @@ const FinalForm = () => {
         >
           debug next
         </button> */}
+        {errorSend && <span className="send-error">        что-то пошло не так, попробуйте еще раз
+        </span>}
         <input
           disabled={!agree}
           type="submit"

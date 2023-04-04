@@ -1,17 +1,15 @@
-import styles from './style.module.css'
-import Title from '../../components/Title'
+ 
 import './style.scss'
-import { useDispatch, useSelector } from 'react-redux'
-import { resultSelection } from '../../actions/routingApp'
-
-
+import { useSelector } from 'react-redux'
+ 
 import { Toothpaste, requiredProduts } from '../../data/toothpaste'
 import tooth from './assets/tooth.png'
 import wb from './assets/wb.png'
 import ozon from './assets/ozon.png'
-import ali from './assets/aliexpress.png'
+//import ali from './assets/aliexpress.png'
 import tyan from './assets/tyan.png'
 import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 const ResultScore = () => {
   const remineralizing = useSelector((state) => state.score.sensitivity)
@@ -20,11 +18,30 @@ const ResultScore = () => {
   const hygieneLevel = useSelector((state) => state.score.hygieneLevel)
   const ftor = useSelector((state) => state.score.ftor)
   const name = useSelector((state) => state.personal.name)
+  const email = useSelector((state) => state.personal.email)
 
+  const [success, setSuccess] = useState(false)
+
+  const setAppointment = () => {
+    axios
+      .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { email, appointment: true })
+      .then((r) => {
+        window.ym(92962183, 'reachGoal', 'specialist')
+        window.gtag('event', 'specialist')
+        setSuccess(true)
+      })
+      .catch((e) => {
+        console.log("error");
+        console.error(e.message);
+        setSuccess(false)
+
+      });
+
+  }
 
 
   const percentage = (value, max) => {
-    if (value == 0) {
+    if (value === 0) {
       value = 1
     }
     return Math.ceil((value / max) * 100)
@@ -94,6 +111,9 @@ const ResultScore = () => {
       window.gtag('event', name)
     }
 
+
+
+
     useEffect(() => {
       setItemKey(ftor ? 'ftorItem' : 'item')
     }, [ftor])
@@ -115,10 +135,10 @@ const ResultScore = () => {
               <img name={`${item[itemKey].yaIndex}_Ali`} src={ali} alt="aliexpress" />
             </a> */}
             {item[itemKey].ozon ?
-              <a onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank">
+              <a onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank" rel="noreferrer noopener">
                 <img src={ozon} name={`${item[itemKey].yaIndex ?? '1'}_OZON`} alt="ozon" />
               </a> :
-              <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link" target="_blank">
+              <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link" target="_blank" rel="noreferrer noopener">
                 <img name={`${item[itemKey].yaIndex ?? '1'}_WB`} src={wb} alt="wb" />
               </a>}
           </div>
@@ -229,7 +249,7 @@ const ResultScore = () => {
             <div className="feedback_section_content">
               <h2>Запишитесь к специалисту,
                 чтобы получить квалифицированную помощь</h2>
-              <button>Записаться к стоматологу</button>
+              <button onClick={setAppointment} disabled={success}>{success ? 'Вы успешно записаны' : 'Записаться к стоматологу'}</button>
               <p>Не забывайте регулярно посещать стоматолога и проводить профессиональную чистку зубов. Регулярные консультации специалиста и ежедневный домашний уход помогут сохранить здоровье зубов и десен на долгие годы</p>
               <p>Уход за полостью рта — важная часть повседневной заботы о здоровье. Если вас беспокоят какие-либо симптомы, или вы хотите пройти профилактический осмотр — вы можете записаться к нашим стоматологам. Все специалисты прошли отбор по критериям образования, опыта и отзывов клиентов, и получили одобрение компании SPLAT</p>
             </div>

@@ -881,7 +881,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .form-send {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   background: transparent;
   width: 100%;
   border: 1px solid var(--primary-red);
@@ -930,8 +930,16 @@ input[type="checkbox"]:checked::before {
   .form-send {
     margin-top: 2rem;
   }
+  
 }
-
+.send-error{
+  text-align: center;
+  display: block;margin-top: 12px;
+  color: var(--error);
+  background: #d94c4c46;
+  padding: 10px;
+  border-radius: 5px;
+}
 .recommendation-block {
   margin: 3rem auto 6rem;
   max-width: 690px;
