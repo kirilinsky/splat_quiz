@@ -22,8 +22,8 @@ const FinalForm = () => {
 
   const submitForm = (e) => {
     dispatch(setPerosonalAction(formdata))
-    window.ym(92962183, 'reachGoal', 'specialist')
-    window.gtag('event', 'specialist')
+    window.ym(92962183, 'reachGoal', 'specialist_recommendations_open')
+    window.gtag('event', 'specialist_recommendations_open')
     setAgree(false);
     e.preventDefault();
     dispatch(resultScore())

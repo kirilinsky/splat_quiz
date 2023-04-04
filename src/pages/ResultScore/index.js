@@ -62,7 +62,7 @@ const ResultScore = () => {
     return 'Low'
   }
 
-  console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
+  //console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
 
 
   const Products = ({ additional = false, array, ftor = false, type = false }) => {
@@ -88,11 +88,15 @@ const ResultScore = () => {
       };
     }, [array, itemKey]);
 
+    const handleClickTracking = (e) => {
+      let { name } = e.target
+      window.ym(92962183, 'reachGoal', name)
+      window.gtag('event', name)
+    }
+
     useEffect(() => {
       setItemKey(ftor ? 'ftorItem' : 'item')
     }, [ftor])
-
-    console.log(ftor, 'ftor');
 
     return !productsArray.length ? '' : productsArray.map((item) => (
       <div className='product' key={item.id}>
@@ -103,19 +107,20 @@ const ResultScore = () => {
 
 
           <p className="product_body_desc">
-            {/* description debug */}
+            {item[ftor ? 'ftorRec' : 'rec']}
+            {item[itemKey]?.rec}
           </p>
           <div className="product_body_buttons">
-            <a href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
-              <img src={ali} alt="aliexpress" />
-            </a>
-            {item[itemKey].ozon &&
-              <a href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank">
-                <img src={ozon} alt="ozon" />
+            {/* <a name="Ali" href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
+              <img name={`${item[itemKey].yaIndex}_Ali`} src={ali} alt="aliexpress" />
+            </a> */}
+            {item[itemKey].ozon ?
+              <a onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank">
+                <img src={ozon} name={`${item[itemKey].yaIndex ?? '1'}_OZON`} alt="ozon" />
+              </a> :
+              <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link" target="_blank">
+                <img name={`${item[itemKey].yaIndex ?? '1'}_WB`} src={wb} alt="wb" />
               </a>}
-            <a href={item[itemKey].wb} className="product_body_buttons_link" target="_blank">
-              <img src={wb} alt="wb" />
-            </a>
           </div>
         </div>
       </div>
