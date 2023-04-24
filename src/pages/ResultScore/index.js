@@ -1,15 +1,17 @@
- 
+
 import './style.scss'
 import { useSelector } from 'react-redux'
- 
+
 import { Toothpaste, requiredProduts } from '../../data/toothpaste'
 import tooth from './assets/tooth.png'
-import wb from './assets/wb.png'
-import ozon from './assets/ozon.png'
-//import ali from './assets/aliexpress.png'
+
+
 import tyan from './assets/tyan.png'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import ModalSuccess from './components/Modal';
+
+
 
 const ResultScore = () => {
   const remineralizing = useSelector((state) => state.score.sensitivity)
@@ -21,19 +23,35 @@ const ResultScore = () => {
   const email = useSelector((state) => state.personal.email)
 
   const [success, setSuccess] = useState(false)
+  const [appError, setAppError] = useState(false)
+
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   const setAppointment = () => {
+    setAppError(false)
     axios
       .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { email, appointment: true })
       .then((r) => {
         window.ym(92962183, 'reachGoal', 'specialist')
         window.gtag('event', 'specialist')
         setSuccess(true)
+        openModal()
       })
       .catch((e) => {
+
         console.log("error");
         console.error(e.message);
         setSuccess(false)
+        setAppError(true)
 
       });
 
@@ -82,6 +100,7 @@ const ResultScore = () => {
   //console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
 
 
+
   const Products = ({ additional = false, array, ftor = false, type = false }) => {
     const [productsArray, setProductsArray] = useState([])
     const [itemKey, setItemKey] = useState('')
@@ -107,6 +126,7 @@ const ResultScore = () => {
 
     const handleClickTracking = (e) => {
       let { name } = e.target
+
       window.ym(92962183, 'reachGoal', name)
       window.gtag('event', name)
     }
@@ -134,13 +154,14 @@ const ResultScore = () => {
             {/* <a name="Ali" href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
               <img name={`${item[itemKey].yaIndex}_Ali`} src={ali} alt="aliexpress" />
             </a> */}
-            {item[itemKey].ozon ?
-              <a onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link" target="_blank" rel="noreferrer noopener">
-                <img src={ozon} name={`${item[itemKey].yaIndex ?? '1'}_OZON`} alt="ozon" />
-              </a> :
-              <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link" target="_blank" rel="noreferrer noopener">
+
+            <a name={`${item[itemKey].yaIndex ?? '1'}_OZON`} onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link ozon" target="_blank" rel="noreferrer noopener">
+              Купить на OZON
+            </a>
+            {/*    <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link wb" target="_blank" rel="noreferrer noopener">
                 <img name={`${item[itemKey].yaIndex ?? '1'}_WB`} src={wb} alt="wb" />
-              </a>}
+                Купить на OZON
+              </a> */}
           </div>
         </div>
       </div>
@@ -247,14 +268,20 @@ const ResultScore = () => {
               <img src={tyan} alt="girl" />
             </div>
             <div className="feedback_section_content">
-              <h2>Запишитесь к специалисту,
-                чтобы получить квалифицированную помощь</h2>
-              <button onClick={setAppointment} disabled={success}>{success ? 'Вы успешно записаны' : 'Записаться к стоматологу'}</button>
               <p>Не забывайте регулярно посещать стоматолога и проводить профессиональную чистку зубов. Регулярные консультации специалиста и ежедневный домашний уход помогут сохранить здоровье зубов и десен на долгие годы</p>
               <p>Уход за полостью рта — важная часть повседневной заботы о здоровье. Если вас беспокоят какие-либо симптомы, или вы хотите пройти профилактический осмотр — вы можете записаться к нашим стоматологам. Все специалисты прошли отбор по критериям образования, опыта и отзывов клиентов, и получили одобрение компании SPLAT</p>
+
+              <h2>Запишитесь к специалисту,
+                чтобы получить квалифицированную помощь</h2>
+
+              <button onClick={setAppointment} disabled={success}>{success ? 'Вы успешно записаны' : 'Записаться к стоматологу'}</button>
+              <span className={`${appError ? '' : 'hidden'} error-app`}>что-то пошло не так, попробуйте еще раз</span>
             </div>
           </div>
         </div>
+
+        <ModalSuccess onClose={closeModal} isOpen={modalIsOpen}
+        />
       </div>
     </>
   )

@@ -1,8 +1,6 @@
-import styles from "./style.module.css";
 
 import { useDispatch } from "react-redux";
 import { secondQuiz } from "../../actions/routingApp";
-import Title from "../../components/Title";
 import Tilt from 'react-parallax-tilt';
 
 import './style.scss'
@@ -15,21 +13,21 @@ const StartPage = () => {
   const dispatch = useDispatch();
   return (
     <>
- 
+
       <div className="mainscreen_grid">
         <div className="mainscreen_content">
           <h1>Узнайте о состоянии полости рта без посещения стоматолога</h1>
           <p>Пройдите бесплатную оценку полости рта и получите персональные рекомендации по уходу за зубами и дёснами</p>
-          
-            <button
-              onClick={() => {
-                window.scrollTo(0, 0);
-                dispatch(secondQuiz());
-              }}
-            >
-              Начать
-            </button>
-        
+
+          <button
+            onClick={() => {
+              window.scrollTo(0, 0);
+              dispatch(secondQuiz());
+            }}
+          >
+            Начать
+          </button>
+
         </div>
         <div className="mainscreen_picture">
           <div className="hero_desktop">
