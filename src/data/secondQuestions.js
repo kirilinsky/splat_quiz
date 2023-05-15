@@ -606,7 +606,7 @@ export const secondQuestions = [
     id: 8,
     question: 'Замечали Вы у себя кровоточивость десен?',
     sourceImage: image1,
-    isSingleAnswer: false,
+    isSingleAnswer: true,
     pointSensitivity: 0,
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
@@ -1164,7 +1164,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
-      
+
     yaIndex: 'question18',
     answers: [
       {
