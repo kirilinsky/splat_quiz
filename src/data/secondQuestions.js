@@ -950,7 +950,7 @@ export const secondQuestions = [
         id: 1202,
         answer: 'да, иногда',
         description:
-          'Газированные и сладкие напитки содержат сахар, углекислый газ и ортофосфорную кислоту, что пагубно влияет на зубы. Перерабатывая сахар, патогенные микроорганизмы выделяют разрушительные для зубной эмали кислоты. Чтобы сохранить здоровье зубов, мы рекомендуем полностью отказаться от таких напитков и перейти на обычную воду. ',
+          'Газированные и сладкие напитки содержат сахар, углекислый газ и ортофосфорную кислоту, что пагубно влияет на зубы. Перерабатывая сахар, патогенные микроорганизмы выделяют разрушительные для зубной эмали кислоты. Чтобы сохранить здоровье зубов, мы рекомендуем сократить потребление таких напитков и перейти на обычную воду. ',
         correctAnswer: false,
         status: false,
         sensitivity: 1,
@@ -964,7 +964,7 @@ export const secondQuestions = [
         id: 1203,
         answer: 'да, часто',
         description:
-          'Газированные и сладкие напитки содержат сахар, углекислый газ и ортофосфорную кислоту, что пагубно влияет на зубы. Перерабатывая сахар, патогенные микроорганизмы выделяют разрушительные для зубной эмали кислоты. Чтобы сохранить здоровье зубов, мы рекомендуем полностью отказаться от таких напитков и перейти на обычную воду. ',
+          'Газированные и сладкие напитки содержат сахар, углекислый газ и ортофосфорную кислоту, что пагубно влияет на зубы. Перерабатывая сахар, патогенные микроорганизмы выделяют разрушительные для зубной эмали кислоты. Чтобы сохранить здоровье зубов, мы рекомендуем сократить потребление таких напитков и перейти на обычную воду. ',
         correctAnswer: false,
         status: false,
         sensitivity: 1,
@@ -1101,7 +1101,7 @@ export const secondQuestions = [
   },
   {
     id: 15,
-    question: 'Вы любите жевать жевательную резинку?',
+    question: 'Вы жуете жевательную резинку?',
     sourceImage: image1,
     isSingleAnswer: true,
     pointSensitivity: 0,
@@ -1114,7 +1114,7 @@ export const secondQuestions = [
       {
         questionId: 15,
         id: 1501,
-        answer: 'нет, это вредно',
+        answer: 'нет',
         description:
           'Это не так, жвачка не может починить вред вашим зубам! Некоторые стоматологи рекомендуют жевать жевательную резинку после каждого приема пищи по 5-10 минут 6 раз в день. Но не больше. Жвачка без сахара с содержанием ксилита снижает рН слюны, способствует очищению зубов от остатков пищи и естественной реминерализации эмали. Впрочем, очищающая пенка справится с этим эффективнее, быстрее и безопаснее.',
         correctAnswer: false,
@@ -1128,7 +1128,7 @@ export const secondQuestions = [
       {
         questionId: 15,
         id: 1502,
-        answer: 'да, редко',
+        answer: 'иногда бывает',
         description:
           'Некоторые стоматологи рекомендуют жевать жевательную резинку после каждого приема пищи по 5-10 минут 6 раз в день. Но не больше. Жвачка без сахара с содержанием ксилита снижает рН слюны, способствует очищению зубов от остатков пищи и естественной реминерализации эмали. Впрочем, очищающая пенка справится с этим эффективнее, быстрее и безопаснее.',
         correctAnswer: true,
@@ -1157,6 +1157,62 @@ export const secondQuestions = [
   },
   {
     id: 16,
+    question: 'Курите ли вы?',
+    sourceImage: image1,
+    isSingleAnswer: true,
+    pointSensitivity: 0,
+    pointCaries: 0,
+    pointInflammationAndBleeding: 0,
+    pointHygieneLevel: 0,
+
+    yaIndex: 'question18',
+    answers: [
+      {
+        questionId: 16,
+        id: 1801,
+        answer: 'да, часто',
+        description:
+          'наверно ашкудишки свои куришь',
+        correctAnswer: false,
+        status: false,
+        sensitivity: 1,
+        caries: 1,
+        inflammationAndBleeding: 1,
+        hygieneLevel: 1,
+        yaIndex: 'answer1_question18'
+      },
+      {
+        questionId: 16,
+        id: 1802,
+        answer: 'да, редко',
+        description:
+          'ок да',
+        correctAnswer: false,
+        status: false,
+        sensitivity: 1,
+        caries: 1,
+        inflammationAndBleeding:1,
+        hygieneLevel: 1,
+        yaIndex: 'answer2_question18'
+      },
+      {
+        questionId: 16,
+        id: 1803,
+        answer: 'нет',
+        description:
+          'это good',
+        correctAnswer: true,
+        status: false,
+        sensitivity: 0,
+        caries: 0,
+        inflammationAndBleeding: 0,
+        hygieneLevel: 0,
+        yaIndex: 'answer3_question18'
+      },
+    ],
+  },
+  {
+    id: 17,
     question: 'Ваши физические параметры?',
     subtitle: 'Позволяет оценить риски развития заболеваний полости рта.',
     sourceImage: image1,
@@ -1170,7 +1226,7 @@ export const secondQuestions = [
     yaIndex: 'question17'
   },
   {
-    id: 17,
+    id: 18,
     question: 'Укажите регион проживания',
     subtitle: 'Место вашего проживания помогает определить уровень фтора, от чего зависит риск развития кариеса',
     sourceImage: image18,
@@ -1183,7 +1239,7 @@ export const secondQuestions = [
     required: false,
     answers: [
       {
-        questionId: 17,
+        questionId: 18,
         id: 1701,
         answer: 'Да 2',
         description: '',
@@ -1196,7 +1252,7 @@ export const secondQuestions = [
         yaIndex: 'yes_question18'
       },
       {
-        questionId: 17,
+        questionId: 18,
         id: 1702,
         answer: 'Нет',
         description: '',

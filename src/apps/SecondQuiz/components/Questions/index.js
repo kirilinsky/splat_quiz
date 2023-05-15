@@ -30,10 +30,10 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
       window.gtag && window.gtag('event', question.yaIndex)
     }
   }, [])
-
-  if (question.id === 16) {
+  console.log(question.id);
+  if (question.id === 17) {
     return <Bmi question={question} />
-  } else if (question.id === 17) {
+  } else if (question.id === 18) {
     return <FluoridationLevel question={question} />
   } else {
     return (
