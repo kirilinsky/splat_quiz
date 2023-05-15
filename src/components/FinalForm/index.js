@@ -125,12 +125,12 @@ const FinalForm = () => {
             </label>
           </div> */}
         </div>
-        {/*   <button
+            <button
           className="form-send"
           onClick={() => dispatch(resultScore())}
         >
           debug next
-        </button> */}
+        </button> 
         {errorSend && <span className="send-error">        что-то пошло не так, попробуйте еще раз
         </span>}
         <input

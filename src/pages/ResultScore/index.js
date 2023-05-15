@@ -7,6 +7,8 @@ import tooth from './assets/tooth.png'
 
 
 import tyan from './assets/tyan.png'
+import disc from './assets/disc.png';
+
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ModalSuccess from './components/Modal';
@@ -260,8 +262,21 @@ const ResultScore = () => {
         </div>
       </div>
 
+      <div className="disc_section">
+        <div className="container">
+          <div className="disc_section_wrap">
+            <img src={disc} alt="зубам полезно" />
 
-      <div className="feedback_section">
+            <p>Данный опросник не является средством постановки диагноза, не является советом по медицинскому вопросу. Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом
+              <br />
+              <br />
+              Опросник разработан при поддержке Президента Профессионального общества гигиенистов стоматологических</p>
+
+          </div>
+        </div>
+
+      </div>
+      {/* <div className="feedback_section">
         <div className="container">
           <div className="feedback_section_wrapper">
             <div className="feedback_section_picture">
@@ -282,7 +297,7 @@ const ResultScore = () => {
 
         <ModalSuccess onClose={closeModal} isOpen={modalIsOpen}
         />
-      </div>
+      </div> */}
     </>
   )
 }

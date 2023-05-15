@@ -491,12 +491,12 @@
     font-size: 22px;
     line-height: 120%;
     margin-bottom: 16px;
-    a{
+    a {
       font-size: inherit;
       color: inherit;
     }
     @media screen and (max-width: 566px) {
-     font-size: 19px;
+      font-size: 19px;
     }
   }
   button {
@@ -511,5 +511,29 @@
     position: absolute;
     width: 127px;
     transform: translate(-50%, -50%);
+  }
+}
+
+.disc_section {
+  &_wrap {
+    display: flex;
+    gap: 19px;
+    padding: 20px 0;
+    align-items: center;
+    @media screen and (max-width: 560px) {
+       flex-direction: column-reverse;
+    }
+    p{
+      font-size: 13px;
+      line-height: 130%;
+      color: #232c32;
+      opacity: 0.4;
+      width: 95%;
+      @media screen and (max-width: 560px) {
+font-size: 12px;     }
+    }
+    img {
+      object-fit: contain;
+    }
   }
 }
