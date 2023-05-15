@@ -34,8 +34,8 @@ const Navigation = ({
 
 
   const sendMetric = string => {
-    window.ym(92962183, 'reachGoal', string)
-    window.gtag('event', string)
+    window.ym && window.ym(92962183, 'reachGoal', string)
+    window.gtag && window.gtag('event', string)
 
   }
 
@@ -91,7 +91,7 @@ const Navigation = ({
       </div>
 
       {/* debug */}
-         <div
+      <div
         onClick={() => {
           sendMetric('specialist_recommendations_open')
 
@@ -100,7 +100,7 @@ const Navigation = ({
         className="quiz-navigation-button btn-active"
       >
         Debug final
-      </div> 
+      </div>
       {/* debug */}
 
       {currentCard === questionLength ? (

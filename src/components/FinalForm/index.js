@@ -30,8 +30,8 @@ const FinalForm = () => {
 
   const submitForm = (e) => {
     dispatch(setPerosonalAction(formdata))
-    window.ym(92962183, 'reachGoal', 'specialist_recommendations_open')
-    window.gtag('event', 'specialist_recommendations_open')
+    window.ym && window.ym(92962183, 'reachGoal', 'specialist_recommendations_open')
+    window.gtag && window.gtag('event', 'specialist_recommendations_open')
     setAgree(false);
     //setInfo(false);
     setErrorSend(false)
@@ -40,8 +40,8 @@ const FinalForm = () => {
     axios
       .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { ...formdata, sensitivity_indicator, caries_indicator, hygiene_indicator, inflammation_indicator })
       .then((r) => {
-        window.ym(92962183, 'reachGoal', 'specialist_success')
-        window.gtag('event', 'specialist_success')
+        window.ym && window.ym(92962183, 'reachGoal', 'specialist_success')
+        window.gtag && window.gtag('event', 'specialist_success')
         dispatch(resultScore())
       })
       .catch((e) => {
@@ -55,8 +55,8 @@ const FinalForm = () => {
 
 
   useEffect(() => {
-    window.ym(92962183, 'reachGoal', 'specialist_open')
-    window.gtag('event', 'specialist_open')
+    window.ym && window.ym(92962183, 'reachGoal', 'specialist_open')
+    window.gtag && window.gtag('event', 'specialist_open')
   }, [])
   return (
     <div className="form">
@@ -125,12 +125,12 @@ const FinalForm = () => {
             </label>
           </div> */}
         </div>
-            <button
+        <button
           className="form-send"
           onClick={() => dispatch(resultScore())}
         >
           debug next
-        </button> 
+        </button>
         {errorSend && <span className="send-error">        что-то пошло не так, попробуйте еще раз
         </span>}
         <input

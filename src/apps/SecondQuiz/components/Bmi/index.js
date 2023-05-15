@@ -19,11 +19,11 @@ const Bmi = ({ question }) => {
 
   const handleChange = (e) => {
     if (e.target.name === 'height') {
-      window.ym(92962183, 'reachGoal', 'introduced_growth')
-      window.gtag('event', 'introduced_growth')
+      window.ym && window.ym(92962183, 'reachGoal', 'introduced_growth')
+      window.gtag && window.gtag('event', 'introduced_growth')
     } else if (e.target.name === 'weight') {
-      window.ym(92962183, 'reachGoal', 'introduced_weight')
-      window.gtag('event', 'introduced_weight')
+      window.ym && window.ym(92962183, 'reachGoal', 'introduced_weight')
+      window.gtag && window.gtag('event', 'introduced_weight')
     }
     setInput({
       ...input,
@@ -33,8 +33,8 @@ const Bmi = ({ question }) => {
 
   const handleAgeClick = (item) => {
     setIsSelected(item.id)
-    window.ym(92962183, 'reachGoal', item.yaIndex)
-    window.gtag('event', item.yaIndex)
+    window.ym && window.ym(92962183, 'reachGoal', item.yaIndex)
+    window.gtag && window.gtag('event', item.yaIndex)
   }
 
   useEffect(() => {

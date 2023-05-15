@@ -14,8 +14,8 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
       return
     }
 
-    window.ym(92962183, 'reachGoal', yaIndex)
-    window.gtag('event', yaIndex)
+    window.ym && window.ym(92962183, 'reachGoal', yaIndex)
+    window.gtag && window.gtag('event', yaIndex)
   }
   const dispatch = useDispatch()
 

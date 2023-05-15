@@ -26,9 +26,9 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
 
   useEffect(() => {
     if (question && question.yaIndex) {
-      window.ym(92962183, 'reachGoal', question.yaIndex)
-      window.gtag('event', question.yaIndex)
-    } 
+      window.ym && window.ym(92962183, 'reachGoal', question.yaIndex)
+      window.gtag && window.gtag('event', question.yaIndex)
+    }
   }, [])
 
   if (question.id === 16) {

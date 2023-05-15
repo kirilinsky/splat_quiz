@@ -43,8 +43,8 @@ const ResultScore = () => {
     axios
       .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { email, appointment: true })
       .then((r) => {
-        window.ym(92962183, 'reachGoal', 'specialist')
-        window.gtag('event', 'specialist')
+        window.ym && window.ym(92962183, 'reachGoal', 'specialist')
+        window.gtag && window.gtag('event', 'specialist')
         setSuccess(true)
         openModal()
       })
@@ -129,8 +129,8 @@ const ResultScore = () => {
     const handleClickTracking = (e) => {
       let { name } = e.target
 
-      window.ym(92962183, 'reachGoal', name)
-      window.gtag('event', name)
+      window.ym && window.ym(92962183, 'reachGoal', name)
+      window.gtag && window.gtag('event', name)
     }
 
 

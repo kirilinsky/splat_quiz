@@ -10,8 +10,8 @@ const FluoridationLevel = ({ question }) => {
   useEffect(() => {
     if (cityName !== 'Выберете регион'
       && cityName !== 'Москва') {
-      window.ym(92962183, 'reachGoal', 'region_not_Moscow_question18')
-      window.gtag('event', 'region_not_Moscow_question18')
+      window.ym && window.ym(92962183, 'reachGoal', 'region_not_Moscow_question18')
+      window.gtag && window.gtag('event', 'region_not_Moscow_question18')
     }
   }, [cityName])
 
@@ -33,7 +33,7 @@ const FluoridationLevel = ({ question }) => {
             <option
               key={city.id}
               value={city.region}
-              
+
             >
               {city.region}
             </option>
@@ -64,8 +64,8 @@ const DangerRegion = () => {
 
   const handleDangerButton = item => {
     setDangerRegion(item.id)
-    window.ym(92962183, 'reachGoal', item.yaIndex)
-    window.gtag('event', item.yaIndex)
+    window.ym && window.ym(92962183, 'reachGoal', item.yaIndex)
+    window.gtag && window.gtag('event', item.yaIndex)
   }
 
   useEffect(() => {
