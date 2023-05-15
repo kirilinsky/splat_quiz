@@ -101,6 +101,16 @@ const Navigation = ({
       >
         Debug final
       </div>
+      <div
+        onClick={() => {
+          sendMetric('specialist_recommendations_open')
+
+          dispatch(finalForm())
+        }}
+        className="quiz-navigation-button btn-active"
+      >
+        Debug IMT
+      </div>
       {/* debug */}
 
       {currentCard === questionLength ? (

@@ -323,16 +323,16 @@
 
 .quiz-desktop {
   margin-top: 2.5rem;
-  padding: 32px;
-  font-size: 18px;
-  line-height: 160%;
-  display: flex;
+  padding: 30px;
+  font-size: 17px;
+  min-height: 150px;
+  line-height: 140%; 
   flex-direction: column;
   transform: translateX(500%);
   transition: 0.25s linear;
   background: #fff;
   border-radius: 32px;
-  box-shadow: 0px 14px 151px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 14px 150px rgba(0, 0, 0, 0.03);
   
 }
 .quiz-desktop.active {
@@ -340,8 +340,10 @@
   transition: 0.5s linear;
 }
 .quiz-desktop img {
-  margin-bottom: 24px;
-  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 98px;
 }
 
 .quiz-desktop.neutral {

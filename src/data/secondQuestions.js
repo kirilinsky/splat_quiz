@@ -1164,7 +1164,7 @@ export const secondQuestions = [
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
-
+      
     yaIndex: 'question18',
     answers: [
       {
@@ -1172,7 +1172,7 @@ export const secondQuestions = [
         id: 1801,
         answer: 'да, часто',
         description:
-          'наверно ашкудишки свои куришь',
+          null,
         correctAnswer: false,
         status: false,
         sensitivity: 1,
@@ -1186,12 +1186,12 @@ export const secondQuestions = [
         id: 1802,
         answer: 'да, редко',
         description:
-          'ок да',
+          null,
         correctAnswer: false,
         status: false,
         sensitivity: 1,
         caries: 1,
-        inflammationAndBleeding:1,
+        inflammationAndBleeding: 1,
         hygieneLevel: 1,
         yaIndex: 'answer2_question18'
       },
@@ -1200,7 +1200,7 @@ export const secondQuestions = [
         id: 1803,
         answer: 'нет',
         description:
-          'это good',
+          null,
         correctAnswer: true,
         status: false,
         sensitivity: 0,
