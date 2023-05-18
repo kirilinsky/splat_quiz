@@ -19,8 +19,8 @@
       height: auto;
     }
     @media screen and (max-height: 715px) {
-      grid-template-columns: 73% auto;
-      min-height: 100vh;
+      grid-template-columns: 74% auto;
+      min-height: 30vh;
       gap: 1px;
     }
 
@@ -139,6 +139,7 @@
     height: 100%;
     padding: 0 5rem;
     height: 15vh;
+
     @media screen and (max-height: 915px) {
       height: 18vh;
     }
@@ -172,14 +173,18 @@
         align-items: flex-start;
         margin-top: 31px;
       }
-      p {
-        font-size: 13px;
+      p,
+      span {
+        font-size: 17px;
         line-height: 130%;
         color: #232c32;
-        opacity: 0.4;
+
         @media screen and (max-width: 1200px) {
-          font-size: 12px;
+          font-size: 13px;
         }
+      }
+      span {
+        color: #646d70;
       }
       img {
         max-height: 90px;

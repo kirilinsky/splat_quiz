@@ -58,7 +58,7 @@
   background: #f7f8fc;
   width: 100%;
 
-  padding: 2.5rem;
+  padding: 1.6rem 2.5rem;
   margin: 0 auto;
 }
 
@@ -127,7 +127,7 @@
   display: flex;
 }
 .quiz-answers {
-  margin-top: 2.5rem;
+  margin-top: 2.1rem;
   width: 50%;
   flex-grow: 1;
 }
