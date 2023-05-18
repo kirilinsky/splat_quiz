@@ -105,7 +105,12 @@
   line-height: 110%;
   letter-spacing: 0.02em;
 }
-
+.quiz-multiple {
+  font-size: 18px;
+  line-height: 160%;
+  color: #646d70;
+  margin-top: 8px;
+}
 /* quiz1-headline */
 
 .quiz-headline {
@@ -326,17 +331,16 @@
   padding: 30px;
   font-size: 17px;
   min-height: 150px;
-  line-height: 140%; 
+  line-height: 140%;
   flex-direction: column;
   transform: translateX(500%);
   transition: 0.25s linear;
   background: #fff;
   border-radius: 32px;
   box-shadow: 0px 14px 150px rgba(0, 0, 0, 0.03);
-  
 }
 .quiz-desktop.active {
-  transform: translateX(0)  ; 
+  transform: translateX(0);
   transition: 0.5s linear;
 }
 .quiz-desktop img {
