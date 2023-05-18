@@ -5,10 +5,10 @@ import SwitchPage from './helpers/switchPage'
 
 const App = () => {
   return (
-    <>
+    <div className="mainscreen">
       <Header />
       <SwitchPage />
-    </>
+    </div>
   )
 }
 
