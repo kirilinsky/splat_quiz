@@ -70,7 +70,7 @@ const Navigation = ({
     onChangeCard(currentCard + 1)
     dispatch(setDescription(''))
     // for test 18 page
-    // onChangeCard(18)
+    //onChangeCard(18)
 
     if (currentCard === questionLength) {
       dispatch(setSensitivity(result().sensitivity))
@@ -103,9 +103,9 @@ const Navigation = ({
       </div>
       <div
         onClick={() => {
-          sendMetric('specialist_recommendations_open')
+          
 
-          dispatch(finalForm())
+          onChangeCard(18)
         }}
         className="quiz-navigation-button btn-active"
       >

@@ -462,7 +462,7 @@
 .quiz-bmi .quiz-answer-line {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -0.5rem 2.5rem;
+  margin: 0 -0.5rem 0rem;
 }
 
 .quiz-bmi .quiz-answer-line .quiz-input {
