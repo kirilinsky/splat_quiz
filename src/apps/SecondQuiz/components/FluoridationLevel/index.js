@@ -43,12 +43,15 @@ const FluoridationLevel = ({ question }) => {
         {/*  Вашем регионе оптимальное количество фтора, поэтому нет ограничений по*/}
         {/*  использованию продуктов Oral Care содержащих фтор*/}
         {/*</div>*/}
-        <p>
+        <div style={{ marginTop: '1.5rem' }} className="quiz-region-title">Ваш город</div>
+        <input type="text" className='quiz-region-input' />
+        {/*    <p>
           Проживаете ли вы в одном из следующих городов/поселков/сел: Тверь,
           Томск, Одинцово, Егорьевск, Красногорск, Сердобск, пос. Сява, с.
           Каракулино, пос. Игра, пос. Кез?
-        </p>
-        <DangerRegion />
+        </p>  
+      
+        <DangerRegion /> */}
       </div>
     </div>
   )
