@@ -30,7 +30,7 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
       window.gtag && window.gtag('event', question.yaIndex)
     }
   }, [])
-  console.log(question.id);
+ 
   if (question.id === 17) {
     return <Bmi question={question} />
   } else if (question.id === 18) {

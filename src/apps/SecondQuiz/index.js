@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { secondQuestions } from '../../data/secondQuestions'
 import { navigate } from './utils/navigate'
-import { descriptionAnswer } from '../../actions/secondQuiz'
+import { setBleed } from '../../actions/secondQuiz'
 
 import StatusBar from './components/StatusBar'
 import Questions from './components/Questions'
@@ -15,13 +15,12 @@ const SecondQuiz = () => {
   const currentCard = useSelector(
     (state) => state.routing.quizPage
   )
-   const _dispatch = useDispatch()
+  const _dispatch = useDispatch()
 
 
   const handleCardChange = (cardIndex) => {
-    console.log(cardIndex,'fg');
     _dispatch(changeQuizPage(cardIndex))
-    
+
   }
 
   const cardCrop = navigate(questions, currentCard)
@@ -30,14 +29,24 @@ const SecondQuiz = () => {
   // const answerChoiceMode = () => {}
 
   const selectAnswer = (answerID, questionID) => {
+
     setQuestions(
       questions.map((el) => {
         if (el.isSingleAnswer) {
+          
           el.answers.map((item) => {
             if (item.questionId === questionID) {
-              item.status = false
+              item.status = false 
               if (item.id === answerID) {
                 item.status = !item.status
+                if(el.bleedQuestion){
+                  if (item.setBleed) {
+                    _dispatch(setBleed(true))
+                  } else{
+                    _dispatch(setBleed(false))
+                  }
+                }
+                
               }
             }
           })

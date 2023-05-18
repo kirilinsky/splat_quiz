@@ -1,5 +1,18 @@
 import { products, Accessories } from "./products";
 
+
+//bleed
+//required
+export const bleedProduts = [ 
+  {
+    ftorRec: "",
+    ftorItem: Accessories.ToothbrushUltraSensitive,
+    rec: "",
+    item: Accessories.ToothbrushUltraSensitive,
+    id: 6,
+  },
+];
+
 //required
 export const requiredProduts = [
   {

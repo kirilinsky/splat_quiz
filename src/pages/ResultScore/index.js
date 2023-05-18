@@ -2,7 +2,7 @@
 import './style.scss'
 import { useSelector } from 'react-redux'
 
-import { Toothpaste, requiredProduts } from '../../data/toothpaste'
+import { Toothpaste, bleedProduts, requiredProduts } from '../../data/toothpaste'
 import tooth from './assets/tooth.png'
 
 
@@ -20,6 +20,7 @@ const ResultScore = () => {
   const caries = useSelector((state) => state.score.caries)
   const bleeding = useSelector((state) => state.score.inflammationAndBleeding)
   const hygieneLevel = useSelector((state) => state.score.hygieneLevel)
+  const bleed = useSelector((state) => state.score.bleed)
   const ftor = useSelector((state) => state.score.ftor)
   const name = useSelector((state) => state.personal.name)
   const email = useSelector((state) => state.personal.email)
@@ -103,7 +104,7 @@ const ResultScore = () => {
 
 
 
-  const Products = ({ additional = false, array, ftor = false, type = false }) => {
+  const Products = ({ additional = false,bleed=false, array, ftor = false, type = false }) => {
     const [productsArray, setProductsArray] = useState([])
     const [itemKey, setItemKey] = useState('')
 
@@ -118,6 +119,10 @@ const ResultScore = () => {
 
       if (itemKey) {
         a = a.filter(x => x[itemKey].type === type)
+      }
+
+      if(a[0] && bleed){
+        a[0] = bleedProduts[0]
       }
 
       setProductsArray(a)
@@ -256,7 +261,8 @@ const ResultScore = () => {
             <p>Для более эффективного и комплексного ухода наши эксперты рекомендуют ежедневно использовать специализированные средства гигиены: ополаскиватель, зубную нить и очищающую пенку</p>
           </div>
           <div className="products_section_items">
-            <Products type="accessories" array={Toothpaste} ftor={ftor} />
+           <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} /> 
+
             <Products additional array={requiredProduts} />
           </div>
         </div>

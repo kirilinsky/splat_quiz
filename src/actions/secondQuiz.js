@@ -41,6 +41,9 @@ export const secondQuiz = createSlice({
     actionFtor: (state, action) => {
       state.ftor = action.payload
     },
+    actionBleed: (state,action) => {
+      state.bleed = action.payload
+    },
   },
 })
 
@@ -50,9 +53,9 @@ export const {
   actionInflammationAndBleeding,
   actionHygieneLevel,
   actionDescription,
-  actionDescriptionColor,actionNeutralColor,
+  actionDescriptionColor, actionNeutralColor,
   actionBmi,
-  actionFtor,
+  actionFtor, actionBleed
 } = secondQuiz.actions
 
 export const setSensitivity = (value) => (dispatch) => {
@@ -86,6 +89,10 @@ export const setBmi = (value) => (dispatch) => {
 
 export const setFtor = (value) => (dispatch) => {
   dispatch(actionFtor(value))
+}
+
+export const setBleed = (value) => (dispatch) => {
+  dispatch(actionBleed(value))
 }
 
 export default secondQuiz.reducer

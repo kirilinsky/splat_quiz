@@ -607,6 +607,7 @@ export const secondQuestions = [
     question: 'Замечали Вы у себя кровоточивость десен?',
     sourceImage: image1,
     isSingleAnswer: true,
+    bleedQuestion: true,
     pointSensitivity: 0,
     pointCaries: 0,
     pointInflammationAndBleeding: 0,
@@ -621,6 +622,7 @@ export const secondQuestions = [
           'Замечательно! У вас нет признаков заболевания десен — пародонтита, гингивита. ',
         correctAnswer: true,
         status: false,
+
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 0,
@@ -636,6 +638,7 @@ export const secondQuestions = [
         correctAnswer: false,
         status: false,
         sensitivity: 0,
+        setBleed: true,
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
@@ -649,7 +652,7 @@ export const secondQuestions = [
           'В норме здоровая десна не кровоточит при приеме твердой пищи. Такой симптом может говорить о хроническом заболевании десен —пародонтите, гингивите. ',
         correctAnswer: false,
         status: false,
-        sensitivity: 0,
+        sensitivity: 0, setBleed: true,
         caries: 0,
         inflammationAndBleeding: 1,
         hygieneLevel: 0,
@@ -662,7 +665,7 @@ export const secondQuestions = [
         description:
           'Постоянная кровоточивость говорит о хроническом заболевании десен —пародонтите, гингивите. Возможно, стоит пройти дополнительную диагностику, чтобы устранить все факторы риска, а также комплекс профессиональной гигиены полости рта и противовоспалительной терапии. ',
         correctAnswer: false,
-        status: false,
+        status: false, setBleed: true,
         sensitivity: 0,
         caries: 0,
         inflammationAndBleeding: 1,
@@ -672,7 +675,7 @@ export const secondQuestions = [
       {
         questionId: 8,
         id: 805,
-        answer: 'иногда',
+        answer: 'иногда', setBleed: true,
         description:
           'Периодическая кровоточивость может свидетельствовать заболевания десен (гингивита, пародонтита) или травмы из-за неправильных движений щеткой. Стоматолог проведет диагностику, определит причину и обучит вас технике чистки зубов.',
         correctAnswer: false,
