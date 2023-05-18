@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import politic from "../../assets/pol.pdf";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { resultScore, secondQuiz } from "../../actions/routingApp";
+import { backFromForm, changeQuizPage, resultScore, secondQuiz } from "../../actions/routingApp";
 import InputMask from "react-input-mask";
 import { setPerosonalAction } from "../../actions/personal";
 
@@ -132,12 +132,7 @@ const FinalForm = () => {
         >
           debug next
         </button>
-        <button
-          className="form-send"
-          onClick={() => dispatch(secondQuiz())}
-        >
-          назад
-        </button>
+
         {errorSend && <span className="send-error">        что-то пошло не так, попробуйте еще раз
         </span>}
         <input
@@ -147,6 +142,12 @@ const FinalForm = () => {
           value="Отправить"
         />
       </form>
+      <button
+        className="form-send"
+        onClick={() => dispatch(backFromForm())}
+      >
+        назад
+      </button>
     </div>
   );
 };

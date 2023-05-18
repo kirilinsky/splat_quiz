@@ -102,9 +102,7 @@ const Navigation = ({
         Debug final
       </div>
       <div
-        onClick={() => {
-          
-
+        onClick={() => { 
           onChangeCard(18)
         }}
         className="quiz-navigation-button btn-active"

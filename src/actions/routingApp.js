@@ -4,8 +4,17 @@ export const routingApps = createSlice({
   name: 'routingApps',
   initialState: {
     page: 'StartPage',
+    quizPage: 0
   },
   reducers: {
+    backFromForm: (state) => {
+      state.quizPage = 19
+      state.page = 'SecondQuiz'
+    },
+    changeQuizPage: (state, action) => {
+
+      state.quizPage = action.payload
+    },
     startPage: (state) => {
       state.page = 'StartPage'
     },
@@ -13,6 +22,7 @@ export const routingApps = createSlice({
       //state.page = 'ResultScore'
       // debug delete
       state.page = 'SecondQuiz'
+      state.quizPage = 1
     },
 
     recommendation: (state) => {
@@ -44,7 +54,7 @@ export const routingApps = createSlice({
 })
 
 export const {
-  startPage,
+  startPage, changeQuizPage, backFromForm,
   initialPage,
   firstQuiz,
   secondQuiz,

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
- import { secondQuestions } from '../../data/secondQuestions'
+import { secondQuestions } from '../../data/secondQuestions'
 import { navigate } from './utils/navigate'
 import { descriptionAnswer } from '../../actions/secondQuiz'
 
@@ -7,14 +7,21 @@ import StatusBar from './components/StatusBar'
 import Questions from './components/Questions'
 import Navigation from './components/Navigation'
 import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { changeQuizPage } from '../../actions/routingApp'
 
 const SecondQuiz = () => {
   const [questions, setQuestions] = useState(secondQuestions)
-  const [currentCard, setCurrentCard] = useState(1)
+  const currentCard = useSelector(
+    (state) => state.routing.quizPage
+  )
+   const _dispatch = useDispatch()
 
 
   const handleCardChange = (cardIndex) => {
-    setCurrentCard(cardIndex)
+    console.log(cardIndex,'fg');
+    _dispatch(changeQuizPage(cardIndex))
+    
   }
 
   const cardCrop = navigate(questions, currentCard)
@@ -105,7 +112,7 @@ const SecondQuiz = () => {
                     onChangeCard={handleCardChange}
                     currentQuestion={cardCrop}
                   />
-                 {/*  <div className="quiz-image">
+                  {/*  <div className="quiz-image">
                     {cardCrop.map((image) => (
                       <img src={image.sourceImage} alt="" key={image.id} />
                     ))}
