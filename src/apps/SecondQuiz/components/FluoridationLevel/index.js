@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { setFtor } from '../../../../actions/secondQuiz'
 
 import { listOfCities } from '../../../../data/citiesList'
+import CitiesInput from './CitiesInput'
 
 const FluoridationLevel = ({ question }) => {
   const [cityName, setCityName] = useState('Выберете регион')
@@ -44,7 +45,7 @@ const FluoridationLevel = ({ question }) => {
         {/*  использованию продуктов Oral Care содержащих фтор*/}
         {/*</div>*/}
         <div style={{ marginTop: '1.5rem' }} className="quiz-region-title">Ваш город</div>
-        <input type="text" className='quiz-region-input' />
+        <CitiesInput />
         {/*    <p>
           Проживаете ли вы в одном из следующих городов/поселков/сел: Тверь,
           Томск, Одинцово, Егорьевск, Красногорск, Сердобск, пос. Сява, с.
