@@ -101,14 +101,7 @@ const Navigation = ({
       >
         Debug final
       </div>
-      <div
-        onClick={() => { 
-          onChangeCard(18)
-        }}
-        className="quiz-navigation-button btn-active"
-      >
-        Debug IMT
-      </div>
+  
       {/* debug */}
 
       {currentCard === questionLength ? (
