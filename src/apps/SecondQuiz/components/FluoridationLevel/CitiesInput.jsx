@@ -24,13 +24,25 @@ const CitiesInput = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [hiddenList, setHiddenList] = useState(true);
+  const [selected, setSelected] = useState(false);
   const [disableSearch, setDisableSearch] = useState(citySaved ? true : false);
 
   const dispatch = useDispatch();
 
   const handleCityString = (e) => {
+    setSelected(false);
     setCityString(e.target.value);
+    setHiddenList(false);
     setDisableSearch(false);
+  };
+
+  const handleFocus = () => {
+    setHiddenList(false);
+  };
+
+  const handleBlur = () => {
+    setHiddenList(true);
   };
 
   const fetchDataAsync = async (str) => {
@@ -50,11 +62,8 @@ const CitiesInput = () => {
     }
   };
 
-  const reset = () =>{
-    setData(null) 
-  }
-
   const selectCity = (name) => {
+    setSelected(true);
     setCityString(name);
     let ftor = "not";
     if (ftorCities.includes(name)) {
@@ -71,6 +80,8 @@ const CitiesInput = () => {
     const debounceTimeout = setTimeout(() => {
       if (cityString !== "" && !disableSearch) {
         fetchDataAsync(cityString);
+      } else {
+        setData(null);
       }
     }, 500);
 
@@ -78,27 +89,36 @@ const CitiesInput = () => {
       clearTimeout(debounceTimeout);
     };
   }, [cityString]);
+
+  useEffect(() => {
+    !selected && dispatch(setCityAction(""));
+  }, [selected]);
   return (
-    <div className="cities_input_wrap">
+    <div
+      tabIndex={0}
+      className="cities_input_wrap"
+      onFocusCapture={handleFocus}
+      onBlurCapture={handleBlur}
+    >
       <input
-        onChange={handleCityString}
-        onBlur={reset}
+        onInput={handleCityString}
         value={cityString}
         type="text"
         className="quiz-region-input"
       />
 
-      {!error && data && (
+      {!hiddenList && !error && data && (
         <div className="cities_input_list">
           {isLoading ? (
             <img src={loadingGif} />
           ) : data?.length > 0 ? (
             data.map((x) => (
               <div
+                key={x.id}
                 className="cities_input_list_item"
-                onClick={() => selectCity(x.name)}
+                onMouseDown={() => selectCity(x.name)}
               >
-                {x.name} 
+                {x.name}
                 <span>{x.area}</span>
               </div>
             ))
