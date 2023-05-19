@@ -3,11 +3,19 @@ import React, { useState, useEffect } from 'react'
 
 import { listOfCities } from '../../../../data/citiesList'
 import CitiesInput from './CitiesInput'
+import { setCityAction } from '../../../../actions/personal'
+import { useDispatch } from 'react-redux'
+
+const federalCitites = ['Москва', 'Санкт-Петербург', 'Севастополь']
 
 const FluoridationLevel = ({ question }) => {
   const [cityName, setCityName] = useState('Выберете регион')
-
+  const dispatch = useDispatch()
+   
   useEffect(() => {
+    if(federalCitites.includes(cityName)){
+      dispatch(setCityAction( cityName))
+    }
     if (cityName !== 'Выберете регион'
       && cityName !== 'Москва') {
       window.ym && window.ym(92962183, 'reachGoal', 'region_not_Moscow_question18')
@@ -15,7 +23,7 @@ const FluoridationLevel = ({ question }) => {
     }
   }, [cityName])
 
- 
+
 
   return (
     <div className="quiz-level">

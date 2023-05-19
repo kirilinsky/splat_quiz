@@ -63,15 +63,12 @@ const CitiesInput = () => {
   };
 
   const selectCity = (name) => {
-    setSelected(true);
-    setCityString(name);
-    let ftor = "not";
-    if (ftorCities.includes(name)) {
-      ftor = "yes";
-    }
+    const ftor = ftorCities.includes(name) ? "yes" : "not";
     dispatch(setFtor(ftor));
     dispatch(setCityAction(name));
 
+    setSelected(true);
+    setCityString(name);
     setData(null);
     setDisableSearch(true);
   };
@@ -93,6 +90,7 @@ const CitiesInput = () => {
   useEffect(() => {
     !selected && dispatch(setCityAction(""));
   }, [selected]);
+
   return (
     <div
       tabIndex={0}
@@ -109,9 +107,7 @@ const CitiesInput = () => {
 
       {!hiddenList && !error && data && (
         <div className="cities_input_list">
-          {isLoading ? (
-            <img src={loadingGif} />
-          ) : data?.length > 0 ? (
+          {data?.length > 0 ? (
             data.map((x) => (
               <div
                 key={x.id}
