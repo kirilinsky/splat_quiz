@@ -4,7 +4,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { backFromForm, changeQuizPage, resultScore, secondQuiz } from "../../actions/routingApp";
 import InputMask from "react-input-mask";
-import { setPerosonalAction } from "../../actions/personal";
+import { setPersonalAction } from "../../actions/personal";
 
 
 const FinalForm = () => {
@@ -16,6 +16,7 @@ const FinalForm = () => {
   const caries_indicator = useSelector((state) => state.score.caries)
   const inflammation_indicator = useSelector((state) => state.score.inflammationAndBleeding)
   const hygiene_indicator = useSelector((state) => state.score.hygieneLevel)
+  const city = useSelector(state => state.personal.city)
 
   const [errorSend, setErrorSend] = useState(false);
   const [formdata, setFormdata] = useState({
@@ -30,7 +31,7 @@ const FinalForm = () => {
 
 
   const submitForm = (e) => {
-    dispatch(setPerosonalAction(formdata))
+    dispatch(setPersonalAction(formdata))
     window.ym && window.ym(92962183, 'reachGoal', 'specialist_recommendations_open')
     window.gtag && window.gtag('event', 'specialist_recommendations_open')
     setAgree(false);
@@ -39,7 +40,7 @@ const FinalForm = () => {
     e.preventDefault();
     //dispatch(resultScore())
     axios
-      .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { ...formdata, sensitivity_indicator, caries_indicator, hygiene_indicator, inflammation_indicator })
+      .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { ...formdata, city, sensitivity_indicator, caries_indicator, hygiene_indicator, inflammation_indicator })
       .then((r) => {
         window.ym && window.ym(92962183, 'reachGoal', 'specialist_success')
         window.gtag && window.gtag('event', 'specialist_success')
@@ -128,7 +129,10 @@ const FinalForm = () => {
         </div>
         <button
           className="form-send"
-          onClick={() => dispatch(resultScore())}
+          onClick={() => {
+            dispatch(setPersonalAction(formdata))
+            dispatch(resultScore())
+          }}
         >
           debug next
         </button>

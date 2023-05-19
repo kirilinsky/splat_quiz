@@ -1,13 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import loadingGif from "./loading.gif";
+import { useDispatch, useSelector } from "react-redux";
+import { setCityAction } from "../../../../actions/personal";
+import { setFtor } from "../../../../actions/secondQuiz";
+
+let ftorCities = [
+  "Тверь",
+  "Томск",
+  "Одинцово",
+  "Егорьевск",
+  "Красногорск",
+  "Сердобск",
+  "Сява",
+  "Каракулино",
+  "Игра",
+  "Кез",
+];
 
 const CitiesInput = () => {
-  const [cityString, setCityString] = useState("");
+  const citySaved = useSelector((s) => s.personal.city);
+  const [cityString, setCityString] = useState(citySaved || "");
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [disableSearch, setDisableSearch] = useState(false);
+  const [disableSearch, setDisableSearch] = useState(citySaved ? true : false);
+
+  const dispatch = useDispatch();
 
   const handleCityString = (e) => {
     setCityString(e.target.value);
@@ -31,8 +50,19 @@ const CitiesInput = () => {
     }
   };
 
+  const reset = () =>{
+    setData(null) 
+  }
+
   const selectCity = (name) => {
     setCityString(name);
+    let ftor = "not";
+    if (ftorCities.includes(name)) {
+      ftor = "yes";
+    }
+    dispatch(setFtor(ftor));
+    dispatch(setCityAction(name));
+
     setData(null);
     setDisableSearch(true);
   };
@@ -52,11 +82,12 @@ const CitiesInput = () => {
     <div className="cities_input_wrap">
       <input
         onChange={handleCityString}
+        onBlur={reset}
         value={cityString}
         type="text"
         className="quiz-region-input"
       />
-      {console.log(data)}
+
       {!error && data && (
         <div className="cities_input_list">
           {isLoading ? (
@@ -67,14 +98,14 @@ const CitiesInput = () => {
                 className="cities_input_list_item"
                 onClick={() => selectCity(x.name)}
               >
-                {x.name}
-
+                {x.name} 
                 <span>{x.area}</span>
               </div>
             ))
           ) : (
             <div
-              onClick={() => selectCity("")} title="сбросить"
+              onClick={() => selectCity("")}
+              title="сбросить"
               className="cities_input_list_item disabled"
             >
               ничего не найдено

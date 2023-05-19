@@ -19,7 +19,7 @@ const Navigation = ({
   let check
   const dispatch = useDispatch()
   const bmi = useSelector((state) => state.score.bmiNumber)
-
+  const city = useSelector(state => state.personal.city)
   currentQuestion.map((item) => {
     if (bmi > 0) return (check = true)
     if (item.required === false) return (check = true)
@@ -101,17 +101,21 @@ const Navigation = ({
       >
         Debug final
       </div>
-  
+
       {/* debug */}
 
       {currentCard === questionLength ? (
         <div
           onClick={() => {
-            sendMetric('specialist_recommendations_open')
-            dispatch(finalForm())
-            handleIncrement()
+
+            if (city) {
+              dispatch(finalForm())
+              handleIncrement()
+              sendMetric('specialist_recommendations_open')
+            }
+
           }}
-          className="quiz-navigation-button btn-active"
+          className={`quiz-navigation-button  ${!!city ? 'btn-active' : 'btn-disable'}`}
         >
           Дальше
         </div>

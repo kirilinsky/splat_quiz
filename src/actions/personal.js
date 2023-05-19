@@ -10,8 +10,11 @@ export const personal = createSlice({
     name: 'personal',
     initialState: init,
     reducers: {
-        setPerosonal: (_, {payload}) => {
-            return { ...payload } 
+        setPersonal: (_, { payload }) => {
+            return { ...payload }
+        },
+        setCity: (state, { payload }) => {
+            return { ...state, city:payload }
         },
         reset: (state) => {
             state = init
@@ -20,11 +23,15 @@ export const personal = createSlice({
 })
 
 export const {
-    setPerosonal, reset
+    setPersonal, reset, setCity
 } = personal.actions
 
-export const setPerosonalAction = (value) => (dispatch) => {
-    dispatch(setPerosonal(value))
+export const setPersonalAction = (value) => (dispatch) => {
+    dispatch(setPersonal(value))
+}
+
+export const setCityAction = (value) => (dispatch) => {
+    dispatch(setCity(value))
 }
 
 export default personal.reducer
