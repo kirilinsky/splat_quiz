@@ -344,7 +344,7 @@
   transform: translateX(0);
   transition: 0.5s linear;
 }
-.quiz-desktop img {
+.quiz-desktop > img {
   margin-bottom: 10px;
   margin-right: 20px;
   

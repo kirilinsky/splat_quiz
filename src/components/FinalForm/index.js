@@ -146,7 +146,7 @@ const FinalForm = () => {
         className="form-send"
         onClick={() => dispatch(backFromForm())}
       >
-        назад
+        Назад
       </button>
     </div>
   );

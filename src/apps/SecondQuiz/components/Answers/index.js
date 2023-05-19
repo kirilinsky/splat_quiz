@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import {
+  setArrayDescription,
   setDescription,
   setDescriptionColor, setNeutralColor
 } from '../../../../actions/secondQuiz'
@@ -8,7 +9,7 @@ import {
 
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K']
 
-const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
+const Answers = ({ multiple, answers, onSelectAnswer, onCountingPoints }) => {
   const yaClick = (yaIndex) => {
     if (!yaIndex) {
       return
@@ -34,6 +35,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
             }`}
           key={el.id}
           onClick={() => {
+            console.log(el, 'fd', multiple);
             onSelectAnswer(el.id, el.questionId)
             onCountingPoints(
               el.sensitivity,
@@ -43,7 +45,7 @@ const Answers = ({ answers, onSelectAnswer, onCountingPoints }) => {
               el.id,
               el.questionId
             )
-            dispatch(setDescription(el.description))
+            dispatch(setArrayDescription({ multiple, text: el.description }))
             dispatch(setDescriptionColor(el.correctAnswer))
             dispatch(setNeutralColor(el.neutral))
             yaClick(el.yaIndex)

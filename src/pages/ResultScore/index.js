@@ -1,6 +1,6 @@
 
 import './style.scss'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { Toothpaste, bleedProduts, requiredProduts } from '../../data/toothpaste'
 import tooth from './assets/tooth.png'
@@ -12,6 +12,7 @@ import disc from './assets/disc.png';
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ModalSuccess from './components/Modal';
+import { backFromForm } from '../../actions/routingApp'
 
 
 
@@ -24,7 +25,7 @@ const ResultScore = () => {
   const ftor = useSelector((state) => state.score.ftor)
   const name = useSelector((state) => state.personal.name)
   const email = useSelector((state) => state.personal.email)
-
+  const dispatch = useDispatch()
   const [success, setSuccess] = useState(false)
   const [appError, setAppError] = useState(false)
 
@@ -104,9 +105,11 @@ const ResultScore = () => {
 
 
 
-  const Products = ({ additional = false,bleed=false, array, ftor = false, type = false }) => {
+  const Products = ({ additional = false, bleed = false, array, ftor = false, type = false }) => {
     const [productsArray, setProductsArray] = useState([])
     const [itemKey, setItemKey] = useState('')
+
+    
 
     useEffect(() => {
       if (!type) {
@@ -121,7 +124,7 @@ const ResultScore = () => {
         a = a.filter(x => x[itemKey].type === type)
       }
 
-      if(a[0] && bleed){
+      if (a[0] && bleed) {
         a[0] = bleedProduts[0]
       }
 
@@ -261,11 +264,13 @@ const ResultScore = () => {
             <p>Для более эффективного и комплексного ухода наши эксперты рекомендуют ежедневно использовать специализированные средства гигиены: ополаскиватель, зубную нить и очищающую пенку</p>
           </div>
           <div className="products_section_items">
-           <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} /> 
+            <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} />
 
             <Products additional array={requiredProduts} />
           </div>
+          <button onClick={()=> dispatch(backFromForm())} className='final_back_btn'>Назад</button>
         </div>
+
       </div>
 
       <div className="disc_section">

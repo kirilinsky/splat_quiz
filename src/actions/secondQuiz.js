@@ -7,7 +7,7 @@ export const secondQuiz = createSlice({
     caries: 0,
     inflammationAndBleeding: 0,
     hygieneLevel: 0,
-    descriptionAnswer: '',
+    descriptionAnswer: [],
     colorDescription: false,
     neutral: false,
     bmiNumber: 0,
@@ -29,6 +29,24 @@ export const secondQuiz = createSlice({
     actionDescription: (state, action) => {
       state.descriptionAnswer = action.payload
     },
+    actionArrayDescription: (state, {payload:{text, multiple}}) => {
+      let arr = [...state.descriptionAnswer]
+      if(multiple){
+         if(arr.includes(text)){
+          arr = arr.filter(x=> x !== text)
+        } else{
+          arr.push(text)
+        }
+      } else{
+        arr = []
+        arr.push(text)
+      }
+
+      console.log(text,arr,'arr');
+      //console.log(action,'dfg');
+      state.descriptionAnswer = arr
+    },
+
     actionDescriptionColor: (state, action) => {
       state.colorDescription = action.payload
     },
@@ -41,7 +59,7 @@ export const secondQuiz = createSlice({
     actionFtor: (state, action) => {
       state.ftor = action.payload
     },
-    actionBleed: (state,action) => {
+    actionBleed: (state, action) => {
       state.bleed = action.payload
     },
   },
@@ -52,7 +70,7 @@ export const {
   actionCaries,
   actionInflammationAndBleeding,
   actionHygieneLevel,
-  actionDescription,
+  actionDescription, actionArrayDescription,
   actionDescriptionColor, actionNeutralColor,
   actionBmi,
   actionFtor, actionBleed
@@ -73,6 +91,9 @@ export const setHygieneLevel = (value) => (dispatch) => {
 
 export const setDescription = (value) => (dispatch) => {
   dispatch(actionDescription(value))
+}
+export const setArrayDescription = (value) => (dispatch) => {
+  dispatch(actionArrayDescription(value))
 }
 
 export const setDescriptionColor = (value) => (dispatch) => {

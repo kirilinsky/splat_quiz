@@ -5,6 +5,7 @@ import Bmi from '../Bmi'
 import FluoridationLevel from '../FluoridationLevel'
 
 import operator from '../../../../assets/images/operator.png'
+import QuizSlider from './QuizSlider'
 
 const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
   const descriptionAnswer = useSelector(
@@ -30,7 +31,7 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
       window.gtag && window.gtag('event', question.yaIndex)
     }
   }, [])
- 
+
   if (question.id === 17) {
     return <Bmi question={question} />
   } else if (question.id === 18) {
@@ -46,17 +47,18 @@ const Questions = ({ question, onSelectAnswer, onCountingPoints }) => {
           <div className="quiz-answers">
             <Answers
               answers={question.answers}
+              multiple={!question.isSingleAnswer}
               onSelectAnswer={onSelectAnswer}
               onCountingPoints={onCountingPoints}
             />
           </div>
           {isMobile >= 1200 && (<div className="quiz-desc">
             <div
-              className={`quiz-desktop ${descriptionAnswer ? 'active' : ''}  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
+              className={`quiz-desktop ${descriptionAnswer.length ? 'active' : ''}  ${neutralColor ? 'neutral' : descriptionAnswerColor ? 'green' : 'red'
                 }`}
             >
-              <img src={operator} alt="operator" />
-              {descriptionAnswer}
+              <img src={operator} alt="operator" /> 
+              <QuizSlider arr={descriptionAnswer} />
             </div>
           </div>)}
         </div>

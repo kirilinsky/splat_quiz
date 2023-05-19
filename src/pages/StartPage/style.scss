@@ -18,10 +18,10 @@
       grid-template-rows: 1fr 1fr;
       height: auto;
     }
-    @media screen and (max-height: 715px) {
-      grid-template-columns: 74% auto;
-      min-height: 30vh;
-      gap: 1px;
+    @media screen and (max-height: 735px) {
+      grid-template-columns: 77% auto;
+      min-height: 32vh;
+      gap: 0px;
     }
 
     @media screen and (max-width: 580px) {
@@ -242,5 +242,27 @@
 
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+
+.final_back_btn {
+  width: 245px;
+  padding: 24px;
+  background-color: var(--primary-red);
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+  color: #fff;
+  margin-bottom: 25px;
+  @media screen and (max-width: 1200px) {
+    padding: 19px;
+  }
+  @media screen and (max-width: 580px) {
+    width: 100%;
+  }
+  &:hover {
+    background-color: #8b0923;
+    cursor: pointer;
   }
 }
