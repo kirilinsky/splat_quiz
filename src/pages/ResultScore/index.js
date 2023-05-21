@@ -6,13 +6,19 @@ import { Toothpaste, bleedProduts, requiredProduts } from '../../data/toothpaste
 import tooth from './assets/tooth.png'
 
 
-import tyan from './assets/tyan.png'
+import ozonBig from './assets/ozon_big.png'
 import disc from './assets/disc.png';
+
+import pdf from './assets/pdf.svg'
+import telegram from './assets/telegram.svg'
+import emailIcon from './assets/email.svg'
 
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ModalSuccess from './components/Modal';
 import { backFromForm } from '../../actions/routingApp'
+
+
 
 
 
@@ -109,7 +115,7 @@ const ResultScore = () => {
     const [productsArray, setProductsArray] = useState([])
     const [itemKey, setItemKey] = useState('')
 
-    
+
 
     useEffect(() => {
       if (!type) {
@@ -246,17 +252,39 @@ const ResultScore = () => {
         </div>
 
       </div>
-
+      <div className="share_section">
+        <div className="container">
+          <div className="share_section_wrap">
+            <h3>Поделиться результатом: </h3>
+            <div className="share_section_links">
+              <div className="share_section_link">
+                <img src={pdf} alt="pdf" />
+                <span>   Скачать в PDF</span>
+              </div>
+              <div className="share_section_link">
+                <img src={telegram} alt="telegram" />
+                <span>   Отправить в Telegram</span>
+              </div>
+              <div className="share_section_link">
+                <img src={emailIcon} alt="email" />
+                <span>   Отправить на почту</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <div className="products_section">
 
         <div className="container">
+
           <div className="products_section_title">
-            <h2>Рекомендуем </h2>
-            <p>На основе полученных ответов мы подобрали продукты SPLAT,
-              которые соответствуют вашим потребностям по уходу за зубами и полостью рта:</p>
+        <img src={ozonBig} alt="Ozon" />
+            <h2> А это ваш персональный набор за уходом полости рта <span>со скидкой 15%</span></h2>
+
           </div>
+
           <div className="products_section_items">
             <Products type="product" array={Toothpaste} ftor={ftor} />
           </div>
@@ -268,7 +296,7 @@ const ResultScore = () => {
 
             <Products additional array={requiredProduts} />
           </div>
-          <button onClick={()=> dispatch(backFromForm())} className='final_back_btn'>Назад</button>
+          <button onClick={() => dispatch(backFromForm())} className='final_back_btn'>Назад</button>
         </div>
 
       </div>

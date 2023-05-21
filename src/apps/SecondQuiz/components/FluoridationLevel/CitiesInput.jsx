@@ -22,7 +22,6 @@ const CitiesInput = () => {
   const citySaved = useSelector((s) => s.personal.city);
   const [cityString, setCityString] = useState(citySaved || "");
   const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const [hiddenList, setHiddenList] = useState(true);
   const [selected, setSelected] = useState(false);
@@ -55,10 +54,8 @@ const CitiesInput = () => {
       }
       const data = await response.json();
       setData(data.result);
-      setIsLoading(false);
     } catch (error) {
       setError(error.message);
-      setIsLoading(false);
     }
   };
 
