@@ -261,10 +261,10 @@ const ResultScore = () => {
                 <img src={pdf} alt="pdf" />
                 <span>   Скачать в PDF</span>
               </div>
-              <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
+             {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
                 <img src={telegram} alt="telegram" />
                 <span>   Отправить в Telegram</span>
-              </a>
+              </a> */}
               <div className="share_section_link">
                 <img src={emailIcon} alt="email" />
                 <span>   Отправить на почту</span>
