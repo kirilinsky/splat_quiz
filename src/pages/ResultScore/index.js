@@ -261,10 +261,10 @@ const ResultScore = () => {
                 <img src={pdf} alt="pdf" />
                 <span>   Скачать в PDF</span>
               </div>
-              <div className="share_section_link">
+              <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
                 <img src={telegram} alt="telegram" />
                 <span>   Отправить в Telegram</span>
-              </div>
+              </a>
               <div className="share_section_link">
                 <img src={emailIcon} alt="email" />
                 <span>   Отправить на почту</span>
@@ -280,7 +280,7 @@ const ResultScore = () => {
         <div className="container">
 
           <div className="products_section_title">
-        <img src={ozonBig} alt="Ozon" />
+            <img src={ozonBig} alt="Ozon" />
             <h2> А это ваш персональный набор за уходом полости рта <span>со скидкой 15%</span></h2>
 
           </div>
@@ -288,14 +288,15 @@ const ResultScore = () => {
           <div className="products_section_items">
             <Products type="product" array={Toothpaste} ftor={ftor} />
           </div>
-          <div className="products_section_title">
-            <p>Для более эффективного и комплексного ухода наши эксперты рекомендуют ежедневно использовать специализированные средства гигиены: ополаскиватель, зубную нить и очищающую пенку</p>
-          </div>
+
           <div className="products_section_items">
             <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} />
 
             <Products additional array={requiredProduts} />
+            <a className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
           </div>
+
+
           <button onClick={() => dispatch(backFromForm())} className='final_back_btn'>Назад</button>
         </div>
 

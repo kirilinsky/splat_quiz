@@ -246,17 +246,27 @@
 }
 
 .final_back_btn {
-  width: 245px;
-  padding: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  white-space: nowrap;
+  width: max-content;
+  &.ozon_btn {
+    background: #005bff;
+    &:hover{
+      background:  #0a56e3;
+    }
+  }
+  min-width: 245px;
+  padding: 34px 40px;
   background-color: var(--primary-red);
   border-radius: 20px;
   border: none;
-  font-size: 20px;
+ 
   font-family: inherit;
   color: #fff;
   margin-bottom: 25px;
   @media screen and (max-width: 1200px) {
-    padding: 19px;
+    padding: 25px;
   }
   @media screen and (max-width: 580px) {
     width: 100%;

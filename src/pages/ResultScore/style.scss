@@ -201,7 +201,7 @@
     img {
       height: 225px;
       @media screen and (max-width: 586px) {
-       display: none;
+        display: none;
       }
     }
     h2 {
@@ -234,7 +234,7 @@
         @media screen and (max-width: 586px) {
           width: max-content;
           font-size: 20px;
-         }
+        }
       }
     }
     p {
@@ -646,5 +646,18 @@
     color: #768489;
     font-weight: 400;
     font-size: 16px;
+    text-decoration: none;  
+    span {
+      transition: 0.2s linear;
+      border-bottom: 1px dashed transparent;
+      padding-bottom: 1px;
+    }
+    &:hover {
+      cursor: pointer;
+      span {
+        border-color: #7684896a;
+        transition: 0.2s linear;
+      }
+    }
   }
 }
