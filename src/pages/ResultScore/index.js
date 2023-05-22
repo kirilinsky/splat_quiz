@@ -155,30 +155,29 @@ const ResultScore = () => {
     }, [ftor])
 
     return !productsArray.length ? '' : productsArray.map((item) => (
-      <div className='product' key={item.id}>
-        <div className="product_img"><img src={item[itemKey].image} alt={item[itemKey].name} /></div>
-        <div className="product_body">
-          <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
-          <div className="product_body_title">{item[itemKey].name}</div>
-
-
-          <p className="product_body_desc">
+      <div className={`product  `} key={item.id}>
+        <div className='product_desc'>
+          <p>
             {item[ftor ? 'ftorRec' : 'rec']}
             {item[itemKey]?.rec}
           </p>
-          <div className="product_body_buttons">
-            {/* <a name="Ali" href={item[itemKey].link} className="product_body_buttons_link" target="_blank">
-              <img name={`${item[itemKey].yaIndex}_Ali`} src={ali} alt="aliexpress" />
-            </a> */}
+        </div>
 
-            <a name={`${item[itemKey].yaIndex ?? '1'}_OZON`} onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link ozon" target="_blank" rel="noreferrer noopener">
-              Купить на OZON
-            </a>
-            {/*    <a name="WB" onClick={handleClickTracking} href={item[itemKey].wb} className="product_body_buttons_link wb" target="_blank" rel="noreferrer noopener">
-                <img name={`${item[itemKey].yaIndex ?? '1'}_WB`} src={wb} alt="wb" />
-                Купить на OZON
-              </a> */}
+        <div className="product_body">
+          <div className="product_img"><img src={item[itemKey].image} alt={item[itemKey].name} /></div>
+          <div className="product_body_content">
+            <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
+            <div className="product_body_title">{item[itemKey].name}</div>
           </div>
+
+
+
+
+          {/*  <div className="product_body_buttons"> 
+           <a name={`${item[itemKey].yaIndex ?? '1'}_OZON`} onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link ozon" target="_blank" rel="noreferrer noopener">
+              Купить на OZON
+            </a>  
+          </div>*/}
         </div>
       </div>
     ))
@@ -261,14 +260,14 @@ const ResultScore = () => {
                 <img src={pdf} alt="pdf" />
                 <span>   Скачать в PDF</span>
               </div>
-             {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
+              {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
                 <img src={telegram} alt="telegram" />
                 <span>   Отправить в Telegram</span>
-              </a> */}
+              </a> 
               <div className="share_section_link">
                 <img src={emailIcon} alt="email" />
                 <span>   Отправить на почту</span>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
@@ -287,19 +286,23 @@ const ResultScore = () => {
 
           <div className="products_section_items">
             <Products type="product" array={Toothpaste} ftor={ftor} />
-          </div>
 
-          <div className="products_section_items">
             <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} />
 
             <Products additional array={requiredProduts} />
-            <a className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
+
           </div>
-
-
-          <button onClick={() => dispatch(backFromForm())} className='final_back_btn'>Назад</button>
         </div>
 
+      </div>      <div className="back_section">
+      <div className="container">
+        <a className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
+      </div></div>
+      <div className="back_section">
+        <div className="container">
+          <button onClick={() => dispatch(backFromForm())} className='final_back_btn'>Назад</button>
+
+        </div>
       </div>
 
       <div className="disc_section">

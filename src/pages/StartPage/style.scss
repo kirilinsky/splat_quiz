@@ -247,26 +247,32 @@
 
 .final_back_btn {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 20px;
   white-space: nowrap;
   width: max-content;
   &.ozon_btn {
     background: #005bff;
-    &:hover{
-      background:  #0a56e3;
+    font-size: 23px;
+    display: block;text-align: center;
+     
+    @media screen and (max-width: 1200px) {
+      padding: 24px;
+    }
+    &:hover {
+      background: #0a56e3;
     }
   }
-  min-width: 245px;
-  padding: 34px 40px;
+  min-width: 134px;
+  padding: 20px;
   background-color: var(--primary-red);
   border-radius: 20px;
   border: none;
- 
+
   font-family: inherit;
   color: #fff;
   margin-bottom: 25px;
   @media screen and (max-width: 1200px) {
-    padding: 25px;
+    padding: 15px;
   }
   @media screen and (max-width: 580px) {
     width: 100%;
