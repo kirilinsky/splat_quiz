@@ -517,15 +517,16 @@
 }
 
 .disc_section {
+  background: #fff;
   &_wrap {
     display: flex;
     gap: 19px;
     padding: 20px;
     align-items: center;
     background: #fff;
-    box-shadow: 0px 12px 32px rgba(224, 226, 221, 0.3);
+    box-shadow: 0px 12px 34px rgba(212, 214, 208, 0.3);
     border-radius: 24px;
-    margin-bottom: 39px;
+   
     @media screen and (max-width: 560px) {
       flex-direction: column-reverse;
     }
@@ -611,8 +612,6 @@
 }
 
 .back_section {
-  padding: 30px 0;
-
-  min-height: 10vh;
+  padding: 22px 0; 
   background: #fff;
 }

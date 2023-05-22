@@ -1,5 +1,6 @@
 .mainscreen {
   background: #f8f9ff;
+  margin-bottom: 39px;
   &_grid {
     display: grid;
     padding-right: 0;
@@ -253,8 +254,9 @@
   padding: 15px;
   &.ozon_btn {
     background: #005bff;
-    font-size: 23px ;
-    display: block;text-align: center;
+    font-size: 23px;
+    display: block;
+    text-align: center;
     padding: 34px 41px;
     @media screen and (max-width: 1200px) {
       padding: 24px;
@@ -264,7 +266,7 @@
     }
   }
   min-width: 134px;
- 
+
   background-color: var(--primary-red);
   border-radius: 20px;
   border: none;
