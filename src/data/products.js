@@ -362,7 +362,7 @@ const products = {
         type: "product",
         image: image40,
         name:
-            "ОЧИЩАЮЩАЯ ПЕНКА ДЛЯ ЗУБОВ И ДЕСЕН 2 в 1 (алоэ и чайное дерево) / ORAL CARE FOAM 2 in 1 (aloe & tea tree)",
+            "Очищающая пенка для зубов и десен 2 в 1 (алоэ и чайное дерево) / ORAL CARE FOAM 2 in 1 (aloe & tea tree)",
         link: "https://s.click.aliexpress.com/e/_ooWo2Wp",
     },
     WhitingHard: {
@@ -427,7 +427,7 @@ const Accessories = {
         type: 'accessories', image: image105,
         yaIndex: 'product20',
         rec: 'Очищающая пенка помогает удалить налет после каждого приема пищи, предотвращает появление зубного камня, кариеса и других заболеваний.',
-        name: 'ОЧИЩАЮЩАЯ ПЕНКА ДЛЯ ЗУБОВ И ДЕСЕН 2 в 1 (алоэ и чайное дерево)',
+        name: 'Очищающая пенка для зубов и десен 2 в 1 (алоэ и чайное дерево)',
         link: 'https://aliexpress.ru/item/1005001709539275.html?_ga=2.196776292.991924105.1655452245-1117741815.1653548929&pdp_npi=2%40dis%21RUB%21337%2C00%20%D1%80%D1%83%D0%B1.%21293%2C19%20%D1%80%D1%83%D0%B1.%21%21%21%21%21%4021135c2e16554527627384119e409b%2112000017243497571%21sh&sku_id=12000017243497571&spm=a2g0o.store_pc_groupList.8148356.22.3eea2979ZzCAqe',
         ozon: 'https://ozon.ru/t/591GbKR', wb: 'https://www.wildberries.ru/catalog/23445369/detail.aspx'
     },
