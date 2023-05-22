@@ -247,14 +247,15 @@
 
 .final_back_btn {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 19px;
   white-space: nowrap;
   width: max-content;
+  padding: 15px;
   &.ozon_btn {
     background: #005bff;
-    font-size: 23px;
+    font-size: 23px ;
     display: block;text-align: center;
-     
+    padding: 34px 41px;
     @media screen and (max-width: 1200px) {
       padding: 24px;
     }
@@ -263,7 +264,7 @@
     }
   }
   min-width: 134px;
-  padding: 20px;
+ 
   background-color: var(--primary-red);
   border-radius: 20px;
   border: none;
