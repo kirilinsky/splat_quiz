@@ -303,11 +303,11 @@ const ResultScore = () => {
               {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
                 <img src={telegram} alt="telegram" />
                 <span>   Отправить в Telegram</span>
-              </a> */}
+              </a> 
               <div className="share_section_link">
                 <img src={emailIcon} alt="email" />
                 <span>   Отправить на почту</span>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
