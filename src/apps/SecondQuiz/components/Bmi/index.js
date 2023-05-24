@@ -41,14 +41,14 @@ const Bmi = ({ question }) => {
   const dispatch = useDispatch()
 
   const handleChange = (e) => {
-    //debug ytag
-    /*  if (e.target.name === 'height') {
-       window.ym && window.ym(92962183, 'reachGoal', 'introduced_growth')
-       window.gtag && window.gtag('event', 'introduced_growth')
-     } else if (e.target.name === 'weight') {
-       window.ym && window.ym(92962183, 'reachGoal', 'introduced_weight')
-       window.gtag && window.gtag('event', 'introduced_weight')
-     } */
+
+    if (e.target.name === 'height') {
+      window.ym && window.ym(92962183, 'reachGoal', 'introduced_growth')
+      window.gtag && window.gtag('event', 'introduced_growth')
+    } else if (e.target.name === 'weight') {
+      window.ym && window.ym(92962183, 'reachGoal', 'introduced_weight')
+      window.gtag && window.gtag('event', 'introduced_weight')
+    }
     setInput({
       ...input,
       [e.target.name]: e.target.value,
@@ -57,15 +57,15 @@ const Bmi = ({ question }) => {
 
   const handleAgeClick = (item) => {
     setIsSelected(item.id)
-    //debug ytag
-    // window.ym && window.ym(92962183, 'reachGoal', item.yaIndex)
-    //window.gtag && window.gtag('event', item.yaIndex)
+
+    window.ym && window.ym(92962183, 'reachGoal', item.yaIndex)
+    window.gtag && window.gtag('event', item.yaIndex)
   }
 
   useEffect(() => {
     const { height, weight } = input
     let bmi = Math.round((Number(weight) / Math.pow(Number(height), 2)) * 10000)
-   
+
     if (bmi >= 12 && bmi <= 18) {
       setBmiType('low')
     } else if (bmi >= 19 && bmi <= 24) {

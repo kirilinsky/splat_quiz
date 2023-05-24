@@ -19,8 +19,7 @@ export const routingApps = createSlice({
       state.page = 'StartPage'
     },
     secondQuiz: (state) => {
-      //state.page = 'ResultScore'
-      // debug delete
+     
       state.page = 'SecondQuiz'
       state.quizPage = 1
     },
