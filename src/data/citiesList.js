@@ -3,7 +3,7 @@
 export const listOfCities = [
   {
     "id": 80,
-    fluorine: false, "region": "Москва",
+    fluorine: false, "region": "Москва и область",
     "district_id": 1
   },
   {
@@ -13,7 +13,7 @@ export const listOfCities = [
   },
   {
     "id": 181,
-    fluorine: false, "region": "Севастополь",
+    fluorine: false, "region": "Севастополь и респ. Крым",
     "district_id": 3
   },
   {
@@ -145,10 +145,6 @@ export const listOfCities = [
   {
     "id": 27,
     fluorine: false, "region": "Республика Коми",
-    "district_id": 3
-  }, {
-    "id": 127,
-    fluorine: false, "region": "Республика Крым",
     "district_id": 3
   },
   {

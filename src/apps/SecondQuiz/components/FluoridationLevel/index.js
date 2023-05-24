@@ -6,7 +6,7 @@ import CitiesInput from './CitiesInput'
 import { setCityAction } from '../../../../actions/personal'
 import { useDispatch } from 'react-redux'
 
-const federalCitites = ['Москва', 'Санкт-Петербург', 'Севастополь']
+const federalCitites = ['Москва и область', 'Санкт-Петербург и область', 'Севастополь и респ. Крым']
 
 const FluoridationLevel = ({ question }) => {
   const [cityName, setCityName] = useState('Выберете регион')
