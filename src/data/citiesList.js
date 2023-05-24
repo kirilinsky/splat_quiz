@@ -12,6 +12,11 @@ export const listOfCities = [
     "district_id": 3
   },
   {
+    "id": 181,
+    fluorine: false, "region": "Севастополь",
+    "district_id": 3
+  },
+  {
     "id": 2,
     fluorine: false, "region": "Республика Адыгея",
     "district_id": 2
@@ -31,6 +36,7 @@ export const listOfCities = [
     fluorine: false, "region": "Архангельская область",
     "district_id": 3
   },
+
   {
     "id": 6,
     fluorine: false, "region": "Астраханская область",
@@ -139,6 +145,10 @@ export const listOfCities = [
   {
     "id": 27,
     fluorine: false, "region": "Республика Коми",
+    "district_id": 3
+  }, {
+    "id": 127,
+    fluorine: false, "region": "Республика Крым",
     "district_id": 3
   },
   {
@@ -391,4 +401,9 @@ export const listOfCities = [
     fluorine: false, "region": "Ханты-Мансийский АО",
     "district_id": 6
   }
+  , {
+    "id": 79,
+    fluorine: false, "region": "Иные территории,включая город и космодром Байконур",
+    "district_id": 3
+  },
 ]
