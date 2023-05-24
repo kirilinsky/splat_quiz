@@ -143,13 +143,13 @@ const ResultScore = () => {
       (imgProperties2.height * pdfWidth) / imgProperties2.width;
     const pdfHeight3 =
       (imgProperties3.height * pdfWidth) / imgProperties3.width;
-    pdf.addImage(data, 'PNG', 3, 0, pdfWidth, pdfHeight);
+    pdf.addImage(data, 'PNG', 3, 0, pdfWidth, pdfHeight, '', 'FAST');
     pdf.addPage();
-    pdf.addImage(data2, 'PNG', 3, 0, pdfWidth, pdfHeight2);
-    pdf.addImage(data3, 'PNG', 3, pdfHeight2, pdfWidth, pdfHeight3);
+    pdf.addImage(data2, 'PNG', 3, 0, pdfWidth, pdfHeight2, '', 'FAST');
+    pdf.addImage(data3, 'PNG', 3, pdfHeight2, pdfWidth, pdfHeight3, '', 'FAST');
 
     pdf.link(pdfWidth / 2 - (imgProperties3.width / 2), pdfHeight2, imgProperties3.width, pdfHeight3, { url: links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`] });
-   
+
     pdf.save('ваша_рекомендация.pdf')
 
 
@@ -237,8 +237,8 @@ const ResultScore = () => {
     <>
       <Helmet>
         <title>{`Ваш результат`}</title>
-         {forPDF ? <meta name="viewport" content="width=900, user-scalable=no" /> : <meta name="viewport" content="width=device-width, initial-scale=1" />}
-       </Helmet>
+        {forPDF ? <meta name="viewport" content="width=900, user-scalable=no" /> : <meta name="viewport" content="width=device-width, initial-scale=1" />}
+      </Helmet>
       <div className="score_section">
         <div className={`pdf_1 ${forPDF ? 'pdf_variant' : ''}`} ref={printRef}>
           <div className="container">
