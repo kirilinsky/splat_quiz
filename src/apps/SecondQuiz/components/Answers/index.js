@@ -35,7 +35,7 @@ const Answers = ({ multiple, answers, onSelectAnswer, onCountingPoints }) => {
             }`}
           key={el.id}
           onClick={() => {
-            console.log(el, 'fd', multiple);
+           
             onSelectAnswer(el.id, el.questionId)
             onCountingPoints(
               el.sensitivity,

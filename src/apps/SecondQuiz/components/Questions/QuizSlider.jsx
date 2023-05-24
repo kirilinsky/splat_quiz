@@ -19,7 +19,7 @@ const QuizSlider = ({ arr }) => {
     setCurrentText(currentText - 1);
   };
 
-  console.log(arr);
+  
   return (
     <div className="quiz_slider">
       <div className="quiz_slider-text">{arr[currentText]}</div>

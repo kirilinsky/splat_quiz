@@ -42,8 +42,7 @@ export const secondQuiz = createSlice({
         arr.push(text)
       }
 
-      console.log(text,arr,'arr');
-      //console.log(action,'dfg');
+      
       state.descriptionAnswer = arr
     },
 

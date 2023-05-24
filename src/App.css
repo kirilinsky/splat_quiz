@@ -1,5 +1,8 @@
 /* App Main Page */
-
+.webim-root{
+    right: 2% !important;
+  bottom: 2% !important;
+}
 .btn-red {
   margin-top: 2rem;
   background: var(--primary-red);
