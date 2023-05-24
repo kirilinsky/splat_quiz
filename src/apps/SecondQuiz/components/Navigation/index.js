@@ -91,7 +91,7 @@ const Navigation = ({
       </div>
 
       {/* debug */}
-     {/*  <div
+     <div
         onClick={() => {
           sendMetric('specialist_recommendations_open')
 
@@ -100,7 +100,7 @@ const Navigation = ({
         className="quiz-navigation-button btn-active"
       >
         Debug final
-      </div> */}
+      </div>  
 
       {/* debug */}
 

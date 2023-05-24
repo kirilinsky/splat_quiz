@@ -3,6 +3,34 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  &.pdf_variant{
+    
+    width: auto;
+    .score_section_result_item {
+      width: 37vw;
+    }
+    .score_section_title_image{
+      height: 135px;
+    }
+    .score_section_title_content p{
+      font-size: 15px;
+    }
+    .score_section_title_content h1{
+        font-size: 34px;
+        margin-top: 7px;
+    }
+    .score_section_result_wrap {
+      padding: 0;
+      gap: 8px;
+    }
+    .score_section_result {
+       max-width: 100%;
+      padding: 0;
+    }
+  }
+  @media print {
+    width: 750px;
+  }
 }
 
 .score_section {
@@ -17,12 +45,19 @@
     width: 100%;
     margin-bottom: 40px;
     overflow: hidden;
+
     @media screen and (max-width: 590px) {
       margin-bottom: 24px;
     }
     &_wrap {
       display: flex;
       gap: 21px;
+      &.pdf_variant {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
+        max-width: 100vw;
+      }
       @media screen and (max-width: 1200px) {
         padding: 24px;
         padding-bottom: 1px;
@@ -196,6 +231,17 @@
 .products_section {
   background: #fff;
   padding-top: 80px;
+  &.pdf_variant{
+    width: 1201px;
+    padding-top: 3px;
+    .product_desc p {
+      font-size: 14px;
+      padding-bottom: 14px;
+    }
+    .product_body_title{
+      font-size: 18px;
+    }
+  }
   &_title {
     display: flex;
     align-items: center;
@@ -576,6 +622,9 @@
 //share
 .share_section {
   margin-bottom: 80px;
+  @media print {
+    display: none;
+  }
   @media screen and (max-width: 710px) {
     margin-bottom: 40px;
   }

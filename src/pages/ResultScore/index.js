@@ -19,6 +19,7 @@ import axios from 'axios'
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 import { links } from '../../data/ozonLinks'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -37,6 +38,7 @@ const ResultScore = () => {
   const dispatch = useDispatch()
   const [success, setSuccess] = useState(false)
   const [appError, setAppError] = useState(false)
+  const [forPDF, setForPDF] = useState(false)
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const printRef = useRef();
@@ -115,20 +117,24 @@ const ResultScore = () => {
   }
 
   const handleDownloadPdf = async () => {
+    setForPDF(true)
     const element = printRef.current;
     const element2 = printRef2.current;
     const element3 = printRef3.current;
+
+    await new Promise(resolve => setTimeout(resolve, 2000));
     const canvas = await html2canvas(element);
     const canvas2 = await html2canvas(element2);
-    const canvas3 = await html2canvas(element3);
+    const canvas3 = await html2canvas(element3)
+    setForPDF(false)
     const data = canvas.toDataURL('image/png');
     const data2 = canvas2.toDataURL('image/png');
-    const data3 = canvas3.toDataURL('image/png');
+    const data3 = canvas3.toDataURL('image/png')
 
     const pdf = new jsPDF();
     const imgProperties = pdf.getImageProperties(data);
     const imgProperties2 = pdf.getImageProperties(data2);
-    const imgProperties3 = pdf.getImageProperties(data3);
+    const imgProperties3 = pdf.getImageProperties(data3)
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight =
       (imgProperties.height * pdfWidth) / imgProperties.width;
@@ -143,8 +149,10 @@ const ResultScore = () => {
     pdf.addImage(data3, 'PNG', 3, pdfHeight2, pdfWidth, pdfHeight3);
 
     pdf.link(pdfWidth / 2 - (imgProperties3.width / 2), pdfHeight2, imgProperties3.width, pdfHeight3, { url: links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`] });
+   
+    pdf.save('ваша_рекомендация.pdf')
 
-    pdf.save('ваша_рекомендация.pdf');
+
   };
 
   //console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
@@ -227,8 +235,12 @@ const ResultScore = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`Ваш результат`}</title>
+         {forPDF ? <meta name="viewport" content="width=900, user-scalable=no" /> : <meta name="viewport" content="width=device-width, initial-scale=1" />}
+       </Helmet>
       <div className="score_section">
-        <div className='pdf_1' ref={printRef}>
+        <div className={`pdf_1 ${forPDF ? 'pdf_variant' : ''}`} ref={printRef}>
           <div className="container">
             <div className="score_section_title">
               <div className="score_section_title_content">
@@ -243,8 +255,8 @@ const ResultScore = () => {
             </div>
           </div>
 
-          <div className="score_section_result" >
-            <div className="score_section_result_wrap">
+          <div className={`score_section_result  `} >
+            <div className={`score_section_result_wrap ${forPDF ? 'pdf_variant' : ''}`}>
               <div className="score_section_result_item">
                 <h4>Гигиена</h4>
                 <h2>{percentage(hygieneLevel, 7)}%</h2>
@@ -317,7 +329,7 @@ const ResultScore = () => {
       </div>
 
 
-      <div className="products_section" ref={printRef2}>
+      <div className={`products_section ${forPDF ? 'pdf_variant' : ''}`} ref={printRef2}>
 
         <div className="container">
 
