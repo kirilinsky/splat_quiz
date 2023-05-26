@@ -10,7 +10,7 @@ import ozonBig from './assets/ozon_big.png'
 import disc from './assets/disc.png';
 
 import pdf from './assets/pdf.svg'
-import emailIcon from './assets/email.svg'
+//import emailIcon from './assets/email.svg'
 
 import { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
@@ -352,7 +352,7 @@ const ResultScore = () => {
       </div>
       <div ref={printRef3} className="back_section">
         <div className="container">
-          <a href={links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`]} className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
+          <a rel='noopener noreferrer' target='_blank' href={links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`]} className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
         </div>
       </div>
 
