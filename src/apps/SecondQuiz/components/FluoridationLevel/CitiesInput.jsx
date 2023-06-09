@@ -33,7 +33,7 @@ const CitiesInput = () => {
     setSelected(false);
     setCityString(e.target.value);
     setHiddenList(false);
-    setDisableSearch(false);
+    setDisableSearch(false); 
   };
 
   const handleFocus = () => {
@@ -62,6 +62,7 @@ const CitiesInput = () => {
   const selectCity = (name) => {
     const ftor = ftorCities.includes(name) ? "yes" : "not";
     dispatch(setFtor(ftor));
+    
     dispatch(setCityAction(name));
 
     setSelected(true);
@@ -85,7 +86,8 @@ const CitiesInput = () => {
   }, [cityString]);
 
   useEffect(() => {
-    !selected && dispatch(setCityAction(""));
+    
+    !selected &&  dispatch(setCityAction("")) && setCityString('');
   }, [selected]);
 
   return (

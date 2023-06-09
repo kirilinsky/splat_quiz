@@ -116,6 +116,40 @@ export const links = {
 
 
 
+export const targets = {
+    'Low-Low-Low-Low'	: 'product1_OZON',
+'Low-Low-High-Low'	: 'product2_OZON',
+'Low-Medium-Low-High'	: 'product3_OZON',
+'Low-Medium-High-Low'	: 'product4_OZON',
+'Low-High-Low-Low'	: 'product5_OZON',
+'Low-High-Medium-Low'	: 'product6_OZON',
+'Low-High-High-Low': 'product7_OZON',
+'Medium-Low-Low-Low': 'product8_OZON',
+'Medium-Low-Low-High': 'product9_OZON',
+'Medium-Low-Medium-Low': 'product10_OZON',
+'Medium-Low-High-Low': 'product11_OZON',
+'Medium-Medium-Low-High': 'product12_OZON',
+'Medium-Medium-Medium-High': 'product13_OZON',
+'Medium-Medium-High-Low': 'product14_OZON',
+'Medium-High-Low-Low': 'product15_OZON',
+'Medium-High-Low-Medium': 'product16_OZON',
+'Medium-High-Medium-Low': 'product17_OZON',
+'Medium-High-Medium-Medium': 'product18_OZON',
+'Medium-High-High-Low': 'product19_OZON',
+'Medium-High-High-Medium': 'product20_OZON',
+'High-Low-Low-Low': 'product21_OZON',
+'High-Low-Low-High': 'product22_OZON',
+'High-Low-Medium-Low': 'product23_OZON',
+'High-Medium-Low-High': 'product24_OZON',
+'High-Medium-Medium-Low': 'product25_OZON',
+'High-High-Low-Low': 'product26_OZON',
+'High-High-Medium-Low': 'product27_OZON',
+'Low-High-Low-Low': 'product28_OZON',
+'Low-High-High-High': 'product29_OZON',
+'Medium-High-Low-Low': 'product30_OZON',
+'Medium-High-High-Medium'	: 'product31_OZON',
+}
+
 
 
 

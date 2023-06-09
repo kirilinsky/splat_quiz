@@ -72,64 +72,65 @@ const Navigation = ({
     // for test 18 page
     //onChangeCard(18)
 
-    if (currentCard === questionLength) {
-      dispatch(setSensitivity(result().sensitivity))
-      dispatch(setCaries(result().caries))
-      dispatch(setInflammationAndBleeding(result().inflammationAndBleeding))
-      dispatch(setHygieneLevel(result().hygieneLevel))
-    }
-  }
 
-  return (
-    <div className="quiz-navigation">
-      <div
-        className={`quiz-navigation-button quiz-navigation-button-back ${currentCard === 1 ? '' : 'btn-back-active'
-          }`}
-        onClick={handleDecrement}
-      >
-        Назад
-      </div>
 
-      {/* debug */}
-     <div
-        onClick={() => {
-          sendMetric('specialist_recommendations_open')
+    dispatch(setSensitivity(result().sensitivity))
+    dispatch(setCaries(result().caries))
+    dispatch(setInflammationAndBleeding(result().inflammationAndBleeding))
+    dispatch(setHygieneLevel(result().hygieneLevel))
+ 
+}
 
-          dispatch(finalForm())
-        }}
-        className="quiz-navigation-button btn-active"
-      >
-        Debug final
-      </div>  
-
-      {/* debug */}
-
-      {currentCard === questionLength ? (
-        <div
-          onClick={() => {
-
-            if (city) {
-              dispatch(finalForm())
-              handleIncrement()
-              sendMetric('specialist_recommendations_open')
-            }
-
-          }}
-          className={`quiz-navigation-button  ${!!city ? 'btn-active' : 'btn-disable'}`}
-        >
-          Дальше
-        </div>
-      ) : (
-        <div
-          className={`quiz-navigation-button ${check ? 'btn-active' : 'btn-disable'
-            }`}
-          onClick={handleIncrement}
-        >
-          Дальше
-        </div>
-      )}
+return (
+  <div className="quiz-navigation">
+    <div
+      className={`quiz-navigation-button quiz-navigation-button-back ${currentCard === 1 ? '' : 'btn-back-active'
+        }`}
+      onClick={handleDecrement}
+    >
+      Назад
     </div>
-  )
+
+    {/* debug */}
+   {/*  <div
+      onClick={() => {
+        sendMetric('specialist_recommendations_open')
+
+        dispatch(finalForm())
+      }}
+      className="quiz-navigation-button btn-active"
+    >
+      Debug final
+    </div> */}
+
+    {/* debug */}
+
+    {currentCard === questionLength ? (
+      <div
+        onClick={() => {
+
+          if (city) {
+            dispatch(finalForm())
+            handleIncrement()
+            sendMetric('specialist_recommendations_open')
+          }
+
+        }}
+        className={`quiz-navigation-button  ${!!city ? 'btn-active' : 'btn-disable'}`}
+      >
+        Дальше
+      </div>
+    ) : (
+      <div
+        className={`quiz-navigation-button ${check ? 'btn-active' : 'btn-disable'
+          }`}
+        onClick={handleIncrement}
+      >
+        Дальше
+      </div>
+    )}
+  </div>
+)
 }
 
 export default Navigation

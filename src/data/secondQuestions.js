@@ -1119,7 +1119,7 @@ export const secondQuestions = [
         id: 1501,
         answer: 'нет, это вредно',
         description:
-          'Жвачка не может починить вред вашим зубам! Некоторые стоматологи рекомендуют жевать жевательную резинку после каждого приема пищи по 5-10 минут 6 раз в день. Но не больше. Жвачка без сахара с содержанием ксилита снижает рН слюны, способствует очищению зубов от остатков пищи и естественной реминерализации эмали. Впрочем, очищающая пенка справится с этим эффективнее, быстрее и безопаснее.',
+          'Жвачка не может причинить вред вашим зубам! Некоторые стоматологи рекомендуют жевать жевательную резинку после каждого приема пищи по 5-10 минут 6 раз в день. Но не больше. Жвачка без сахара с содержанием ксилита снижает рН слюны, способствует очищению зубов от остатков пищи и естественной реминерализации эмали. Впрочем, очищающая пенка справится с этим эффективнее, быстрее и безопаснее.',
         correctAnswer: false,
         status: false,
         sensitivity: 0,
@@ -1168,7 +1168,7 @@ export const secondQuestions = [
     pointInflammationAndBleeding: 0,
     pointHygieneLevel: 0,
 
-    yaIndex: 'question18',
+    yaIndex: 'question19',
     answers: [
       {
         questionId: 16,
@@ -1182,7 +1182,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
-        yaIndex: 'answer1_question18'
+        yaIndex: 'answer1_question19'
       },
       {
         questionId: 16,
@@ -1196,7 +1196,7 @@ export const secondQuestions = [
         caries: 1,
         inflammationAndBleeding: 1,
         hygieneLevel: 1,
-        yaIndex: 'answer2_question18'
+        yaIndex: 'answer2_question19'
       },
       {
         questionId: 16,
@@ -1210,7 +1210,7 @@ export const secondQuestions = [
         caries: 0,
         inflammationAndBleeding: 0,
         hygieneLevel: 0,
-        yaIndex: 'answer3_question18'
+        yaIndex: 'answer3_question19'
       },
     ],
   },

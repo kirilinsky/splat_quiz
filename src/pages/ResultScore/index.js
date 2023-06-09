@@ -13,12 +13,12 @@ import pdf from './assets/pdf.svg'
 //import emailIcon from './assets/email.svg'
 
 import { useEffect, useRef, useState } from 'react'
-import axios from 'axios'
+
 
 
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
-import { links } from '../../data/ozonLinks'
+import { links, targets } from '../../data/ozonLinks'
 import { Helmet } from 'react-helmet'
 
 
@@ -32,9 +32,10 @@ const ResultScore = () => {
   const bleeding = useSelector((state) => state.score.inflammationAndBleeding)
   const hygieneLevel = useSelector((state) => state.score.hygieneLevel)
   const bleed = useSelector((state) => state.score.bleed)
+  const resultString = useSelector((state) => state.score.resultString)
   const ftor = useSelector((state) => state.score.ftor)
   const name = useSelector((state) => state.personal.name)
-  const email = useSelector((state) => state.personal.email)
+  const percents = useSelector((state) => state.score.percents)
   const dispatch = useDispatch()
   const [success, setSuccess] = useState(false)
   const [appError, setAppError] = useState(false)
@@ -55,34 +56,26 @@ const ResultScore = () => {
     setIsOpen(false);
   }
 
-  const setAppointment = () => {
-    setAppError(false)
-    axios
-      .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { email, appointment: true })
-      .then((r) => {
-        window.ym && window.ym(92962183, 'reachGoal', 'specialist')
-        window.gtag && window.gtag('event', 'specialist')
-        setSuccess(true)
-        openModal()
-      })
-      .catch((e) => {
-
-        console.log("error");
-        console.error(e.message);
-        setSuccess(false)
-        setAppError(true)
-
-      });
-
-  }
-
-
-  const percentage = (value, max) => {
-    if (value === 0) {
-      value = 1
-    }
-    return Math.ceil((value / max) * 100)
-  }
+  /*  const setAppointment = () => {
+     setAppError(false)
+     axios
+       .post("/wp-content/themes/promo/inc/hygiene/ajax.php", { email, appointment: true })
+       .then((r) => {
+         window.ym && window.ym(92962183, 'reachGoal', 'specialist')
+         window.gtag && window.gtag('event', 'specialist')
+         setSuccess(true)
+         openModal()
+       })
+       .catch((e) => {
+ 
+         console.log("error");
+         console.error(e.message);
+         setSuccess(false)
+         setAppError(true)
+ 
+       });
+ 
+   } */
 
   const Value1 = () => {
     if (remineralizing <= 5) return 'Low'
@@ -116,7 +109,21 @@ const ResultScore = () => {
     return 'Low'
   }
 
+
+
+  const percentage = (value, max) => {
+    if (value === 0) {
+      value = 1
+    }
+    return Math.ceil((value / max) * 100)
+  }
+
+
+
   const handleDownloadPdf = async () => {
+    window.ym && window.ym(92962183, 'reachGoal', 'dowload_result_pdf')
+    window.gtag && window.gtag('event', 'dowload_result_pdf')
+
     setForPDF(true)
     const element = printRef.current;
     const element2 = printRef2.current;
@@ -148,15 +155,20 @@ const ResultScore = () => {
     pdf.addImage(data2, 'PNG', 3, 0, pdfWidth, pdfHeight2, '', 'FAST');
     pdf.addImage(data3, 'PNG', 3, pdfHeight2, pdfWidth, pdfHeight3, '', 'FAST');
 
-    pdf.link(pdfWidth / 2 - (imgProperties3.width / 2), pdfHeight2, imgProperties3.width, pdfHeight3, { url: links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`] });
+    pdf.link(pdfWidth / 2 - (imgProperties3.width / 2), pdfHeight2, imgProperties3.width, pdfHeight3, { url: links[resultString] });
 
     pdf.save('ваша_рекомендация.pdf')
 
 
   };
 
-  //console.log('TOTAL POINTS:', 'remineralizing', Value1(), 'caries', Value2(), 'bleeding', Value3(), 'hygieneLevel', Value4())
+  const handleClickTracking = () => {
 
+
+    window.ym && window.ym(92962183, 'reachGoal', targets[resultString])
+    window.gtag && window.gtag('event', targets[resultString])
+  }
+ 
 
 
   const Products = ({ additional = false, bleed = false, array, ftor = false, type = false }) => {
@@ -170,9 +182,7 @@ const ResultScore = () => {
         setProductsArray(array)
         return
       }
-      let a = itemKey && array[
-        `${Value1()}-${Value2()}-${Value3()}-${Value4()}`
-      ]
+      let a = itemKey && array[resultString]
 
       if (itemKey) {
         a = a.filter(x => x[itemKey].type === type)
@@ -188,134 +198,133 @@ const ResultScore = () => {
       };
     }, [array, itemKey]);
 
-    const handleClickTracking = (e) => {
-      let { name } = e.target
 
-      window.ym && window.ym(92962183, 'reachGoal', name)
-      window.gtag && window.gtag('event', name)
-    }
 
 
 
 
     useEffect(() => {
-      setItemKey(ftor ? 'ftorItem' : 'item')
+      setItemKey(additional ? 'item' : ftor ? 'ftorItem' : 'item')
     }, [ftor])
 
     return !productsArray.length ? '' : productsArray.map((item) => (
-      <div className={`product  `} key={item.id}>
-        <div className='product_desc'>
-          <p>
-            {item[ftor ? 'ftorRec' : 'rec']}
-            {item[itemKey]?.rec}
-          </p>
+  
+      <div   className = {`product  `} key = { item.id } >
+      <div className='product_desc'>
+        <p>
+          {item[ftor ? 'ftorRec' : 'rec']}
+          {item[itemKey]?.rec}
+         
+        </p>
+      </div>
+
+      <div className="product_body">
+        <div className="product_img"><img src={item[itemKey]?.image} alt={item[itemKey].name} /></div>
+        <div className="product_body_content">
+          <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
+          <div className="product_body_title">{item[itemKey].name}</div>
         </div>
 
-        <div className="product_body">
-          <div className="product_img"><img src={item[itemKey].image} alt={item[itemKey].name} /></div>
-          <div className="product_body_content">
-            <div className="product_body_copy">SPLAT® PROFESSIONAL</div>
-            <div className="product_body_title">{item[itemKey].name}</div>
-          </div>
 
 
 
-
-          {/*  <div className="product_body_buttons"> 
+        {/*  <div className="product_body_buttons"> 
            <a name={`${item[itemKey].yaIndex ?? '1'}_OZON`} onClick={handleClickTracking} href={item[itemKey].ozon} className="product_body_buttons_link ozon" target="_blank" rel="noreferrer noopener">
               Купить на OZON
             </a>  
           </div>*/}
-        </div>
       </div>
+    </div >
     ))
   }
 
 
 
-  return (
-    <>
-      <Helmet>
-        <title>{`Ваш результат`}</title>
-        {forPDF ? <meta name="viewport" content="width=900, user-scalable=no" /> : <meta name="viewport" content="width=device-width, initial-scale=1" />}
-      </Helmet>
-      <div className="score_section">
-        <div className={`pdf_1 ${forPDF ? 'pdf_variant' : ''}`} ref={printRef}>
-          <div className="container">
-            <div className="score_section_title">
-              <div className="score_section_title_content">
-                <h1>Спасибо за прохождение опроса{name ? ', ' + name.split(' ')[0] : ''}!</h1>
-                <p>Мы провели для вас персональную оценку здоровья полости рта.
-                  Она включает четыре индикатора: гигиена, воспаление и кровоточивость, кариес, реминерализация и укрепление. Индикаторы помогают получить полную картину состояния полости рта и определить, что требует внимания и ухода</p>
-                <span>*Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом</span>
-              </div>
-              <div className="score_section_title_image">
-                <img src={tooth} alt="tooth" />
-              </div>
+return (
+  <>
+    <Helmet>
+      <title>{`Ваш результат`}</title>
+      {forPDF ? <meta name="viewport" content="width=900, user-scalable=no" /> : <meta name="viewport" content="width=device-width, initial-scale=1" />}
+    </Helmet>
+    <div className="score_section">
+      <div className={`pdf_1 ${forPDF ? 'pdf_variant' : ''}`} ref={printRef}>
+        <div className="container">
+          <div className="score_section_title">
+            <div className="score_section_title_content">
+              <h1>Спасибо за прохождение опроса{name ? ', ' + name.split(' ')[0] : ''}!</h1>
+              <p>Мы провели для вас персональную оценку здоровья полости рта.
+                Она включает четыре индикатора: гигиена, воспаление и кровоточивость, кариес, реминерализация и укрепление. Индикаторы помогают получить полную картину состояния полости рта и определить, что требует внимания и ухода</p>
+              <span>*Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом</span>
             </div>
-          </div>
-
-          <div className={`score_section_result  `} >
-            <div className={`score_section_result_wrap ${forPDF ? 'pdf_variant' : ''}`}>
-              <div className="score_section_result_item">
-                <h4>Гигиена</h4>
-                <h2>{percentage(hygieneLevel, 7)}%</h2>
-
-                <div className="score_section_result_item_progress">
-                  <span style={{ width: `${percentage(hygieneLevel, 7)}%` }} className={Value4()}></span>
-                </div>
-                <p>
-                  Индикатор гигиены - оценивает риск развития заболеваний полости рта, которые связаны с нарушением гигиены зубов. Например, вероятность образования зубного налета и камня, кариеса и пародонтоза
-                </p>
-              </div>
-
-              <div className="score_section_result_item">
-                <h4>Воспаление и кровоточивость</h4>
-                <h2>{percentage(bleeding, 8)}%</h2>
-                <div className="score_section_result_item_progress"><span style={{ width: `${percentage(bleeding, 8)}%` }} className={Value3()}></span></div>
-                <p>
-                  Индикатор воспаления
-                  и кровоточивости - оценивает риск развития заболеваний десен, которые связаны с воспалением
-                  и кровоточивостью при чистке зубов,
-                  а также общее состояние десен
-                  и вероятность пародонтоза
-                </p>
-              </div>
-
-              <div className="score_section_result_item">
-                <h4>Кариес</h4>
-                <h2>{percentage(caries, 13)}%</h2>
-                <div className="score_section_result_item_progress"><span style={{ width: `${percentage(caries, 13)}%` }} className={Value2()}></span></div>
-                <p>
-                  Индикатор кариеса - оценивает риск развития кариеса зубов
-                </p>
-              </div>
-
-              <div className="score_section_result_item">
-                <h4>Реминерализация и укрепление</h4>
-                <h2>{percentage(remineralizing, 12)}%</h2>
-
-                <div className="score_section_result_item_progress"><span style={{ width: `${percentage(remineralizing, 12)}%` }} className={Value1()}></span></div>
-                <p>
-                  Индикатор чувствительности - оценивает текущий уровень и риск развития повышенной чувствительности зубов. Индикатор учитывает болевые ощущения при контакте с холодной, горячей, сладкой или кислой пищей
-                </p>
-              </div>
+            <div className="score_section_title_image">
+              <img src={tooth} alt="tooth" />
             </div>
           </div>
         </div>
 
+        <div className={`score_section_result  `} >
+          <div className={`score_section_result_wrap ${forPDF ? 'pdf_variant' : ''}`}>
+            <div className="score_section_result_item">
+              <h4>Гигиена</h4>
+              <h2> {percents.hygieneLevel}%</h2>
 
-      </div>
-      <div className="share_section">
-        <div className="container">
-          <div className="share_section_wrap">
-            <h3>Поделиться результатом: </h3>
-            <div className="share_section_links">
-              <div className="share_section_link" onClick={handleDownloadPdf}>
-                <img src={pdf} alt="pdf" />
-                <span>Скачать в PDF</span>
+              <div className="score_section_result_item_progress">
+                <span style={{ width: percents.hygieneLevel + '%' }} className={Value4()} ></span>
               </div>
-              {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
+              <p>
+                Индикатор гигиены - оценивает риск развития заболеваний полости рта, которые связаны с нарушением гигиены зубов. Например, вероятность образования зубного налета и камня, кариеса и пародонтоза
+              </p>
+            </div>
+
+            <div className="score_section_result_item">
+              <h4>Воспаление и кровоточивость</h4>
+              <h2>{percents.inflammationAndBleeding}%</h2>
+              <div className="score_section_result_item_progress">
+                <span style={{ width: percents.inflammationAndBleeding + '%' }} className={Value3()} ></span></div>
+              <p>
+                Индикатор воспаления
+                и кровоточивости - оценивает риск развития заболеваний десен, которые связаны с воспалением
+                и кровоточивостью при чистке зубов,
+                а также общее состояние десен
+                и вероятность пародонтоза
+              </p>
+            </div>
+
+            <div className="score_section_result_item">
+              <h4>Кариес</h4>
+              <h2>{percents.caries}%</h2>
+              <div className="score_section_result_item_progress">
+                <span style={{ width: percents.caries + '%' }} className={Value2()}></span></div>
+              <p>
+                Индикатор кариеса - оценивает риск развития кариеса зубов
+              </p>
+            </div>
+
+            <div className="score_section_result_item">
+              <h4>Реминерализация и укрепление</h4>
+              <h2>{percents.sensitivity}%</h2>
+
+              <div className="score_section_result_item_progress"><span style={{ width: percents.sensitivity + '%' }} className={Value1()}></span></div>
+              <p>
+                Индикатор чувствительности - оценивает текущий уровень и риск развития повышенной чувствительности зубов. Индикатор учитывает болевые ощущения при контакте с холодной, горячей, сладкой или кислой пищей
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div className="share_section">
+      <div className="container">
+        <div className="share_section_wrap">
+          <h3>Поделиться результатом: </h3>
+          <div className="share_section_links">
+            <div className="share_section_link" onClick={handleDownloadPdf}>
+              <img src={pdf} alt="pdf" />
+              <span>Скачать в PDF</span>
+            </div>
+            {/*  <a target='_blank' rel='noopener noreferrer' href="https://telegram.me/share/url?url=promo.splatglobal.com/hygiene&text=я прошел тест" className="share_section_link">
                 <img src={telegram} alt="telegram" />
                 <span>   Отправить в Telegram</span>
               </a> 
@@ -323,63 +332,63 @@ const ResultScore = () => {
                 <img src={emailIcon} alt="email" />
                 <span>   Отправить на почту</span>
               </div>*/}
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
 
-      <div className={`products_section ${forPDF ? 'pdf_variant' : ''}`} ref={printRef2}>
+    <div className={`products_section ${forPDF ? 'pdf_variant' : ''}`} ref={printRef2}>
 
-        <div className="container">
+      <div className="container">
 
-          <div className="products_section_title">
-            <img src={ozonBig} alt="Ozon" />
-            <h2> А это ваш персональный набор за уходом полости рта <span>со скидкой 15%</span></h2>
+        <div className="products_section_title">
+          <img src={ozonBig} alt="Ozon" />
+          <h2> А это ваш персональный набор за уходом полости рта <span>со скидкой 15%</span></h2>
 
-          </div>
-
-          <div className="products_section_items">
-            <Products type="product" array={Toothpaste} ftor={ftor} />
-
-            <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} />
-
-            <Products additional array={requiredProduts} />
-
-          </div>
         </div>
 
-      </div>
-      <div ref={printRef3} className="back_section">
-        <div className="container">
-          <a rel='noopener noreferrer' target='_blank' href={links[`${Value1()}-${Value2()}-${Value3()}-${Value4()}`]} className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
+        <div className="products_section_items">
+          <Products type="product" array={Toothpaste} ftor={ftor} />
+
+          <Products type="accessories" bleed={bleed} array={Toothpaste} ftor={ftor} />
+
+          <Products additional array={requiredProduts} />
+
         </div>
       </div>
 
-      {/* <div className="back_section">
+    </div>
+    <div ref={printRef3} className="back_section">
+      <div className="container">
+        <a rel='noopener noreferrer' onClick={handleClickTracking} target='_blank' href={links[resultString]} className='ozon_btn final_back_btn'>Купить со скидкой на OZON</a>
+      </div>
+    </div>
+
+    {/* <div className="back_section">
         <div className="container">
           <button onClick={() => dispatch(backFromForm())} className='final_back_btn'>Назад</button>
 
         </div>
       </div> */}
 
-      <div className="disc_section">
-        <div className="container">
-          <div className="disc_section_wrap">
-            <img src={disc} alt="зубам полезно" />
+    <div className="disc_section">
+      <div className="container">
+        <div className="disc_section_wrap">
+          <img src={disc} alt="зубам полезно" />
 
-            <p>Данный опросник не является средством постановки диагноза, не является советом по медицинскому вопросу. Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом
-              <br />
-              <br />
-              <span>
-                Опросник разработан при поддержке Президента Профессионального общества гигиенистов стоматологических
-              </span> </p>
+          <p>Данный опросник не является средством постановки диагноза, не является советом по медицинскому вопросу. Информация в опроснике не может быть использована для назначения лечения и не заменяет прием врача. По всем вопросам, имеющим отношение к состоянию здоровья, врачебной и медицинской помощи, необходимо проконсультироваться со специалистом
+            <br />
+            <br />
+            <span>
+              Опросник разработан при поддержке Президента Профессионального общества гигиенистов стоматологических
+            </span> </p>
 
-          </div>
         </div>
-
       </div>
-      {/* <div className="feedback_section">
+
+    </div>
+    {/* <div className="feedback_section">
         <div className="container">
           <div className="feedback_section_wrapper">
             <div className="feedback_section_picture">
@@ -401,8 +410,8 @@ const ResultScore = () => {
         <ModalSuccess onClose={closeModal} isOpen={modalIsOpen}
         />
       </div> */}
-    </>
-  )
+  </>
+)
 }
 
 export default ResultScore

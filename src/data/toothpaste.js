@@ -3,13 +3,14 @@ import { products, Accessories } from "./products";
 
 //bleed
 //required
-export const bleedProduts = [ 
-  {
-    ftorRec: "",
-    ftorItem: Accessories.ToothbrushUltraSensitive,
-    rec: "",
+export const bleedProduts = [
+  { 
+    rec: 'Мы подобрали зубную щетку на основе результатов вашего теста. Пожалуйста, не забывайте чистить зубы 2-3 минуты дважды в день и менять зубную щетку не реже, чем раз в три месяца.'
+    ,
     item: Accessories.ToothbrushUltraSensitive,
-    id: 6,
+ 
+    ftorRec: "",
+    ftorItem:  Accessories.ToothbrushUltraSensitive,
   },
 ];
 

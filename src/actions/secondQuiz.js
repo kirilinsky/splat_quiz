@@ -12,6 +12,16 @@ export const secondQuiz = createSlice({
     neutral: false,
     bmiNumber: 0,
     ftor: 'not',
+    ozonLink: '',
+    targetEvent: '',
+    resultString:'',
+    percents: {
+      sensitivity: '0',
+      caries: '0',
+      inflammationAndBleeding: '0',
+      hygieneLevel: '0',
+    },
+    products: []
   },
   reducers: {
     actionSensitivity: (state, action) => {
@@ -19,6 +29,21 @@ export const secondQuiz = createSlice({
     },
     actionCaries: (state, action) => {
       state.caries = action.payload
+    },
+    actionPercents:(state,action)=>{
+      state.percents = action.payload
+    },
+    actionResultString:(state,action)=>{
+      state.resultString = action.payload
+    },
+    actionProducts: (state, action) => {
+      state.products = [...state.products, ...action.payload]
+    },
+    actionOzonLink: (state, action) => {
+      state.ozonLink =  action.payload
+    },
+    actionClearProducts: (state, action) => {
+      state.products =  []
     },
     actionInflammationAndBleeding: (state, action) => {
       state.inflammationAndBleeding = action.payload
@@ -29,20 +54,20 @@ export const secondQuiz = createSlice({
     actionDescription: (state, action) => {
       state.descriptionAnswer = action.payload
     },
-    actionArrayDescription: (state, {payload:{text, multiple}}) => {
+    actionArrayDescription: (state, { payload: { text, multiple } }) => {
       let arr = [...state.descriptionAnswer]
-      if(multiple){
-         if(arr.includes(text)){
-          arr = arr.filter(x=> x !== text)
-        } else{
+      if (multiple) {
+        if (arr.includes(text)) {
+          arr = arr.filter(x => x !== text)
+        } else {
           arr.push(text)
         }
-      } else{
+      } else {
         arr = []
         arr.push(text)
       }
 
-      
+
       state.descriptionAnswer = arr
     },
 
@@ -66,17 +91,29 @@ export const secondQuiz = createSlice({
 
 export const {
   actionSensitivity,
-  actionCaries,
+  actionCaries, actionProducts,
   actionInflammationAndBleeding,
-  actionHygieneLevel,
+  actionHygieneLevel,actionResultString,
   actionDescription, actionArrayDescription,
   actionDescriptionColor, actionNeutralColor,
-  actionBmi,
-  actionFtor, actionBleed
+  actionBmi,actionPercents,actionOzonLink,
+  actionFtor, actionBleed,actionClearProducts
 } = secondQuiz.actions
 
 export const setSensitivity = (value) => (dispatch) => {
   dispatch(actionSensitivity(value))
+}
+export const setOzonLink = (value) => (dispatch) => {
+  dispatch(actionOzonLink(value))
+}
+export const setProducts = (value) => (dispatch) => {
+  dispatch(actionProducts(value))
+}
+export const setResultString = (value) => (dispatch) => {
+  dispatch(actionResultString(value))
+}
+export const setPercents = (value) => (dispatch) => {
+  dispatch(actionPercents(value))
 }
 export const setCaries = (value) => (dispatch) => {
   dispatch(actionCaries(value))
@@ -86,6 +123,9 @@ export const setInflammationAndBleeding = (value) => (dispatch) => {
 }
 export const setHygieneLevel = (value) => (dispatch) => {
   dispatch(actionHygieneLevel(value))
+}
+export const setClearProducts = ( ) => (dispatch) => {
+  dispatch(actionClearProducts())
 }
 
 export const setDescription = (value) => (dispatch) => {
